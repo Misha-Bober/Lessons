@@ -1,1 +1,50 @@
-@import url("reset.css")
+@import url("reset.css");
+
+* {
+    color: red; 
+}
+ p {color: red;} 
+
+ a {color: green;} 
+ li {color: blue;} 
+
+ .lesson{
+    color: red;
+} 
+#span-id{
+    color: blue;
+} 
+ div.lesson {
+    color: yellow;
+} 
+ .text {
+    color: blueviolet;
+}
+.lesson {
+    color: red;
+} */
+.text,
+.lesson{
+     color: rgb(27, 80, 141); 
+}
+.text a{
+     color: rgb(46, 169, 185); 
+}
+.text .text_green{
+     color: green; 
+}
+.text * {
+     color: red; 
+}
+.lesson > p {
+     color: purple; 
+}
+.lesson ~ p {
+     color: violet; 
+}
+.lesson + p {
+    color: orange;
+}
+[class*="__fish"] {
+    color: rgb(8, 255, 8);
+}

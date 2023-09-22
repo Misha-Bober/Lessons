@@ -3,7 +3,7 @@
 *::after{
     padding: 0;
     margin: 0;
-    bottom: 0;
+    border: 0;
     box-sizing: border-box;
 }
 a {
@@ -15,8 +15,6 @@ li {
 } 
 img {
     vertical-align: top;
-    width: inherit;
-    height: inherit;
     }
 h1,
 h2,
@@ -26,4 +24,9 @@ h5,
 h6 {
     font-weight: inherit;
     font-size: inherit;
+}
+html,
+body {
+    line-height: 1;
+    height: 100%;
 }

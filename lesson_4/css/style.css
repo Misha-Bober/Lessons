@@ -1,18 +1,18 @@
  @import url("reset.css"); 
 
-* {
-    color: red; 
+ * {
+    color: rgb(0, 254, 59); 
 }
- p {color: red;} 
+ p {color: rgb(0, 255, 229);} 
 
- a {color: green;} 
+ a {color: rgb(91, 171, 224);} 
  li {color: blue;} 
 
  .lesson{
     color: red;
 } 
 #span-id{
-    color: blue;
+    color: rgb(255, 0, 93);
 } 
  div.lesson {
     color: yellow;
@@ -46,5 +46,8 @@
     color: orange;
 }
 [class*="__fish"] {
-    color: rgb(8, 255, 8);
+    color: rgb(8, 255, 8); 
+}
+ .lesson.lesson{
+    color: rgb(255, 73, 234);
 }

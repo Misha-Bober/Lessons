@@ -1,0 +1,83 @@
+
+
+/* @import url("fonts.css"); */
+@import url("reset.css");
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+
+
+
+
+
+body{
+     font-family: "inter", sans-serif;
+     font-size: 18px;
+     color: #7D7D7D;
+    }
+.title,
+sub-title,
+sub-titel-h3{
+    font-family: "Poppins", sans-serif;
+}
+.title {
+    font-size: 25px;
+    text-decoration: overline;
+    /* font-weight: 700; */
+}
+.sub-title {
+    font-size: 30px;
+    /* font-weight: 600; */
+}
+.sub-title-h3 {
+    font-size: 20px;
+    text-decoration: underline;
+    /* font-weight: 600; */
+}
+.sub-title-big {
+    font-size: 40px;
+    /* font-weight: 700; */
+    text-transform: lowercase;
+}
+.title,
+.sub-title-big {
+    font-weight: 700;
+}
+.sub-title,
+.sub-title-h3 {
+    font-weight: 600;
+}
+.title,
+.sub-title,
+.sub-title-big {
+    color: hwb(225 22% 75%);
+}
+.sub-title-h3 {
+    color: #6B77E5;
+    text-transform: capitalize;
+}
+span {
+    color: #6B77E5;
+}
+Header {
+    text-align: center;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.shadow {
+    text-shadow: 5px 5px 3px rgb(255, 18, 18),
+    1px 1px #25d815;
+}
+.sub-title,
+.sub-title-big,
+.sub-title-h3 {
+    line-height: 1.27; 
+}
+ p {
+    line-height: 1.462;
+}  
+a {
+    color: #061de4;
+}

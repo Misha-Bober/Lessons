@@ -1,11 +1,11 @@
 
 
-/* @import url("fonts.css"); */
-@import url("reset.css");
-
+@import url("fonts.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap");
+@import url("reset.css");
 
 
 
@@ -81,7 +81,12 @@ Header {
 a {
     color: #061de4;
 }
-.image {
+.image img {
     width: 100%;
  }
-    
+ .montserrat p {
+    font-family: montserrat;
+ } 
+.TT-Trailers-Trial p {
+    font-family: TT-Trailers-Trial;
+}

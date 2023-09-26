@@ -35,6 +35,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: "Causten";
     src: 
@@ -44,3 +45,39 @@
     font-style: normal;
     font-display: swap;
 } 
+@font-face {
+    font-family: TT-Trailers-Trial;
+    src:
+    url("../fonts/TT-Trailers-Trial-Bold.woff2") format(woff2),
+    url("../fonts/TT-Trailers-Trial-Bold.woff") format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: TT-Trailers-Trial;
+    src:
+    url("../fonts/TT-Trailers-Trial-ExtraBold.woff2") format(woff2),
+    url("../fonts/TT-Trailers-Trial-ExtraBold.woff") format(woff);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: TT-Trailers-Trial;
+    src:
+    url("../fonts/TT-Trailers-Trial-Medium.woff2") format(woff2),
+    url("../fonts/TT-Trailers-Trial-Medium.woff") format(woff);
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: TT-Trailers-Trial;
+    src:
+    url("../fonts/TT-Trailers-Trial-Regular.woff2") format(woff2),
+    url("../fonts/TT-Trailers-Trial-Regular.woff") format(woff);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

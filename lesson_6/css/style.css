@@ -100,12 +100,25 @@ Header {
     display: inline-block;
     vertical-align: top;
 }
-.image_jewerly img {
-    max-width: 245.64px;
-    max-height: 467.73px;
+.jewelry {
+    font-size: 0;
+    max-width: 1169;
 }
-.image_jewerly,
+  .image_jewerly {
+    max-width: 568px;
+    max-height: 518px;
+    display: inline-block;
+    margin-right: 22px;
+    vertical-align: top;
+}
 .jewelry_content {
+    max-width: 563px;
     display: inline-block;
     vertical-align: top;
 }
+  .image_jewerly img {
+    width:100%;
+    height: 100%;
+}
+
+

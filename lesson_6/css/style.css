@@ -1,0 +1,111 @@
+
+
+@import url("fonts.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular,italic&display=swap");
+@import url("reset.css");
+
+
+
+
+body{
+     font-family: "inter", sans-serif;
+     font-size: 18px;
+     color: #7D7D7D;
+    }
+.title,
+.sub-title,
+.sub-titel-h3,
+.h4 {
+font-family: "Poppins";
+}
+
+.title {
+    font-size: 25px;
+    font-family: "Poppins";
+}
+.sub-title {
+    font-size: 30px;
+    font-family: "Poppins";
+    color: #37393F;
+}
+.sub-title-h3 {
+    font-size: 20px;
+    font-family: "Poppins";
+    color: #6B77E5;
+}
+.sub-title-3 {
+    font-size: 20px;
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #40DDB6;
+}
+.sub-title,
+.sub-title-h3 {
+    font-weight: 600;
+    
+}
+h4 {
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    color: #37393F;   
+}
+* p {
+    line-height: 1.46;
+}
+.sub-title_jewelry {
+    font-family: "DM Serif Text", sans-serif;
+    font-size: 59px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #0E333D;
+}
+.paragraph_jewelry {
+    font-family: "inter", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #474747;
+}
+.title_jewelry {
+    font-family: "inter", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #D06B00; 
+}
+Header {
+    text-align: center;
+}
+.image img {
+    width: 100%;
+    
+}
+.image_work img {
+    max-width: 331px;
+    max-height: 261.5px;
+}
+.content {
+    max-width: 692px;
+}
+.content {
+    margin: 0 auto;
+}
+.image_work,
+.work_content
+ {
+    display: inline-block;
+    vertical-align: top;
+}
+.image_jewerly img {
+    max-width: 245.64px;
+    max-height: 467.73px;
+}
+.image_jewerly,
+.jewelry_content {
+    display: inline-block;
+    vertical-align: top;
+}

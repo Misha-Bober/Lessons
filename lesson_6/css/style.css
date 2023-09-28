@@ -138,7 +138,7 @@ Header {
 }
 .sub-title {
     margin-top: 37px;
-    margin-bottom: 3px;
+    margin-bottom: 10px;
 }
 .sub-title-h3 {
     margin-top: 42px;
@@ -150,4 +150,45 @@ Header {
 .sub-title-3 {
     margin-top: 15px;
     margin-bottom: 21px;
+}
+.image_work {
+    margin-right: 29px;
+}
+.work_content ol li:not(:last-child) {
+    margin-bottom: 30px;
+}
+.Practice {
+    font-size: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.practice_paragraph {
+    padding: 30px 30px 30px 30px;
+    background-color: #0abaeb;
+    color: #000;
+    width: 600px;
+    margin-bottom: 80px;
+}
+.my_photo img {
+    max-width: 500px;
+    max-height: 400px;
+    font-size: 0;
+    vertical-align: top;
+}
+.retreat {
+    margin-left: -200px;
+    margin-top: 50px;
+}
+.practice_paragraph_two {
+    width: 400px;
+    max-height: 150px;
+    overflow: hidden;
+    background-color: aqua;
+    color: #000;
+    margin: 50px;
+}
+.practice_paragraph_three {
+    width: 200px;
+    height: 150px;
+    overflow: scroll;
 }

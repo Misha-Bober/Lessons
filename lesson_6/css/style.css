@@ -91,12 +91,10 @@ Header {
 }
 .image_work img {
     max-width: 331px;
-    max-height: 261.5px;
+    max-height: 261px;
 }
 .content {
     max-width: 692px;
-}
-.content {
     margin: 0 auto;
 }
 .image_work,
@@ -137,16 +135,20 @@ Header {
     margin-bottom: 25px;
 }
 .sub-title {
-    margin-top: 37px;
     margin-bottom: 10px;
 }
+.image {
+    margin-bottom: 37px;
+}
+.completely {
+margin-bottom: 42px;
+}
 .sub-title-h3 {
-    margin-top: 42px;
     margin-bottom: 12px;
 }
-.image_content {
-    padding-top: 40px;
-}
+ .image_content {
+    padding: 40px;
+} 
 .sub-title-3 {
     margin-top: 15px;
     margin-bottom: 21px;

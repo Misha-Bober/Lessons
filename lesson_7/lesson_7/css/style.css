@@ -1,0 +1,70 @@
+
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("reset.css");
+
+body{
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.46;
+   }
+   header {
+    margin-top: 50px;
+   }
+h1 {
+    font-family: "poppins";
+    font-size: 60px;
+    font-weight: 700;
+    color: #37393F;
+    line-height: 1.21;
+    margin-bottom: 70px;
+    text-align: center;
+   }
+h2 {
+    font-family: "poppins";
+    font-size: 40px;
+    font-weight: 700;
+    color: #37393F;
+    line-height: 1.21;
+    margin-bottom: 11px;
+   }
+   .one {
+    margin-bottom: 32px;
+   }
+.Retreat {
+    margin-bottom: 100px;
+}
+h3 {
+    font-family: "poppins";
+    font-size: 30px;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 8px;
+   }
+.two {
+    margin-bottom: 24px;
+}
+span {
+    color: #40DDB6;
+}
+.label_licencing {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.four {
+    margin-bottom: 13;
+}
+.Project {
+    margin-bottom: 35px;
+}
+ol li {
+    list-style: decimal-leading-zero;
+}
+ul li {
+    list-style: disc;
+}
+li {
+    padding-left; 
+}

@@ -119,8 +119,7 @@ ul li {
  .jewellery {
     width: 1103px;
     height: 519px;
-     margin-left: 33px;
-    margin-right: 33px; 
+    margin: 0 auto
  }
  .necklace {
     width: 187px;

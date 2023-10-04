@@ -35,6 +35,13 @@ h2 {
    }
 .retreat {
     margin-bottom: 100px;
+    
+}
+.Licencing {
+    padding-left: 30px;
+    padding-bottom: 30px; 
+    max-width: 1218px;
+    margin: 0 auto;
 }
 h3 {
     font-family: "poppins";
@@ -62,8 +69,8 @@ span {
 }
 .information {
     margin-bottom: 50px;
-    max-width: 1230px;
-    margin: 0 auto
+    max-width: 830px;
+    margin: 0 auto;
 } 
  ol li {
     list-style: decimal-leading-zero;
@@ -109,16 +116,18 @@ ul li {
     margin-bottom: 25px;
 }
 .clothing {
-    margin-left: 21px;
-    margin-right: 21px;
+    max-width: 1240;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 .bold {
     color: #807D7E;
     font-weight: 700;
 }
  .jewellery {
-    width: 1103px;
-    height: 519px;
+    max-width: 1103px;
     margin: 0 auto
  }
  .necklace {

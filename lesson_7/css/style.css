@@ -63,8 +63,7 @@ span {
 .information {
     margin-bottom: 50px;
     max-width: 1230px;
-    padding-left: 200px;
-    padding-right: 200px;
+    margin: 0 auto
 } 
  ol li {
     list-style: decimal-leading-zero;

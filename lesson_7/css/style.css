@@ -33,7 +33,7 @@ h2 {
    .one {
     margin-bottom: 32px;
    }
-.Retreat {
+.retreat {
     margin-bottom: 100px;
 }
 h3 {
@@ -52,20 +52,120 @@ span {
 .label_licencing {
     text-align: center;
     margin-bottom: 16px;
-   vertical-align: sub;
+    color: #37393F;
 }
 .four {
     margin-bottom: 13;
 }
-.Project {
+.project {
     margin-bottom: 35px;
 }
-ol li {
+.information {
+    margin-bottom: 50px;
+    max-width: 1230px;
+    padding-left: 200px;
+    padding-right: 200px;
+} 
+ ol li {
     list-style: decimal-leading-zero;
+    margin-left: 50px;
 }
 ul li {
     list-style: disc;
+    margin-left: 50px;
 }
-li {
-    padding-left; 
+   
+.image {
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+}
+.titel_clothing {
+    font-family: "CoreSansC";
+    font-size: 28px;
+    font-weight: 700;
+    color: #3C4242;
+    margin-bottom: 30px;
+}
+.sub_titel_clothing {
+    font-family: "CoreSansC";
+    font-size: 20px;
+    font-weight: 700;
+    color: #807D7E;
+    margin-bottom: 25px;
+}
+.paragraph_clothing {
+    font-family: "causten";
+    font-size: 20px;
+    font-weight: 400;
+    color: #807D7E;
+    margin-bottom: 20px;
+}
+.paragraph_clothing_one {
+    font-family: "causten";
+    font-size: 20px;
+    font-weight: 400;
+    color: #807D7E;
+    margin-bottom: 25px;
+}
+.clothing {
+    margin-left: 21px;
+    margin-right: 21px;
+}
+.bold {
+    color: #807D7E;
+    font-weight: 700;
+}
+ .jewellery {
+    width: 1103px;
+    height: 519px;
+     margin-left: 33px;
+    margin-right: 33px; 
+ }
+ .necklace {
+    width: 187px;
+    height: 350;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    margin-left: -20px;
+    margin-top: 85px;
+}
+.earrings {
+    width: 318px;
+    height: 519px;
+}
+ .jewellery_image {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 75px;
+} 
+.jewellery_content {
+    width: 503px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.label_jewellery {
+    font-family:"Cormorant Infant";
+    font-size: 20px;
+    font-weight: 700;
+    color: #D58417;
+    margin-bottom: 27px;
+}
+.title_jewellery {
+    font-family:"Cormorant Infant";
+    font-size: 64px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 31px;
+    
+}
+.paragraph_jewellery {
+    font-family:"Cormorant Infant";
+    font-size: 30px;
+    font-weight: 700;
+    color: #606060;
+    line-height: 1.4;
+    width: 489px;
 }

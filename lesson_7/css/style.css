@@ -128,7 +128,8 @@ ul li {
 }
  .jewellery {
     max-width: 1103px;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 50px;
  }
  .necklace {
     width: 187px;
@@ -176,3 +177,70 @@ ul li {
     line-height: 1.4;
     width: 489px;
 }
+.paragraph_karp {
+    background-color: #D58417;
+    color: aqua;
+    margin-bottom: 30px;
+    border: 15px solid #42d017;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    
+}
+.homework {
+    margin: 0 auto;
+    max-width: 1000px;
+ }
+.karp_one { 
+    border: 10px dotted #91ffe3;
+    max-width: 800px;
+    margin: 0 auto; 
+ }
+ .karp { 
+    margin: 0 auto;
+    
+ }
+ .fishing_one {
+    margin: 0 auto;
+    margin-top: 100px;
+    vertical-align: top;
+    margin-bottom: 60px;
+ }
+.fishing {
+    margin: 0 auto;
+    max-width: 800px;
+    border: 10px dashed #b9ff22;
+    background-color: #00ff1e;
+ }
+ a {
+    margin-right: 50px;
+    font-size: 30px;
+    border-top: 30px solid #411eb4;
+	border-right: 20px dashed red;
+	border-bottom: 30px solid #000;
+	border-left: 20px dashed rgb(240, 97, 211);
+ }
+
+.paragraph_fishing {
+    margin-bottom: 50px;
+    margin-top: 100px;
+    border: 20px double rgb(255, 106, 181);
+    outline: 5px solid goldenrod;
+}
+.circle {
+    margin: 0 auto;
+    background-color: #411eb4;
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    box-shadow: 10px 15px 20px 10px #1d3fa5;
+    margin-bottom: 100px;
+}
+.opacity {
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+.img_opacity {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 50%;
+ }

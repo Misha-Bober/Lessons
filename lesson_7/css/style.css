@@ -140,7 +140,6 @@ ul li {
     margin-left: -10px;
     padding-top: 14px;
     border-radius: 235px;
-    vertical-align: top;
 }
 .earrings {
     vertical-align: top;
@@ -173,6 +172,7 @@ ul li {
 }
 .jewellery_content {
     width: 503px;
+    padding: 70px 0;
     display: inline-block;
     vertical-align: middle;
 }

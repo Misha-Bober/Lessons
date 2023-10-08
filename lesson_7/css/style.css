@@ -10,8 +10,20 @@ body{
     color: #7D7D7D;
     line-height: 1.46;
    }
+   .cube {
+    background-color: #40DDB6;
+    margin-right: 6px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align:middle;
+   }
    header {
-    margin-top: 50px;
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 296px;
+    margin-bottom: 70px;
+
    }
 h1 {
     font-family: "poppins";
@@ -19,7 +31,6 @@ h1 {
     font-weight: 700;
     color: #37393F;
     line-height: 1.21;
-    margin-bottom: 70px;
     text-align: center;
    }
 h2 {
@@ -38,10 +49,10 @@ h2 {
     
 }
 .Licencing {
+    margin: 0 auto;
     padding-left: 30px;
     padding-bottom: 30px; 
     max-width: 1218px;
-    margin: 0 auto;
 }
 h3 {
     font-family: "poppins";
@@ -68,24 +79,17 @@ span {
     margin-bottom: 35px;
 }
 .information {
+    margin: 0 auto;
     margin-bottom: 50px;
     max-width: 830px;
-    margin: 0 auto;
 } 
  ol li {
     list-style: decimal-leading-zero;
-    margin-left: 50px;
+    padding-left: 30px;
 }
 ul li {
     list-style: disc;
-    margin-left: 50px;
-}
-   
-.image {
-    vertical-align: middle;
-    margin-right: 6px;
-    width: 12px;
-    height: 12px;
+    padding-left: 30px;
 }
 .titel_clothing {
     font-family: "CoreSansC";
@@ -116,10 +120,10 @@ ul li {
     margin-bottom: 25px;
 }
 .clothing {
+    margin: 0 auto;
     max-width: 1240px;
     padding-left: 30px;
     padding-right: 30px;
-    margin: 0 auto;
     margin-top: 50px;
 }
 .bold {
@@ -132,23 +136,41 @@ ul li {
     margin-bottom: 50px;
  }
  .necklace {
-    width: 187px;
-    height: 350px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-    margin-left: -20px;
-    margin-top: 85px;
+    vertical-align: top;
+    margin-left: -10px;
+    padding-top: 14px;
+    border-radius: 235px;
+    vertical-align: top;
 }
 .earrings {
-    width: 318px;
-    height: 519px;
+    vertical-align: top;
+    margin-left: -11px;
+    padding-top: 19px;
+    border-radius: 235px;
 }
  .jewellery_image {
-    display: inline-block;
-    vertical-align: middle;
     margin-left: 75px;
-} 
+    vertical-align: top;
+    display: inline-block;
+    font-size: 0;
+}
+.small_border {
+    margin-right: 30px;
+    width: 177px;
+    height: 336px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid #502203;
+    border-radius: 235px;
+}
+.big_border {
+    width: 307px;
+    height: 500px;
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid #502203;
+    border-radius: 235px;
+}
 .jewellery_content {
     width: 503px;
     display: inline-block;
@@ -159,7 +181,7 @@ ul li {
     font-size: 20px;
     font-weight: 700;
     color: #D58417;
-    margin-bottom: 27px;
+
 }
 .title_jewellery {
     font-family:"Cormorant Infant";
@@ -236,11 +258,16 @@ ul li {
     margin-bottom: 100px;
 }
 .opacity {
-    padding-bottom: 50px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 .img_opacity {
     max-width: 600px;
     margin: 0 auto;
     opacity: 50%;
+ }
+ footer {
+    background-color: #411eb4;
+    color: red;
+    text-align: center;
  }

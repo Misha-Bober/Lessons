@@ -28,7 +28,14 @@ body{
     background-repeat: repeat-x;
     padding: 20px;
 }
-p {
+.all_background,
+.universal_background,
+.fixed,
+.scroll,
+.position,
+.image_repeat,
+.liner_gradient,
+.image {
    margin-bottom: 50px;
    color: rgb(25, 25, 25);
 }
@@ -73,13 +80,14 @@ p {
     max-width: 1240px;
     font-size: 0;
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 .euphoria_image_one {
     background: url(../img/image_one.png) center/ cover no-repeat;
     font-size: 18px;
     display: inline-block;
     max-width: 614px;
-    min-height: 640px;
+    max-height: 640px;
     padding: 183px 74px 175px;
 }
 .euphoria_image_two {
@@ -87,4 +95,103 @@ p {
     max-height: 640px;
     display: inline-block;
     vertical-align: top;
+}
+.euphoria_h2 {
+    font-family: "CoreSansC";
+    font-size: 34px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.euphoria_paragraph {
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+}
+.euphoria_button {
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 600;
+    color: #3C4242;
+    border-radius: 8px;
+    max-width: 168px;
+    max-height: 46;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 12px 44px 12px 44px;
+}
+.euphoria_content{
+margin: 0 auto;
+padding: 0px 15px 0px 15px;
+}
+.euphoria_content_h2 {
+    font-family: "CoreSansC";
+    font-size: 28px;
+    letter-spacing: 2%;
+    line-height: 1.335;
+    font-weight: 400;
+    color: #3C4242;
+    margin-bottom: 30px;
+}
+.reexplore,
+.one-Stop p {
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.335;
+    letter-spacing: 2%;
+    color: #807D7E;
+}
+.sub_titel_euphoria{
+font-family: "CoreSansC";
+    font-size: 20px;
+    line-height: 1.335;
+    letter-spacing: 2%;
+    font-weight: 700;
+    color: #807D7E;
+    margin-bottom: 25px;
+}
+.bold {
+    color: #807D7E;
+    font-weight: 700;
+}
+p {
+    margin-bottom: 20px;
+}
+.reexplore {
+    margin-bottom: 23px;
+}
+.whitecollar {
+    margin: 0 auto;
+}
+.cube {
+    background-color: #40DDB6;
+    margin-right: 6px;
+    margin-top: 5px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.label_whitecollar {
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 500;
+    color: #37393F;
+}
+.whitecollar_text {
+    width: 852px;
+    margin: 0 auto;
+    text-align: center;
+}
+.whitecollar_h2 {
+    font-family: "poppins";
+    font-size: 40px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 14px;
 }

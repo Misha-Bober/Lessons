@@ -68,18 +68,19 @@ p {
     url("../img/visax-6rpim0I.jpg") 80% / 200px no-repeat,
     linear-gradient(90deg, rgba(228,139,144,1) 10%, rgba(190,185,72,1) 64%, rgba(88,144,209,1) 100%);
 }
-.home_task {
-    margin: 0 auto;
-}
+
 .euphoria_image {
-    display: inline-block;
-    width: 1240px;
+    max-width: 1240px;
+    font-size: 0;
+    margin: 0 auto;
 }
 .euphoria_image_one {
     background: url(../img/image_one.png) center/ cover no-repeat;
+    font-size: 18px;
+    display: inline-block;
     max-width: 614px;
     min-height: 640px;
-    display: inline-block;
+    padding: 183px 74px 175px;
 }
 .euphoria_image_two {
     max-width: 626px;

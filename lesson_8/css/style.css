@@ -1,0 +1,89 @@
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("reset.css");
+
+body{
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.46;
+   }
+
+.color {
+    background-color: rgba(255, 228, 196, 0.815);
+    margin-bottom: 50px;
+}
+.image {
+    background-image: url("../img/nathan-defiesta.png");
+    padding: 20px;
+}
+.liner_gradient {
+    background-image: linear-gradient(90deg, rgb(212, 61, 172) 0%, rgb(194, 220, 20) 42%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+}
+.image_repeat {
+    background-image: url("../img/nathan-defiesta.png");
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+    padding: 20px;
+}
+p {
+   margin-bottom: 50px;
+   color: rgb(25, 25, 25);
+}
+.background {
+    margin: 0 auto;
+    max-width: 800px;
+   min-height: 300px;
+}
+.position {
+    background-image: url("../img/dushawn-jovic.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /* background-position: 0 50%; */
+}
+.scroll {
+    background-image: url("../img/jeffery-erhunse-jgmk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: 50%;
+
+}
+
+.fixed {
+    background-image: url("../img/dushawn-jovic.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 300px;
+    background-position: 50%;
+}
+.universal_background {
+    background: green url(../img/nathan-defiesta.png) 50% 50% / 500px no-repeat fixed;
+}
+.all_background {
+    background: url("../img/unsplash_s.png") 20px 100px / 300px no-repeat,
+    url("../img/visax-6rpim0I.jpg") 80% / 200px no-repeat,
+    linear-gradient(90deg, rgba(228,139,144,1) 10%, rgba(190,185,72,1) 64%, rgba(88,144,209,1) 100%);
+}
+.home_task {
+    margin: 0 auto;
+}
+.euphoria_image {
+    display: inline-block;
+    width: 1240px;
+}
+.euphoria_image_one {
+    background: url(../img/image_one.png) center/ cover no-repeat;
+    max-width: 614px;
+    min-height: 640px;
+    display: inline-block;
+}
+.euphoria_image_two {
+    max-width: 626px;
+    max-height: 640px;
+    display: inline-block;
+    vertical-align: top;
+}

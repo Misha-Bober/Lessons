@@ -119,7 +119,7 @@ body{
     color: #3C4242;
     border-radius: 8px;
     max-width: 168px;
-    max-height: 46;
+    max-height: 46px;
     background-color: #FFFFFF;
     text-align: center;
     padding: 12px 44px 12px 44px;
@@ -131,7 +131,7 @@ padding: 0px 15px 0px 15px;
 .euphoria_content_h2 {
     font-family: "CoreSansC";
     font-size: 28px;
-    letter-spacing: 2%;
+    letter-spacing: 0.4px;
     line-height: 1.335;
     font-weight: 400;
     color: #3C4242;
@@ -143,14 +143,14 @@ padding: 0px 15px 0px 15px;
     font-size: 20px;
     font-weight: 400;
     line-height: 1.335;
-    letter-spacing: 2%;
+    letter-spacing: 0.4px;
     color: #807D7E;
 }
 .sub_titel_euphoria{
 font-family: "CoreSansC";
     font-size: 20px;
     line-height: 1.335;
-    letter-spacing: 2%;
+    letter-spacing: 0.4px;
     font-weight: 700;
     color: #807D7E;
     margin-bottom: 25px;
@@ -178,7 +178,7 @@ p {
 }
 .label_whitecollar {
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     font-weight: 500;
     color: #37393F;
 }
@@ -194,4 +194,188 @@ p {
     font-weight: 700;
     color: #37393F;
     margin-bottom: 14px;
+}
+.whitecollar_card_section_one {
+    max-width: 1220px;
+    font-size: 0;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+.whitecollar_card_section_two {
+    max-width: 1220px;
+    font-size: 0;
+    margin: 0 auto;
+}
+.whitecollar_card {
+    max-width: 384px;
+    max-height: 582px;
+    display: inline-block;
+}
+.whitecollar_card_retreat {
+    max-width: 384px;
+    max-height: 582px;
+    display: inline-block;
+    margin: 0px 34px 0px 34px;
+}
+.whitecollar_background_image_one {
+    background: url(../img/image_three.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_two {
+    background: url(../img/image_four.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_three {
+    background: url(../img/image_five.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_four {
+    background: url(../img/image_seven.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_five {
+    background: url(../img/image_eight.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_six {
+    background: url(../img/image_nine.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+
+.whitecollar_card_section {
+    margin-bottom: 50px;
+}
+.background_image_name {
+    background: url(../img/date.svg) center/ cover no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px; 
+    vertical-align: middle;
+    display: inline-block
+}
+.date {
+    width: 95px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 1.462;
+    font-weight: 400;
+    color: #7D7D7D;
+    vertical-align: middle;
+    display: inline-block
+}
+.whitecollar_content_section {
+    margin: 0 auto;
+    max-width: 673px;
+}
+.whitecollar_content_label {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #37393F;
+}
+.whitecollar_content_h2 {
+    font-family: "poppins";
+    font-size: 40px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 20px;
+}
+.whitecollar_content_paragraph p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.whitecollar_content_paragraph {
+    margin-bottom: 20px;
+
+}   
+.whitecollar_content_card {
+    background: url(../img/marker.svg) no-repeat;
+    padding-left: 35px;
+    height: 30px;
+}
+.whitecollar_content_card :not(:last-child) {
+    margin: 23px;
+}
+.advantage {
+    display: inline-block;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 400;
+    color: #37393F;
+    vertical-align: top;
+}
+.whitecollar_content_card_section {
+    margin-bottom: 43px;
+    font-size: 0;
+}
+.card_section_experience_awards {
+    font-size: 0;
+}
+.card_experience_awards {
+    font-size: 0;
+    border: 1px solid #E3E3E3;
+    padding: 31px 32px 32px 32px;
+    margin-bottom: 37px;
+    display: inline-block;
+}
+.card_experience_awards_retreat {
+    font-size: 0;
+    margin-right: 21px;
+    border: 1px solid #E3E3E3;
+    padding: 31px 32px 32px 32px;
+    display: inline-block;
+}
+.card_experience_awards_h3 {
+    margin-bottom: 3px;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 600;
+    color: #37393F;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.352;
+}
+.card_experience_awards_content {
+    display: inline-block;
+    max-width: 173px;
+}
+.card_experience_awards_img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 19px;
+    max-width: 39px;
+    max-height: 39px;
+}
+.button {
+    font-weight: 600;
+    color: #FFFFFF;
+    max-width: 184px;
+    max-height: 65px;
+    vertical-align: middle;
+    background-color: #6B77E5;
+    padding: 21px 27px 22px 27px;
+}
+main {
+    margin-bottom: 75px;
+}
+footer {
+    text-align: center;
+    font-family: "inter";
+    font-size: 40px;
+    font-weight: 600;
+    color: #f99ad3;
+    background-color: #62a7ba;
 }

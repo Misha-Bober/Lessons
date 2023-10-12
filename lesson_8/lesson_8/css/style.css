@@ -1,0 +1,389 @@
+@import url("fonts.css");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap");
+@import url("reset.css");
+
+body{
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.46;
+   }
+
+.color {
+    background-color: rgba(255, 228, 196, 0.815);
+    margin-bottom: 50px;
+}
+.image {
+    background-image: url("../img/nathan-defiesta.png");
+    padding: 20px;
+}
+.liner_gradient {
+    background-image: linear-gradient(90deg, rgb(212, 61, 172) 0%, rgb(194, 220, 20) 42%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+}
+.image_repeat {
+    background-image: url("../img/nathan-defiesta.png");
+    /* background-repeat: no-repeat; */
+    background-repeat: repeat-x;
+    padding: 20px;
+}
+.all_background,
+.universal_background,
+.fixed,
+.scroll,
+.position,
+.image_repeat,
+.liner_gradient,
+.image {
+   margin-bottom: 50px;
+   color: rgb(25, 25, 25);
+}
+.background {
+    margin: 0 auto;
+    max-width: 800px;
+   min-height: 300px;
+}
+.position {
+    background-image: url("../img/dushawn-jovic.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    /* background-position: 0 50%; */
+}
+.scroll {
+    background-image: url("../img/jeffery-erhunse-jgmk.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: scroll;
+    background-position: 50%;
+
+}
+
+.fixed {
+    background-image: url("../img/dushawn-jovic.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 300px;
+    background-position: 50%;
+}
+.universal_background {
+    background: green url(../img/nathan-defiesta.png) 50% 50% / 500px no-repeat fixed;
+}
+.all_background {
+    background: url("../img/unsplash_s.png") 20px 100px / 300px no-repeat,
+    url("../img/visax-6rpim0I.jpg") 80% / 200px no-repeat,
+    linear-gradient(90deg, rgba(228,139,144,1) 10%, rgba(190,185,72,1) 64%, rgba(88,144,209,1) 100%);
+}
+
+.euphoria_image {
+    max-width: 1240px;
+    font-size: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 11px;
+}
+.euphoria_image_one {
+    background: url(../img/image_one.png) center/ cover no-repeat;
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 11px 0px 0px 11px;
+    background-color: rgb(8, 71, 8);
+    max-width: 614px;
+    padding: 183px 74px 175px;
+}
+.euphoria_image_two {
+    max-width: 626px; 
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(227, 227, 49); 
+    border-radius: 0px 11px 11px 0px;
+}
+
+.euphoria_h2 {
+    font-family: "CoreSansC";
+    font-size: 34px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1,0;
+    letter-spacing: 0.21px;
+    margin-bottom: 26px;
+}
+.euphoria_paragraph {
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    line-height: normal;
+}
+.euphoria_button {
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 600;
+    color: #3C4242;
+    border-radius: 8px;
+    max-width: 168px;
+    max-height: 46px;
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 12px 44px 12px 44px;
+}
+.euphoria_content{
+margin: 0 auto;
+padding: 0px 15px 0px 15px;
+}
+.euphoria_content_h2 {
+    font-family: "CoreSansC";
+    font-size: 28px;
+    letter-spacing: 0.4px;
+    line-height: 1.335;
+    font-weight: 400;
+    color: #3C4242;
+    margin-bottom: 30px;
+}
+.reexplore,
+.one-Stop p {
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.335;
+    letter-spacing: 0.4px;
+    color: #807D7E;
+}
+.sub_titel_euphoria{
+font-family: "CoreSansC";
+    font-size: 20px;
+    line-height: 1.335;
+    letter-spacing: 0.4px;
+    font-weight: 700;
+    color: #807D7E;
+}
+.euphoria {
+    margin-bottom: 25px;
+}
+.bold {
+    color: #807D7E;
+    font-weight: 700;
+}
+p {
+    margin-bottom: 20px;
+}
+.reexplore {
+    margin-bottom: 23px;
+}
+.whitecollar {
+    margin: 0 auto;
+}
+.cube {
+    background-color: #40DDB6;
+    margin-right: 6px;
+    margin-top: 5px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+.label_whitecollar {
+    text-align: center;
+    margin-bottom: 14px;
+    font-weight: 500;
+    color: #37393F;
+}
+.whitecollar_text {
+    width: 852px;
+    margin: 0 auto;
+    text-align: center;
+}
+.whitecollar_h2 {
+    font-family: "poppins";
+    font-size: 40px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 14px;
+}
+.whitecollar_card_section_one {
+    max-width: 1220px;
+    font-size: 0;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+.whitecollar_card_section_two {
+    max-width: 1220px;
+    font-size: 0;
+    margin: 0 auto;
+}
+.whitecollar_card {
+    max-width: 384px;
+    max-height: 582px;
+    display: inline-block;
+}
+.whitecollar_card_retreat {
+    max-width: 384px;
+    max-height: 582px;
+    display: inline-block;
+    margin: 0px 34px 0px 34px;
+}
+.whitecollar_background_image_one {
+    background: url(../img/image_three.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_two {
+    background: url(../img/image_four.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_three {
+    background: url(../img/image_five.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_four {
+    background: url(../img/image_seven.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_five {
+    background: url(../img/image_eight.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+.whitecollar_background_image_six {
+    background: url(../img/image_nine.png) center/ cover no-repeat;
+    width: 384px;
+    height: 501px;
+    margin-bottom: 24px;
+}
+
+.whitecollar_card_section {
+    margin-bottom: 50px;
+}
+.background_image_name {
+    background: url(../img/date.svg) center/ cover no-repeat;
+    width: 22px;
+    height: 22px;
+    margin-right: 3px; 
+    vertical-align: middle;
+    display: inline-block
+}
+.date {
+    width: 95px;
+    height: 22px;
+    font-size: 14px;
+    line-height: 1.462;
+    font-weight: 400;
+    color: #7D7D7D;
+    vertical-align: middle;
+    display: inline-block
+}
+.whitecollar_content_section {
+    margin: 0 auto;
+    max-width: 673px;
+}
+.whitecollar_content_label {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: #37393F;
+}
+.whitecollar_content_h2 {
+    font-family: "poppins";
+    font-size: 40px;
+    line-height: 1.21;
+    font-weight: 700;
+    color: #37393F;
+    margin-bottom: 20px;
+}
+.whitecollar_content_paragraph p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.whitecollar_content_paragraph {
+    margin-bottom: 20px;
+
+}   
+.whitecollar_content_card {
+    background: url(../img/marker.svg) no-repeat;
+    padding-left: 35px;
+    height: 30px;
+}
+.whitecollar_content_card :not(:last-child) {
+    margin: 23px;
+}
+.advantage {
+    display: inline-block;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 400;
+    color: #37393F;
+    vertical-align: top;
+}
+.whitecollar_content_card_section {
+    margin-bottom: 43px;
+    font-size: 0;
+}
+.card_section_experience_awards {
+    font-size: 0;
+    margin-bottom: 58px;
+}
+.card_experience_awards {
+    font-size: 0;
+    border: 1px solid #E3E3E3;
+    padding: 31px 32px 32px 32px;
+    display: inline-block;
+}
+.card_experience_awards_retreat {
+    font-size: 0;
+    margin-right: 21px;
+    border: 1px solid #E3E3E3;
+    padding: 31px 32px 32px 32px;
+    display: inline-block;
+}
+.card_experience_awards_h3 {
+    margin-bottom: 3px;
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 600;
+    color: #37393F;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 1.352;
+}
+.card_experience_awards_content {
+    display: inline-block;
+    max-width: 173px;
+}
+.card_experience_awards_img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 19px;
+    max-width: 39px;
+    max-height: 39px;
+}
+.button {
+    font-weight: 600;
+    color: #FFFFFF;
+    max-width: 184px;
+    max-height: 65px;
+    vertical-align: middle;
+    background-color: #6B77E5;
+    padding: 21px 27px 22px 27px;
+}
+main {
+    margin-bottom: 75px;
+}
+footer {
+    text-align: center;
+    font-family: "inter";
+    font-size: 40px;
+    font-weight: 600;
+    color: #f99ad3;
+    background-color: #62a7ba;
+}

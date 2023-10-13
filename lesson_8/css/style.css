@@ -81,28 +81,33 @@ body{
     font-size: 0;
     margin: 0 auto;
     margin-bottom: 50px;
+    border-radius: 11px;
 }
 .euphoria_image_one {
     background: url(../img/image_one.png) center/ cover no-repeat;
     font-size: 18px;
     display: inline-block;
+    border-radius: 11px 0px 0px 11px;
+    background-color: rgb(8, 71, 8);
     max-width: 614px;
-    max-height: 640px;
     padding: 183px 74px 175px;
 }
 .euphoria_image_two {
-    max-width: 626px;
-    max-height: 640px;
+    max-width: 626px; 
     display: inline-block;
     vertical-align: top;
+    background-color: rgb(227, 227, 49); 
+    border-radius: 0px 11px 11px 0px;
 }
+
 .euphoria_h2 {
     font-family: "CoreSansC";
     font-size: 34px;
     font-weight: 700;
     color: #FFFFFF;
-    line-height: 1.5;
-    margin-bottom: 30px;
+    line-height: 1,0;
+    letter-spacing: 0.21px;
+    margin-bottom: 26px;
 }
 .euphoria_paragraph {
     font-family: "Causten";
@@ -110,7 +115,8 @@ body{
     font-weight: 300;
     color: #FFFFFF;
     letter-spacing: 1px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    line-height: normal;
 }
 .euphoria_button {
     font-family: "Causten";
@@ -153,6 +159,8 @@ font-family: "CoreSansC";
     letter-spacing: 0.4px;
     font-weight: 700;
     color: #807D7E;
+}
+.euphoria {
     margin-bottom: 25px;
 }
 .bold {
@@ -321,12 +329,12 @@ p {
 }
 .card_section_experience_awards {
     font-size: 0;
+    margin-bottom: 58px;
 }
 .card_experience_awards {
     font-size: 0;
     border: 1px solid #E3E3E3;
     padding: 31px 32px 32px 32px;
-    margin-bottom: 37px;
     display: inline-block;
 }
 .card_experience_awards_retreat {

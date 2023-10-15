@@ -436,12 +436,16 @@ h4 {
 }
 .jewellery {
     max-width: 1214px;
+    font-size: 0;
 }
 .title_jewellery {
     max-width: 488px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 166px;
 }
 .title_jewellery_h2 {
-    font-family: "Cormoran Infant";
+    font-family: "Cormorant Infant";
     font-weight: 700;
     font-size: 60px;
     line-height: 1.15;
@@ -452,6 +456,38 @@ h4 {
     content: "";
     width: 304px;
     height: 3px;
-    display: inline-block;
+    display: block;
     background: #78473b;
+}
+.jewellery_content {
+    display: inline-block;
+    padding-top: 32px;
+}
+.jewellery_content_one_border_img {
+    display: inline-block;
+    border: solid 1px #000;
+    margin-bottom: 34px;
+}
+.jewellery_content_one_img {
+    margin: 9px -10px -9px 10px;
+}
+.name_price {
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.4;
+    color: #000;
+}
+.jewellery_content_two {
+    display: inline-block;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+    font-size: 46px;
+    color: #000;
+}
+.sub-title_jewellery_content {
+    margin-bottom: 31px;
+}
+.sub-title_jewellery_content p {
+    line-height: 1,13;
 }

@@ -4,7 +4,7 @@
 @import url("reset.css");
 
 body{
-    padding: 50px;
+    padding: 30px;
     font-family: "inter", sans-serif;
     font-size: 18px;
     color: #7D7D7D;
@@ -413,13 +413,45 @@ h4 {
     padding: 0px 0px 58px 0px;
     max-width: 386px;
     border: solid 1px #E3E3E3;
+    background-color: #F4F4F4;
     display: inline-block;
-
+    text-align: center
 }
 .how_we_work_card_h4 {
     margin-bottom: 16px;
     text-align: center;
 }
 .how_we_work_card p {
-    text-align: center;
+    margin: 37px;
+}
+.how_we_work_card a {
+    font-family: "inter";
+    font-size: 18px;
+    font-weight: 600;
+    color: #6B77E5;
+}
+.how_we_work_card a:hover {
+    color: #3e4ee4;
+    text-decoration: underline;
+}
+.jewellery {
+    max-width: 1214px;
+}
+.title_jewellery {
+    max-width: 488px;
+}
+.title_jewellery_h2 {
+    font-family: "Cormoran Infant";
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.15;
+    color: #000;
+    margin-bottom: 13px;
+}
+.title_jewellery_h2::after {
+    content: "";
+    width: 304px;
+    height: 3px;
+    display: inline-block;
+    background: #78473b;
 }

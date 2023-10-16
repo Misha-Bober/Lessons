@@ -529,7 +529,8 @@ h4 {
     height: 60px;
     background-color: #433f8a;
 }
-.second_step ,.third_step {
+.second_step,
+.third_step {
     width: 50%;
     height: 40px;
     background-color: #2d2b66;

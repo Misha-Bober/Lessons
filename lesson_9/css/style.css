@@ -373,6 +373,7 @@ h4 {
 .how_we_work {
     margin: 0 auto;
     max-width: 1220px;
+    margin-bottom: 50px;
 }
 .center {
     text-align: center;
@@ -397,6 +398,7 @@ h4 {
     text-align: center;
     font-weight: 400;
     color: #7D7D7D;
+    margin: 37px;
 }
 .how_we_work_card_img {
     margin: 0 auto;
@@ -421,9 +423,7 @@ h4 {
     margin-bottom: 16px;
     text-align: center;
 }
-.how_we_work_card p {
-    margin: 37px;
-}
+
 .how_we_work_card a {
     font-family: "inter";
     font-size: 18px;
@@ -437,6 +437,7 @@ h4 {
 .jewellery {
     max-width: 1214px;
     font-size: 0;
+    margin-bottom: 50px;
 }
 .title_jewellery {
     max-width: 488px;
@@ -461,15 +462,26 @@ h4 {
 }
 .jewellery_content {
     display: inline-block;
-    padding-top: 32px;
+    vertical-align: top;
+    margin: 32px 45px 0px 0px;
 }
 .jewellery_content_one_border_img {
+    font-size: 0;
     display: inline-block;
     border: solid 1px #000;
     margin-bottom: 34px;
+    max-width: 334px;
+    max-height: 381px;
 }
 .jewellery_content_one_img {
+    width: 100%;
+    height: 100%;
     margin: 9px -10px -9px 10px;
+    background-color: #757575;
+}
+.jewellery_content_one_img:hover {
+    margin: 0px 0px 0px 0px;
+    transition: all 0.5s;
 }
 .name_price {
     font-family: "Cormorant Infant";
@@ -491,3 +503,49 @@ h4 {
 .sub-title_jewellery_content p {
     line-height: 1,13;
 }
+.my_game {
+    max-width: 1200px;
+    border: solid 1px #585353;
+    border-radius: 20px;
+}
+.my_game_h2 {
+    text-align: center;
+    font-family: "inter";
+    font-weight: 600;
+    font-size: 50px;
+    color: #a97575;
+}
+.game {
+    margin: 0 auto;
+    max-width: 800px;
+    border: solid 1px #585353;
+    border-radius: 20px;
+    padding: 50px;
+    font-size: 0;
+}
+.first_step {
+    margin: 0 auto;
+    width: 40px;
+    height: 60px;
+    background-color: #433f8a;
+}
+.second_step ,.third_step {
+    width: 50%;
+    height: 40px;
+    background-color: #2d2b66;
+    display: inline-block;
+    visibility: hidden;
+}
+/* .third_step {
+    width: 50%;
+    height: 40px;
+    background-color: #2d2b66;
+    visibility: hidden;
+    display: inline-block;
+} */
+.first_step:hover ~ .second_step,
+.third_step {
+    visibility: visible;
+}
+
+

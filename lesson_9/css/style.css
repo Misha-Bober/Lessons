@@ -507,6 +507,8 @@ h4 {
     max-width: 1200px;
     border: solid 1px #585353;
     border-radius: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 .my_game_h2 {
     text-align: center;
@@ -562,7 +564,6 @@ h4 {
     background-color: #2d2b66;
     display: inline-block;
     vertical-align: top;
-    margin-left: 670px;
     visibility: hidden; 
 }
 .second_step:hover ~ .fourth_step,
@@ -572,4 +573,114 @@ h4 {
     visibility: visible;
 }
 
+.sixth_step {
+    width: 30px;
+    height: 40px;
+    background-color: #2d2b66;
+    visibility: hidden;
+    display: inline-block; 
+}
+.third_step:hover ~ .fourth_step,
+.fourth_step:hover ~ .fifth_step,
+.fifth_step:hover,
+.fourth_step:hover {
+    visibility: visible;
+}
+.fifth_step:hover ~ .sixth_step,
+.sixth_step:hover {
+    visibility: visible;
+}
+.third_step:hover ~ .fourth_step,
+.fourth_step:hover ~ .fifth_step,
+.fifth_step:hover,
+.fourth_step:hover {
+    visibility: visible;
+}
+.seventh_step {
+    width: 30px;
+    height: 40px;
+    background-color: #2d2b66;
+    margin-left: 80px;
+    visibility: hidden;
+}
+.fifth_step:hover ~ .sixth_step,
+.sixth_step:hover ~ .seventh_step,
+.sixth_step:hover,
+.seventh_step:hover {
+    visibility: visible;
+}
+.seventh_step {
+    width: 30px;
+    height: 40px;
+    background-color: #2d2b66;
+    margin-left: 80px;
+    visibility: hidden;
+}
+.seventh_step:hover ~ .eighth_step,
+.eighth_step:hover {
+    visibility: visible;
+}
+.eighth_step {
+    width: 300px;
+    height: 10px;
+    background-color: #2d2b66;
+    margin-left: 80px;
+    visibility: hidden;
+}
+.eighth_step:hover ~ .ninth_step,
+.ninth_step:hover ~ .tenth_step,
+.ninth_step:hover,
+.tenth_step:hover {
+    visibility: visible;
+}
+.ninth_step {
+    width: 10px;
+    height: 50px;
+    background-color: #2d2b66;
+    margin-left: 375px;
+    visibility: hidden;
+}
+.tenth_step {
+    width: 50px;
+    height: 50px;
+    background-color: #2d2b66;
+    margin-left: 377px;
+    visibility: hidden;
+}
+.tenth_step:hover ~ .game_img,
+.game_img:hover {
+    visibility: visible;
+    transition: 1s;
+}
 
+
+.game_img {
+    margin: 0 auto;
+    border: solid 1px #585353;
+    border-radius: 20px;
+    padding: 20px;
+    visibility: hidden;
+}
+.game_img_me {
+    margin: 0 auto;
+    max-width: 331px;
+    margin-bottom: 30px;
+}
+.content_img {
+    font-family: "Poppins";
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #e39c3a;
+}
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #cff5ff;
+    color: #712f2f;
+    border-radius: 20px;
+}

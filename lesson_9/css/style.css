@@ -529,7 +529,13 @@ h4 {
     height: 60px;
     background-color: #433f8a;
 }
-.second_step,
+.second_step {
+    width: 50%;
+    height: 40px;
+    background-color: #2d2b66;
+    display: inline-block;
+    visibility: hidden;
+}
 .third_step {
     width: 50%;
     height: 40px;
@@ -545,8 +551,26 @@ h4 {
     display: inline-block;
 } */
 .first_step:hover ~ .second_step,
-.third_step {
+.first_step:hover ~ .third_step,
+.second_step:hover,
+.third_step:hover{
     visibility: visible;
+}
+.fourth_step {
+    width: 30px;
+    height: 40px;
+    background-color: #2d2b66;
+    display: inline-block;
+    /* visibility: hidden; */
+}
+.fifth_step {
+    width: 30px;
+    height: 40px;
+    background-color: #2d2b66;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 670px;
+    /* visibility: hidden; */
 }
 
 

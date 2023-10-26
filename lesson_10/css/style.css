@@ -1,0 +1,107 @@
+@import url("reset.css");
+
+body{
+    font-family: "Inter";
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+header {
+    margin: 50px 0px 50px 0px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgb(104, 148, 186);
+}
+.home_task {
+    padding: 50px 30px 50px 30px;
+}
+h1 {
+    font-size: 50px;
+    color: rgb(131, 254, 244);
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    color: rgb(0, 84, 252);
+    margin-bottom: 30px;
+}
+.image_content {
+    background-color: rgb(239, 234, 174);
+    padding: 30px 20px 80px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.content_one {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.content_one img {
+    margin-left: 70px;
+}
+.content_two img {
+    margin-left: 60px;
+}
+.content_two ,
+.icon_two {
+    text-align: center;
+}
+.icon {
+    background-color: rgb(223, 255, 125);
+    padding: 30px 20px 80px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.icon_one {
+    margin-bottom: 40px;
+    text-align: center;
+}
+.icon_one img {
+    margin-left: 70px;
+}
+.icon_two img {
+    margin-left: 60px;
+}
+.logo {
+    background-color: rgb(254, 253, 144);
+    padding: 30px 20px 80px 20px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.logo_one {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.logo_two {
+    text-align: center;
+}
+.logo_one img {
+    margin-left: 30px;
+}
+.logo_two img {
+    margin-left: 100px;
+}
+.rastr {
+    background-color: rgb(66, 66, 175);
+    padding: 50px 20px 50px 20px;
+    border-radius: 20px;
+}
+.rastr_one img:not(:last-child) {
+    margin-bottom: 30px;
+}
+.rastr_one img {
+    max-width: 800px;
+    border-radius: 30px;
+}
+.rastr_one {
+text-align: center;
+}
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #cff5ff;
+    color: #712f2f;
+    border-radius: 20px;
+}

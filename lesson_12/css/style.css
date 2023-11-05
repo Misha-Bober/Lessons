@@ -372,3 +372,13 @@ footer {
     border-radius: 20px;
     margin: 0 auto;
 }
+.feedback img {
+    background-color: #40DDB6;
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    z-index: 10;
+}

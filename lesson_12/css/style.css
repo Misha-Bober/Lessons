@@ -167,15 +167,13 @@ span {
     border-radius: 10px;
 }
 .hero {
-    /* font-size: 0; */
+    font-size: 0;
     max-width: 1220px;
     margin: 0 auto;
-    max-width: 1220px; 
     position: relative;
     margin-bottom: 150px;
-    
 }
-.hero-content-background {
+.hero-background {
     min-width: 478px;
     min-height: 458px;
     display: inline-block;
@@ -185,7 +183,7 @@ span {
     left: 0;
     padding: 142px 30px 0px 30px;
 }
-.hero-content-cube {
+.content-cube {
     width: 11px;
     height: 11px;
     background-color: #40DDB6;
@@ -193,7 +191,7 @@ span {
     margin-bottom: 2px;
 
 }
-.hero-content-text {
+.content-text {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.46;
@@ -248,12 +246,11 @@ position: relative;
 } 
 .card-content {
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 22px;
+    left: 22px;
     z-index: 8;
     padding: 24px 0px 24px 0px;
     background-color: #FFFFFF;
-    margin: 396px 23px 22px 22px;
     text-align: center;
     min-width: 341px;
     min-height: 114px;

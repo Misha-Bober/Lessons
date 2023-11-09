@@ -1,0 +1,258 @@
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700&display=swap");
+
+
+.header-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(189, 246, 242);
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+h1 {
+    font-family: "Playfair Display";
+    font-size: 50px;
+    color: blueviolet;
+}
+.wrapper {
+    background-image: url(/img/unsplash_sk8hhrw.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+.home-task {
+    font-size: 0;
+}
+.task-transform {
+    width: 200px;
+    height: 200px;
+    background-image: url(/img/thomas-lefebvre.jpg);
+    background-size: cover;
+    border-radius: 20px;
+    display: inline-block;
+    margin-right: 30px;
+}
+* p {
+    font-family: "Playfair Display";
+    font-size: 30px;
+    color: rgb(78, 14, 255);
+}
+.task-transform-translate  {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px;
+}
+.task-transform-translate:hover {
+    transform: translate(-20px,20px);
+}
+.task-transform-scale  {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px;
+} 
+.task-transform-scale:hover {
+    transform: scale(0.8);
+    border-radius: 20px;
+    box-shadow: 0px 0px 27px 10px #51c24d;
+}
+.task-transform-rotate  {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+}
+.task-transform-rotate:hover {
+    transform: rotate(300deg);
+    box-shadow: 0px 0px 27px 10px #51c24d;
+    border-radius: 0px; 
+    transition: all 0.5s;
+}
+.task-transform-skew {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+}
+.task-transform-skew:hover {
+    transform: skew(10deg, 20deg);
+    box-shadow: 0px 0px 27px 10px #53d8ed;
+    border-radius: 0px; 
+    transition: all 0.5s;
+}
+.skew-link {
+    font-size: 30px;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    color: rgb(70, 55, 186);
+    margin-left: 50px;
+}
+    span { 
+    position: relative;
+}
+.skew-link::before { 
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    transform: skew(-20deg, 0deg);
+    transition: all 0.6s;
+} 
+.skew-link:hover::before {
+    transform: skew(20deg, 0deg);
+    background-image: url(/img/unsplash_sk8hhrw.png);
+}
+.row {
+    margin-bottom: 50px;
+}
+.task-transform-rotate-origin {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+}
+.task-transform-rotate-origin:hover {
+    transform: rotate(300deg);
+    transform-origin: 50% 0;
+    box-shadow: 0px 0px 27px 10px #51c24d;
+    border-radius: 0px; 
+    transition: all 0.5s;
+}
+
+.task-transform-translate3d {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+}
+.task-transform-translate3d:hover {
+transform: translate3d(10px, 20px, 10px);
+/* perspective: 50px;
+perspective-origin: 0 0; */
+/* transform-style: preserve-3d; */
+}
+.task-transform {
+perspective: 200px;
+perspective-origin: 10px 10px;
+}
+.task-transform-rotate3d {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+}
+.task-transform-rotate3d:hover {
+    transform: rotate3d(20,10,6,20deg);
+}
+.task-transform-style {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 85px 0px 0px 0px;
+    border-radius: 20px; 
+    
+    
+}
+.task-transform-style:hover {
+transition: all 0.9s;
+transform: rotateY(360deg);
+}
+
+.task-transform-block {
+width: 200px;
+height: 200px;
+/* background-image: url(/img/thomas-lefebvre.jpg); */
+background-color: #61d7ff81;
+background-size: cover;
+border-radius: 20px;
+display: inline-block;
+margin-right: 30px;
+perspective: 200px;
+transform-style: preserve-3d;
+}
+/* .task-transform-block:hover {
+perspective: 200px;
+transform-style: preserve-3d;
+transform-style: flat;
+} */
+.task-flip {
+    perspective: 200px;
+    transform-style: preserve-3d;
+    display: inline-block;
+    
+}
+.flip-item{
+
+    position: relative;
+    width: 200px;
+    height: 350px;
+    transform-style: preserve-3d;
+    
+}
+.flip-back,
+.flip-front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    transition: all 0.9s;
+}
+.flip-front{
+    z-index: 2;
+    background-image: url(/img/unsplash_xOaeIy-shWE.png);
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0px 0px 0px;
+    transform: rotateY(0deg);
+    backface-visibility: hidden;
+    font-size: 30px;
+    color: rgb(255, 242, 0);
+}
+.flip-back {
+    background-image: url(/img/screenshot.png);
+    background-size: cover;
+    text-align: center;
+    transform: rotateY(-180deg);
+}
+.flip-item:hover .flip-back {
+    transform: rotateY(0deg);
+}
+.flip-item:hover .flip-front {
+    transform: rotateY(180deg);
+}
+
+.task-transform,
+.task-transform-block,
+.task-flip {
+    vertical-align: top;
+}

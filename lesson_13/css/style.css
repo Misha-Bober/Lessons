@@ -15,7 +15,7 @@ h1 {
     color: blueviolet;
 }
 .wrapper {
-    background-image: url(/img/unsplash_sk8hhrw.png);
+    background-image: url(../img/unsplash_sk8hhrw.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* padding: 50px; */
@@ -27,7 +27,7 @@ h1 {
 .task-transform {
     width: 200px;
     height: 200px;
-    background-image: url(/img/thomas-lefebvre.jpg);
+    background-image: url(../img/thomas-lefebvre.jpg);
     background-size: cover;
     border-radius: 20px;
     display: inline-block;
@@ -41,7 +41,7 @@ h1 {
 .task-transform-translate  {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -53,7 +53,7 @@ h1 {
 .task-transform-scale  {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -67,7 +67,7 @@ h1 {
 .task-transform-rotate  {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -82,7 +82,7 @@ h1 {
 .task-transform-skew {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -112,13 +112,13 @@ h1 {
     top: 0;
     left: 0;
     position: absolute;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     transform: skew(-20deg, 0deg);
     transition: all 0.6s;
 } 
 .skew-link:hover::before {
     transform: skew(20deg, 0deg);
-    background-image: url(/img/unsplash_sk8hhrw.png);
+    background-image: url(../img/unsplash_sk8hhrw.png);
 }
 .home-task-row {
     margin-bottom: 50px;
@@ -126,7 +126,7 @@ h1 {
 .task-transform-rotate-origin {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -143,7 +143,7 @@ h1 {
 .task-transform-translate3d {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -162,7 +162,7 @@ perspective-origin: 10px 10px;
 .task-transform-rotate3d {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -174,7 +174,7 @@ perspective-origin: 10px 10px;
 .task-transform-style {
     width: 100%;
     height: 100%;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 85px 0px 0px 0px;
@@ -190,7 +190,7 @@ transform: rotateY(360deg);
 .task-transform-block {
 width: 200px;
 height: 200px;
-background-image: url(/img/thomas-lefebvre.jpg); 
+background-image: url(../img/thomas-lefebvre.jpg); 
 /* background-color: #61d7ff81; */
 background-size: cover;
 border-radius: 20px;
@@ -230,7 +230,7 @@ transform-style: flat;
 }
 .flip-front{
     z-index: 2;
-    background-image: url(/img/unsplash_x.png);
+    background-image: url(../img/unsplash_x.png);
     background-size: cover;
     text-align: center;
     padding: 160px 0px 0px 0px;
@@ -240,7 +240,7 @@ transform-style: flat;
     color: rgb(255, 242, 0);
 }
 .flip-back {
-    background-image: url(/img/screenshot.png);
+    background-image: url(../img/screenshot.png);
     background-size: cover;
     text-align: center;
     transform: rotateY(-180deg);
@@ -267,7 +267,7 @@ transform-style: flat;
 .my-car {
     width: 100%;
     height: 700px;
-    background-image: url(/img/d0bdd0b0-d0b3d0bed0bbd0bed0b2d0bdd183-2.webp);
+    background-image: url(../img/d0bdd0b0-d0b3d0bed0bbd0bed0b2d0bdd183-2.webp);
     background-size: cover;
     text-align: center;
     padding-top: 50px;

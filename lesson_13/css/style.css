@@ -18,10 +18,11 @@ h1 {
     background-image: url(/img/unsplash_sk8hhrw.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px;
+    /* padding: 50px; */
 }
 .home-task {
     font-size: 0;
+    margin-bottom: 100px;
 }
 .task-transform {
     width: 200px;
@@ -119,7 +120,7 @@ h1 {
     transform: skew(20deg, 0deg);
     background-image: url(/img/unsplash_sk8hhrw.png);
 }
-.row {
+.home-task-row {
     margin-bottom: 50px;
 }
 .task-transform-rotate-origin {
@@ -189,8 +190,8 @@ transform: rotateY(360deg);
 .task-transform-block {
 width: 200px;
 height: 200px;
-/* background-image: url(/img/thomas-lefebvre.jpg); */
-background-color: #61d7ff81;
+background-image: url(/img/thomas-lefebvre.jpg); 
+/* background-color: #61d7ff81; */
 background-size: cover;
 border-radius: 20px;
 display: inline-block;
@@ -255,4 +256,206 @@ transform-style: flat;
 .task-transform-block,
 .task-flip {
     vertical-align: top;
+}
+.my-car-h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: rgb(15, 32, 32);
+    text-align: center;
+
+}
+.my-car {
+    width: 100%;
+    height: 700px;
+    background-image: url(/img/d0bdd0b0-d0b3d0bed0bbd0bed0b2d0bdd183-2.webp);
+    background-size: cover;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+.car-body {
+    margin-top: 100px;
+    position: relative;
+}
+
+.my-car-light-1 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 40px;
+    border-bottom-width: 20px;
+    border-right: 200px solid #DCD758;
+    position: absolute;
+    left: 76%;
+    top: 300px;
+}
+.my-car-first-section {
+    width: 300px;
+    height: 124px;
+    border-right: 10px solid #000000;
+    background-color: #A9BCFF;
+    border-radius: 0px 140px 0px 0px;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 300px;
+}
+.my-car-headlight-1 {
+    width: 19px;
+    height: 23px;
+    background-color: #DCD758;
+    position: absolute;
+    left: 72%;
+    top: 325px;
+    z-index: 2;
+}
+.my-car-headlight-2 {
+    width: 19px;
+    height: 23px;
+    background-color: #DCD758;
+    position: absolute;
+    left: 73%;
+    top: 350px;
+    z-index: 2;
+}
+.my-car-light-2 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 40px;
+    border-bottom-width: 20px;
+    border-right: 200px solid #DCD758;
+    position: absolute;
+    left: 76%;
+    top: 325px;
+}
+.my-car-second-section {
+    width: 373px;
+    height: 192px;
+    background-color: #A9BCFF;
+    border-radius: 175px 245px 0px 0px;
+    border-top: 10px solid #000000;
+    position: absolute;
+    left: 30%;
+    top: 232px;
+    z-index: 1;
+}
+.my-car-third-section {
+    width: 214px;
+    height: 110px;
+    background-color: #A9BCFF;
+    border-radius: 150px 0px 0px 0px;
+    border-left: 20px solid #000000;
+    position: absolute;
+    left: 15%;
+    top: 315px;
+    /* z-index: 1; */
+}
+.my-car-right-door {
+    width: 136px;
+    height: 163px;
+    background-color: #A4A3A3;
+    border-radius: 0px 100px 0px 0px;
+    border: 5px solid #000000;
+    position: absolute;
+    left: 44%;
+    top: 250px;
+    z-index: 3;
+    transform: skew(2deg, 0deg);
+
+}
+.my-car-left-door {
+    width: 117px;
+    height: 163px;
+    background-color: #A4A3A3;
+    border-radius: 100px 0px 0px 0px;
+    border: 5px solid #000000;
+    position: absolute;
+    left: 34%;
+    top: 250px;
+    z-index: 3;
+    transform: skew(2deg, 0deg);
+}
+.my-car-right-mirror {
+    width: 108px;
+    height: 79px;
+    background-color: #E5F2F2;
+    border-radius: 0px 100px 0px 0px;
+    position: absolute;
+    left: 45%;
+    top: 265px;
+    z-index: 3;
+    transform: skew(2deg, 0deg);
+}
+.my-car-left-mirror {
+    width: 83px;
+    height: 81px;
+    background-color: #E5F2F2;
+    border-radius: 100px 0px 0px 0px;
+    position: absolute;
+    left: 35.5%;
+    top: 265px;
+    z-index: 3;
+    transform: skew(2deg, 0deg);
+}
+.car-right-wheel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #CFE2FE;
+    outline: 10px solid #A4A3A3;
+    position: absolute;
+    left: 21%;
+    top: 365px;
+    z-index: 5;
+    transform: skew(2deg, 0deg);
+}
+.car-left-wheel {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #CFE2FE;
+    outline: 10px solid #A4A3A3;
+    position: absolute;
+    left: 60%;
+    top: 365px;
+    z-index: 5;
+    transform: skew(2deg, 0deg);
+}
+.wheel-disc {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    z-index: 6;
+    background-color: #564e4e;
+}
+
+.wheel-line-1,
+.wheel-line-2,
+.wheel-line-3,
+.wheel-line-4,
+.wheel-line-5 {
+    width: 100px;
+    height: 5px;
+    background-color: #163cc9;
+    vertical-align: middle;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    z-index: 6;
+}
+.wheel-line-2 {
+    rotate: 72deg;
+}
+.wheel-line-3 {
+    rotate: 144deg;
+}
+.wheel-line-4 {
+    rotate: 216deg;
+}
+.wheel-line-5 {
+    rotate: 288deg;
 }

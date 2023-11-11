@@ -286,7 +286,7 @@ transform-style: flat;
     border-bottom-width: 20px;
     border-right: 200px solid #DCD758;
     position: absolute;
-    left: 76%;
+    left: 73%;
     top: 300px;
 }
 .my-car-first-section {
@@ -305,7 +305,7 @@ transform-style: flat;
     height: 23px;
     background-color: #DCD758;
     position: absolute;
-    left: 72%;
+    left: 70%;
     top: 325px;
     z-index: 2;
 }
@@ -314,7 +314,7 @@ transform-style: flat;
     height: 23px;
     background-color: #DCD758;
     position: absolute;
-    left: 73%;
+    left: 71%;
     top: 350px;
     z-index: 2;
 }
@@ -326,7 +326,7 @@ transform-style: flat;
     border-bottom-width: 20px;
     border-right: 200px solid #DCD758;
     position: absolute;
-    left: 76%;
+    left: 72%;
     top: 325px;
 }
 .my-car-second-section {

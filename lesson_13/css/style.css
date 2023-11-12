@@ -448,14 +448,14 @@ transform-style: flat;
     z-index: 6;
 }
 .wheel-line-2 {
-    rotate: 72deg;
+    transform: rotate(72deg);
 }
 .wheel-line-3 {
-    rotate: 144deg;
+    transform: rotate(144deg);
 }
 .wheel-line-4 {
-    rotate: 216deg;
+    transform: rotate(216deg);
 }
 .wheel-line-5 {
-    rotate: 288deg;
+    transform: rotate(288deg);
 }

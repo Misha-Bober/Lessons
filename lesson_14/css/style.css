@@ -265,7 +265,7 @@ display: inline-block;
 }
 .my-car {
 	width: 100%;
-    height: 800px;
+    height: 600px;
 	position: relative;
 }
 .my-car-h2 {
@@ -279,42 +279,76 @@ display: inline-block;
 .car-background {
 	width: 100%;
     height: 100%;
-    background-image: url(../img/1679696690_bogatyr-club-p-doroga-risunok-foni-pinterest-5.jpg);
-    background-size: cover;
-    background-position: 50%;
+    background-image: url(../img/mohammad.jpg);
 	background-repeat: repeat-x;
-	padding: 10px 0px 0px 0px;
-	animation: run 10s, linear, infinite;
-
+	animation: background 5s linear infinite;
 }
 
-@keyframes run {
+@keyframes background {
 	0%{
 	background-position: 0% 0%;
 	}
 	100%{
 	background-position: 100% 0%;	
 	}
-	}
-
+} 
 
 .car-body {
-    width: 1150px;
 	position: absolute;
-	top: 40%;
-	right: 0%;
+	width: 1150px;
+	left: -13%;
+	top: 30%;
 }
-
-.my-car-light-1 {
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    border-top-width: 40px;
-    border-bottom-width: 20px;
-    border-right: 200px solid #DCD758;
-    position: absolute;
-    left: 73%;
-    top: 300px;
+.car-road {
+	width: 100%;
+	height: 100px;
+	background-color: #564e4e;
+	position: absolute;
+	bottom: -15%;
+	left: 0%;
+}
+.road-lane {
+	width: 200px;
+	height: 20px;
+	background-color: #ffffff;
+	position: absolute;
+	right: 0%;
+	top: 40%;
+	animation-name: line;
+    animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	transform: skew(-30deg)
+}
+.road-lane-2 {
+	width: 200px;
+	height: 20px;
+	background-color: #ffffff;
+	position: absolute;
+	right: 0%;
+	top: 40%;
+	animation-name: line;
+	animation-delay: 1s;
+    animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	transform: skew(-30deg)
+}
+@keyframes line { 
+	0%{
+	right: 0%;
+	}
+	50% {
+		right: 83%;
+		visibility: hidden;
+	}
+	99%{
+		visibility: hidden;	
+		right: 0%;	
+	}
+	100% {
+		visibility: hidden;
+	}
 }
 .my-car-first-section {
     width: 300px;
@@ -355,7 +389,28 @@ display: inline-block;
     position: absolute;
     left: 72%;
     top: 325px;
+	opacity: 0%;
 }
+.my-car-light-1 {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-width: 40px;
+    border-bottom-width: 20px;
+    border-right: 200px solid #DCD758;
+    position: absolute;
+    left: 73%;
+    top: 300px;
+	opacity: 0%;
+}
+
+.my-car-first-section:hover .my-car-light-1 {
+	opacity: 100%;
+}
+.my-car-first-section:hover .my-car-light-2 {
+	opacity: 100%;
+}
+
 .my-car-second-section {
     width: 373px;
     height: 192px;
@@ -502,7 +557,49 @@ display: inline-block;
 .wheel-line-5 {
     transform: rotate(288deg);
 }
-
+.month img {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 13%;
+	left: 80%;
+	animation-name: skew;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+@keyframes  skew{
+	0%{
+		transform:translate(0px);
+		transform: rotate(0deg);
+	}
+	5%{
+		transform:translate(5px);
+		transform: rotate(-50deg);
+	}
+	50% {
+		transform:translate(-20px);
+		transform: rotate(20deg);	
+	}
+	100%{
+		transform:translate(-5px);
+		transform: rotate(-360deg);	
+	}
+}
+.my-car-right-mirror__img {
+	width: 108px;
+    height: 79px;
+    border-radius: 0px 100px 0px 0px;
+    position: absolute;
+    left: 45%;
+    top: 265px;
+    z-index: 2;
+    transform: skew(2deg, 0deg);
+}
+.my-car-right-door:hover .my-car-right-mirror {
+	height: 10px;
+	transition: 5s;
+}
 /* run 1s linear forwards,
 		   car-back 2s linear 7s forwards, 
 		   car-second-round 5s linear 10s forwards, 

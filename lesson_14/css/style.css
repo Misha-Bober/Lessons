@@ -404,11 +404,13 @@ display: inline-block;
 	opacity: 0%;
 }
 
-.my-car-first-section:hover .my-car-light-1 {
+.my-car-first-section:hover ~ .my-car-light-1 {
 	opacity: 100%;
+	transition: 0s;
 }
-.my-car-first-section:hover .my-car-light-2 {
+.my-car-first-section:hover ~ .my-car-light-2 {
 	opacity: 100%;
+	transition: 0.3s;
 }
 
 .my-car-second-section {
@@ -466,7 +468,7 @@ display: inline-block;
     position: absolute;
     left: 45%;
     top: 265px;
-    z-index: 3;
+    z-index: 5;
     transform: skew(2deg, 0deg);
 }
 .my-car-left-mirror {
@@ -593,12 +595,26 @@ display: inline-block;
     position: absolute;
     left: 45%;
     top: 265px;
-    z-index: 2;
+    z-index: 4;
     transform: skew(2deg, 0deg);
+	transition-duration: 3s;
 }
-.my-car-right-door:hover .my-car-right-mirror {
-	height: 10px;
-	transition: 5s;
+.car-body:hover .my-car-right-mirror {
+	transition-duration: 3s;
+	transform: translate(0px, 80px);
+	height: 59px;
+}
+.my-car-right-door-2 {
+	width: 120px;
+    height: 65px;
+    /* border-radius: 0px 100px 0px 0px; */
+	background-color: #A4A3A3;
+    position: absolute;
+    left: 44.6%;
+    top: 343px;
+    z-index: 6;
+    transform: skew(2deg, 0deg);
+	transition-duration: 3s;
 }
 /* run 1s linear forwards,
 		   car-back 2s linear 7s forwards, 

@@ -599,7 +599,7 @@ display: inline-block;
     transform: skew(2deg, 0deg);
 	transition-duration: 3s;
 }
-.car-body:hover .my-car-body-mirror-img {
+.car-body:hover .my-car-right-mirror {
 	transition-duration: 3s;
 	transform: translate(0px, 80px);
 	height: 59px;

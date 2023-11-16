@@ -206,7 +206,7 @@ display: inline-block;
 	transition-timing-function: cubic-bezier(0.39,-0.42, 0.47, 1.35);
 }
 
-.animation__circle {
+.task-animation__circle {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -588,7 +588,7 @@ display: inline-block;
 		transform: rotate(-360deg);	
 	}
 }
-.my-car-right-mirror__img {
+.my-car-body-mirror-img {
 	width: 108px;
     height: 79px;
     border-radius: 0px 100px 0px 0px;
@@ -599,7 +599,7 @@ display: inline-block;
     transform: skew(2deg, 0deg);
 	transition-duration: 3s;
 }
-.car-body:hover .my-car-right-mirror {
+.car-body:hover .my-car-body-mirror-img {
 	transition-duration: 3s;
 	transform: translate(0px, 80px);
 	height: 59px;

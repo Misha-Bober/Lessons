@@ -265,7 +265,7 @@ display: inline-block;
 }
 .my-car {
 	width: 100%;
-    height: 400px;
+    height: 800px;
 	position: relative;
 }
 .my-car-h2 {
@@ -279,12 +279,12 @@ display: inline-block;
 .car-background {
 	width: 100%;
     height: 100%;
-    background-image: url(../img/photo_2023-11-16_12-03-29.jpg);
+    background-image: url(../img/1679696690_bogatyr-club-p-doroga-risunok-foni-pinterest-5.jpg);
     background-size: cover;
     background-position: 50%;
 	background-repeat: repeat-x;
 	padding: 10px 0px 0px 0px;
-	animation: run 30s, linear, infinite;
+	animation: run 10s, linear, infinite;
 
 }
 
@@ -300,9 +300,9 @@ display: inline-block;
 
 .car-body {
     width: 1150px;
-	/* position: absolute;
-	left: 0%;
-	right: 0%; */
+	position: absolute;
+	top: 40%;
+	right: 0%;
 }
 
 .my-car-light-1 {

@@ -1,0 +1,181 @@
+@import url("reset.css");
+@import url("fonts.css");
+
+header {
+    padding: 34px 100px 31px 100px;
+    margin-bottom: 50px;
+}
+.header-menu {
+    display: flex;
+    height: 46px;   
+}
+.menu-centr {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 60px 0 163px;
+}
+.menu-centr__search {
+    display: flex;
+    align-items: center;
+    flex-basis: 184px;
+    flex-shrink: 1;
+    flex-grow: 0;
+    padding: 12px 40px;
+    border-radius: 8px;
+    background: #f6f6f6;
+}
+.menu-centr__search p {
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 500;
+    color: #807D7E;
+    margin-left: 12px;
+}
+.header-menu__menu {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.menu-centr__item-link {
+    display: inline-flex;
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+
+}
+.menu-centr__item-link:hover {
+    color: #888888;
+}
+.menu-centr__item-link img {
+    margin-left: 19px;
+    transition-duration: 0.6s;
+}
+.menu-centr__item-link:hover img {
+    transform: rotate(180deg);
+    transition: 0.6s;
+    
+}
+.menu-centr__item {
+    transition: 0.6s;
+}
+.menu-centr__sub-item1,
+.menu-centr__sub-item2,
+.menu-centr__sub-item3 {
+margin-bottom: 10px;
+}
+.menu-centr__item-sub {
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    top: 28px;
+    left: 0;
+    transition-duration: 0.6s;
+}
+.menu-centr__sub-item1:hover {
+    color: #888888;
+}
+.menu-centr__sub-item2:hover {
+    color: #888888;
+}
+.menu-centr__sub-item3:hover {
+    color: #888888;
+}
+.menu-centr__item:hover .menu-centr__item-sub {
+    visibility: visible;
+    transition: 0.6s;
+    opacity: 1;
+} 
+.header-button-section {
+    display: inline-flex;
+    gap: 29px;
+}
+
+.header-button-section__button-login {
+    padding: 12px 48px 12px 48px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+}
+.header-button-section__button-login:hover {
+    background-color: #7c7c7c;
+    color: #333333;
+}
+.header-button-section__button-sing-up {
+    padding: 12px 48px 12px 48px;
+    color: #8A33FD;
+    font-family: "Causten";
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #3C4242;
+}
+.header-button-section__button-sing-up:hover {
+    background-color: #7c7c7c;
+    color: #FFFFFF;
+}
+.categories-for-men {
+    max-width: 1239px;
+    margin: 0 auto;
+}
+.section-card {
+    flex-shrink: 1;
+    flex-basis: 25%;
+    flex-wrap: nowrap;
+}
+.categories-title {
+    margin-bottom: 70px;
+}
+.categories-title::before {
+    content: "";
+    width: 6px;
+    height: 30px;
+    border-radius: 10px;
+    background: #8a33fd;
+    display: inline-block;
+    transform: translateY(4px);
+    margin-right: 20px;
+}
+.categories-title {
+    font-family: "CoreSansC";
+    font-size: 34px;
+    color: #3C4242;
+}
+
+.categories-card-section {
+    display: flex;
+    /* margin: 0 -25px; */
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 50px;
+    
+}
+.img-section-card {
+    max-width: 270.36px;
+    margin-bottom: 16px;
+}
+.section-card__product-name {
+    font-size: 18px;
+    font-family: "Causten";
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.section-card__name {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+    
+}
+.card-name {
+    display: inline-block;
+    
+}

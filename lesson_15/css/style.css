@@ -8,6 +8,7 @@
 	overflow: clip;
 	display: flex;
 	flex-direction: column;
+    
 }
 .wrapper > main {
 	flex-grow: 1;
@@ -164,7 +165,7 @@ margin-bottom: 10px;
     margin-right: 20px;
 }
 .categories-title {
-    font-family: "Core Sans C", "sans-serif";
+    font-family: "CoreSansC", sans-serif;
     font-weight: 600;
     font-size: 34px;
     color: #3c4242;
@@ -183,6 +184,8 @@ margin-bottom: 10px;
     font-family: "Causten";
     font-weight: 500;
     color: #7F7F7F;
+    line-height: 1.279;
+    letter-spacing: -0.56px;
 }
 .img-section-card {
     /* flex-basis: 21,77%;  */
@@ -206,7 +209,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    justify-content: center;
+    margin: 0 auto;
 }
 .my-orders-content {
     display: inline-flex;
@@ -217,7 +220,7 @@ margin-bottom: 10px;
 
 }
 .orders-title {
-    font-family: "Core Sans C", "sans-serif";
+    font-family: "CoreSansC", sans-serif;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 0.56px;
@@ -238,7 +241,7 @@ margin-bottom: 10px;
     border-radius: 8px;
 }
 .orders-content-card__number {
-    font-family: "Causten", "sans-serif";
+    font-family: "Causten", sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: #3c4242;
@@ -248,7 +251,7 @@ margin-bottom: 10px;
 .card-info-status__date,
 .card-status-payment__status,
 .card-date-time__date {
-    font-family: "Causten", "sans-serif";
+    font-family: "Causten", sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #807D7E;
@@ -272,7 +275,7 @@ margin-bottom: 10px;
 .card-status-payment__payment,
 .card-info-status__time,
 .card-info-payment__payment {
-    font-family: "Causten", "sans-serif";
+    font-family: "Causten", sans-serif;
     font-weight: 600;
     font-size: 14px;
     color: #BEBCBD;
@@ -302,7 +305,7 @@ margin-bottom: 10px;
     row-gap: 7px;
 }
 .product-info-name {
-    font-family: "Causten", "sans-serif";
+    font-family: "Causten", sans-serif;
     font-weight: 600;
     font-size: 16px;
     color: #3c4242;
@@ -320,7 +323,29 @@ margin-bottom: 10px;
     background-color: #8A33FD;
     color: #FFFFFF;
     border-radius: 8px;
-    font-family: "Causten", "sans-serif";
+    font-family: "Causten", sans-serif;
     font-weight: 500;
     font-size: 18px;
+}
+.product-info-color__title,
+.product-info-qty__title {
+    font-family: "Causten", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #3C4242;
+}
+.product-info-total__title,
+.product-info-total__total-number {
+    font-family: "Causten", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #807D7E;
+}
+.product-info-qty__qty-number,
+.product-info-color__color-name {
+    font-family: "Causten", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #BEBCBD;
+    padding-left: 3px;
 }

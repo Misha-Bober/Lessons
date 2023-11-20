@@ -433,7 +433,7 @@ display: inline-block;
     position: absolute;
     left: 15%;
     top: 315px;
-    /* z-index: 1; */
+    z-index: 1;
 }
 .my-car-right-door {
     width: 136px;

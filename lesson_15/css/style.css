@@ -190,6 +190,10 @@ margin-bottom: 10px;
 .img-section-card {
     /* flex-basis: 21,77%;  */
     margin-bottom: 16px;
+    transition: 0.3s;
+}
+.img-section-card:hover {
+    transform: scale(1.05);
 }
 
 .section-card__product-name {
@@ -197,6 +201,10 @@ margin-bottom: 10px;
     font-family: "Causten";
     font-weight: 700;
     margin-bottom: 10px;
+    transition: 0.5s;
+}
+.section-card__product-name:hover {
+    transform: scale(1.05);
 }
 .section-card__name {
     display: flex;
@@ -217,7 +225,6 @@ margin-bottom: 10px;
     row-gap: 30px;
     width: 100%;
     align-items: center;
-
 }
 .wishlist-title,
 .orders-title {
@@ -303,6 +310,13 @@ margin-bottom: 10px;
     top: 100%;
     left: 0;
 }
+.orders-content-product__img {
+    transition: 0.5s;
+}
+.orders-content-product__img:hover {
+    transform: scale(1.08);
+}
+
 .content-product-info-card {
     display: inline-flex;
     flex-direction: column;
@@ -314,6 +328,10 @@ margin-bottom: 10px;
     font-size: 16px;
     color: #3c4242;
     margin-bottom: 10px;
+    transition: 0.5s;
+}
+.product-info-name:hover {
+    transform: scale(1.05);
 }
 .content-product-info {
     width: 100%;
@@ -330,6 +348,9 @@ margin-bottom: 10px;
     font-family: "Causten", sans-serif;
     font-weight: 500;
     font-size: 18px;
+}
+.content-product-info-button:hover  {
+    background-color: #a25bff;
 }
 .product-info-color__title,
 .product-info-qty__title {
@@ -376,6 +397,10 @@ margin-bottom: 10px;
 }
 .wishlist-content-product__img-card {
     margin: 0px 36px;
+    transition: 0.4s;
+}
+.wishlist-content-product__img-card:hover {
+    transform: scale(1.08);
 }
 .wishlist-info-card {
     display: flex;
@@ -395,6 +420,10 @@ margin-bottom: 10px;
     color: #3C4242;
     letter-spacing: 0.44px;
     /* margin-bottom: 19px; */
+    transition: 0.5s;
+}
+.wishlist-info-name:hover {
+    transform: scale(1.05);
 }
 .wishlist-info-qty__qty-number,
 .wishlist-info-color__color-name {
@@ -418,6 +447,9 @@ margin-bottom: 10px;
     font-family: "Causten", sans-serif;
     font-weight: 500;
     font-size: 18px;
+}
+.wishlist-product-price-button__button:hover {
+    background-color: #a25bff;
 }
 .wishlist-product-price-button__price {
     font-family: "Causten", sans-serif;

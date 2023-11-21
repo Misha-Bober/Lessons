@@ -209,7 +209,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 .my-orders-content {
     display: inline-flex;
@@ -219,6 +219,7 @@ margin-bottom: 10px;
     align-items: center;
 
 }
+.wishlist-title,
 .orders-title {
     font-family: "CoreSansC", sans-serif;
     font-size: 28px;
@@ -261,6 +262,9 @@ margin-bottom: 10px;
     flex-direction: column;
     row-gap: 7px;
 }
+.wishlist-product-price-button,
+.wishlist-info-qty,
+.wishlist-info-color, 
 .product-info-total,
 .product-info-qty,
 .product-info-color,
@@ -348,4 +352,94 @@ margin-bottom: 10px;
     font-size: 14px;
     color: #BEBCBD;
     padding-left: 3px;
+}
+.wishlist {
+    width: 903px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    margin: 0 auto 50px;
+}
+.wishlist-content-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding-right: 7px;
+}
+.wishlist-product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.wishlist-content-product__img-card {
+    margin: 0px 36px;
+}
+.wishlist-info-card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.wishlist-product-info-card {
+    display: flex;
+    flex-direction: column;
+}
+.wishlist-info-color__title,
+.wishlist-info-qty__title,
+.wishlist-info-name {
+    font-family: "Causten", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #3C4242;
+    letter-spacing: 0.44px;
+    /* margin-bottom: 19px; */
+}
+.wishlist-info-qty__qty-number,
+.wishlist-info-color__color-name {
+    font-family: "Causten", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #807D7E;
+    letter-spacing: 0.44px;
+}
+.wishlist-product-price-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 50px;
+}
+.wishlist-product-price-button__button {
+    padding: 14px 28px 14px 28px;
+    background-color: #8A33FD;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-family: "Causten", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.wishlist-product-price-button__price {
+    font-family: "Causten", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #807D7E;
+    letter-spacing: 0.44px
+}
+.wishlist-content {
+    display: flex;
+    flex-direction: column; 
+    row-gap: 60px;
+}
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #cff5ff;
+    color: #712f2f;
+    border-radius: 20px;
+    margin: 0 auto;
 }

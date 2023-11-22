@@ -106,12 +106,12 @@ margin-bottom: 10px;
     transition: 0.6s;
     opacity: 1;
 } 
-.header-button-section {
+.header__btns-block {
     display: inline-flex;
     gap: 29px;
 }
 
-.header-button-section__button-login {
+.button--violet-mod {
     padding: 12px 48px 12px 48px;
     background-color: #8A33FD;
     color: #FFFFFF;
@@ -121,10 +121,10 @@ margin-bottom: 10px;
     border-radius: 8px;
     transition: 0.4s;
 }
-.header-button-section__button-login:hover {
+.button--violet-mod:hover {
     background-color: #a25bff;
 }
-.header-button-section__button-sing-up {
+.button--white-mod {
     padding: 12px 48px 12px 48px;
     color: #8A33FD;
     font-family: "Causten";
@@ -134,9 +134,10 @@ margin-bottom: 10px;
     border: 1px solid #3C4242;
     transition: 0.4s;
 }
-.header-button-section__button-sing-up:hover {
-    background-color: #a25bff;
-    color: #FFFFFF;
+.button--white-mod:hover {
+    border-color: transparent;
+    background-color: #8a33fd;
+    color: #fff;
 }
 .categories-for-men {
     max-width: 1240px;

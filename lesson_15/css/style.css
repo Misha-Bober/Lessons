@@ -13,13 +13,15 @@
 .wrapper > main {
 	flex-grow: 1;
 }
-header {
-    padding: 34px 100px 31px 100px;
+.header-container-menu {
+    max-width: 1440px;
     margin-bottom: 50px;
 }
 .header-menu {
     display: flex;
-    height: 46px;   
+    height: 46px;
+    max-width: 1240px; 
+    margin: 0 auto;
 }
 .menu-centr {
     display: flex;
@@ -117,10 +119,10 @@ margin-bottom: 10px;
     font-size: 18px;
     font-weight: 500;
     border-radius: 8px;
+    transition: 0.4s;
 }
 .header-button-section__button-login:hover {
-    background-color: #7c7c7c;
-    color: #333333;
+    background-color: #a25bff;
 }
 .header-button-section__button-sing-up {
     padding: 12px 48px 12px 48px;
@@ -130,9 +132,10 @@ margin-bottom: 10px;
     font-weight: 500;
     border-radius: 8px;
     border: 1px solid #3C4242;
+    transition: 0.4s;
 }
 .header-button-section__button-sing-up:hover {
-    background-color: #7c7c7c;
+    background-color: #a25bff;
     color: #FFFFFF;
 }
 .categories-for-men {
@@ -147,12 +150,9 @@ margin-bottom: 10px;
     flex-basis: 21.77%;
     flex-grow: 0;
     flex-shrink: 1;
-    
 }
-.img-section-card {
-    /* flex-basis: 21,77%; */
-    flex-grow: 1;
-    flex-shrink: 1;
+.card-name {
+    margin-right: 20px;
 }
 .categories-title::before {
     content: "";
@@ -189,13 +189,16 @@ margin-bottom: 10px;
 }
 .img-section-card {
     /* flex-basis: 21,77%;  */
-    margin-bottom: 16px;
     transition: 0.3s;
+    width: 100%;
+    border-radius: 10px;
 }
 .img-section-card:hover {
     transform: scale(1.05);
 }
-
+.section-card__link {
+    margin-bottom: 16px;
+}
 .section-card__product-name {
     font-size: 18px;
     font-family: "Causten";
@@ -213,14 +216,14 @@ margin-bottom: 10px;
     flex-grow: 0;
 }
 .my-orders {
-    width: 895px;
+    max-width: 895px;
     display: flex;
     flex-direction: column;
     row-gap: 30px;
     margin: 0 auto 50px;
 }
 .my-orders-content {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     row-gap: 30px;
     width: 100%;
@@ -235,9 +238,10 @@ margin-bottom: 10px;
     color: #3C4242;
 }
 .orders-card {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    width: 100%;
+    row-gap: 30px;
+    
     
 }
 .orders-content-card {
@@ -312,6 +316,7 @@ margin-bottom: 10px;
 }
 .orders-content-product__img {
     transition: 0.5s;
+    max-width: 96px;
 }
 .orders-content-product__img:hover {
     transform: scale(1.08);
@@ -321,6 +326,7 @@ margin-bottom: 10px;
     display: inline-flex;
     flex-direction: column;
     row-gap: 7px;
+    column-gap: 20px;
 }
 .product-info-name {
     font-family: "Causten", sans-serif;
@@ -348,6 +354,7 @@ margin-bottom: 10px;
     font-family: "Causten", sans-serif;
     font-weight: 500;
     font-size: 18px;
+    flex-shrink: 0;
 }
 .content-product-info-button:hover  {
     background-color: #a25bff;
@@ -398,6 +405,7 @@ margin-bottom: 10px;
 .wishlist-content-product__img-card {
     margin: 0px 36px;
     transition: 0.4s;
+    max-width: 110px;
 }
 .wishlist-content-product__img-card:hover {
     transform: scale(1.08);

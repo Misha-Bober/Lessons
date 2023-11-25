@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Форми</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <Header class="header">
+            Відпрацювання
+        </Header>
+        <main class="page">
+            <form enctype="multipart/form-data" method="post" class="form" action="#">
+                <div class="form-text">
+                    <input disabled maxlength="10" minlength="3s" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
+                </div>
+                <div class="form-text">
+                    <input maxlength="10" minlength="3s" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
+                </div>   
+                <div class="form-age">
+                    <label for="age">Повних рочків</label>
+                    <input id="age" maxlength="10" minlength="3s" required autocomplete="off" name="age" placeholder="Повних рочків "  type="number">
+                </div> 
+                <div class="form-email">
+                    <label for="email">email</label>
+                    <input id="email" type="email" required autocomplete="off" name="email" placeholder="Вкажіть свій email" >
+                </div>
+                <div class="form-tell">
+                    <label for="phone">Вкажіть свій номер</label>
+                    <input id="phone" type="tell" maxlength="10" minlength="6s" required autocomplete="off" name="age" placeholder="Вкажіть номер тел." >
+                </div> 
+                <div class="form-password">
+                    <label for="password">Пароль</label>
+                    <input id="password" type="password"  minlength="3s" required autocomplete="off" name="age" placeholder="Введіть пароль">
+                </div>
+                <div class="form-color">
+                    <label for="color">Виберіть колір</label>
+                    <input id="color" type="color" name="color" placeholder="Ваш колір ">
+                </div>
+                <div class="form-search">
+                    <label for="search">Введіть щось </label>
+                    <input id="search" type="search" name="search" placeholder="Пошук">
+                </div>
+                <div class="form-date">
+                    <label for="date">Оберіть дату</label>
+                    <input id="date" type="date" name="date">
+                </div> 
+                <div class="form-range">
+                    <label for="range">Як навчання</label>
+                    <input id="range" type="range" name="range" value="0">
+                </div> 
+                <div class="form-chek">
+                    <label for="chek">Постав пташку </label>
+                    <input id="chek" type="checkbox" name="chek" >
+                    <label for="chek-two">Сигаретки ненайдеться !? </label>
+                    <input id="chek-two" checked type="checkbox" name="chek" >
+                </div>
+                 <fieldset>
+                    <div class="form-radio-stection">
+                        <legend>Star WAR</legend>
+                        <div class="form-radio">
+                            <input id="radio" checked type="radio" value="light" name="radio" >
+                            <label for="radio">Світла сторона ?</label>
+                        </div>
+                        <div class="form-radio-second">
+                            <input id="radio-second" type="radio" value="dark" name="radio" >
+                            <label for="radio-second">Темна сторона ?</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-file">
+                    <label for="file">Вибрати файл</label>
+                    <input id="file" accept=".jpg" type="file"  name="file" >
+                </div>
+                <div class="form-textarea">
+                    <label for="message">Введіть букви</label>
+                    <textarea name="message" id="message" ></textarea>
+                </div>
+                <div class="form-select">
+                    <select name="list" >
+                        <option value="01">Пункт №1</option>
+                        <option value="02">Пункт №2</option>
+                        <option selected value="03">Пункт №3</option>
+                        <option value="04">Пункт №4</option>
+                        <option value="05">Пункт №5</option>
+                        <option value="06">Пункт №6</option>
+                    </select>
+                </div>
+                <div class="form-button">
+                    <p><button type="button">(button) Кнопка нічого не робить </button></p>
+                </div>
+                <div class="form-button">
+                    <p><button type="reset">(reset) Обнулююча конпка</button></p>
+                </div>
+                <div class="form-button">
+                    <p><button type="submit">(submit) Відправити форму</button></p>
+                </div>
+            </form>
+            <div class="page-home-task">
+                <div class="page-contact-us">
+                    <div class="contact-us-title-lable-section">
+                        <div class="contact-us-title-lable-section__lable">Contact Us</div>
+                        <h2 class="contact-us-title-lable-section__title">Request A Call Back !</h2>
+                    </div>
+                </div>
+                <form action="#" method="post" class="home-task-form">
+                    <div class="home-task-form-row">
+                        <div class="home-task-form__item">
+                            <input type="text" name="your-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="home-task-form__item">
+                            <input type="email" name="email-addres" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="home-task-form-row">
+                        <div class="home-task-form__item">
+                            <input type="tel" name="phone-number" placeholder="Phone Number" required>
+                        </div>
+                        <div class="home-task-form__item">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="home-task-form__textarea">
+                        <textarea name="mess" placeholder="Message" required></textarea>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    
+
+    
+</body>
+</html>

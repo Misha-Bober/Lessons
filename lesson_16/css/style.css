@@ -48,7 +48,7 @@ label {
 }
 .page-home-task {
 	max-width: 1220px;
-	margin: 0 auto ;
+	/* margin: 0 auto ; */
 }
 .contact-us-title-lable-section {
 	display: flex;
@@ -80,11 +80,12 @@ label {
 	flex-direction: column;
 	row-gap: 28px;
 	background-color: #ffffff;
-	flex-basis: 100%;
+	/* flex-basis: 100%; */
 }
 .home-task-form-row {
 	display: flex;
 	justify-content: space-between;
+	column-gap: 35px;
 }
 .home-task-form__item {
 	flex-basis: 48.4%;

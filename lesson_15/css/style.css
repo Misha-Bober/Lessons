@@ -13,6 +13,9 @@
 .wrapper > main {
 	flex-grow: 1;
 }
+header {
+    margin: 0 auto;
+}
 .header-container-menu {
     max-width: 1440px;
     margin-bottom: 50px;
@@ -28,6 +31,7 @@
     align-items: center;
     flex-grow: 1;
     justify-content: space-between;
+    column-gap: 210px;
     padding: 0 60px 0 163px;
 }
 .menu-centr__search {
@@ -148,7 +152,7 @@ margin-bottom: 10px;
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    flex-basis: 21.77%;
+    flex-basis: 21.97%;
     flex-grow: 0;
     flex-shrink: 1;
 }
@@ -447,6 +451,7 @@ margin-bottom: 10px;
     flex-direction: row;
     align-items: center;
     column-gap: 50px;
+    flex-shrink: 0;
 }
 .wishlist-product-price-button__button {
     padding: 14px 28px 14px 28px;

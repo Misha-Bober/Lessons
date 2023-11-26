@@ -13,7 +13,8 @@
             Відпрацювання
         </Header>
         <main class="page">
-            <form enctype="multipart/form-data" method="post" class="form" action="#">
+            <div class="page__continer">
+                <form  enctype="multipart/form-data"  method="post" class="form" action="#">
                 <div class="form-text">
                     <input disabled maxlength="10" minlength="3s" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
                 </div>
@@ -30,7 +31,7 @@
                 </div>
                 <div class="form-tell">
                     <label for="phone">Вкажіть свій номер</label>
-                    <input id="phone" type="tell" maxlength="10" minlength="6s" required autocomplete="off" name="age" placeholder="Вкажіть номер тел." >
+                    <input id="phone" type="tel" maxlength="10" minlength="6s" required autocomplete="off" name="age" placeholder="Вкажіть номер тел." >
                 </div> 
                 <div class="form-password">
                     <label for="password">Пароль</label>
@@ -98,36 +99,123 @@
                 <div class="form-button">
                     <p><button type="submit">(submit) Відправити форму</button></p>
                 </div>
-            </form>
-            <div class="page-home-task">
-                <div class="page-contact-us">
-                    <div class="contact-us-title-lable-section">
-                        <div class="contact-us-title-lable-section__lable">Contact Us</div>
-                        <h2 class="contact-us-title-lable-section__title">Request A Call Back !</h2>
+                </form>
+                <div class="page-home-task-consulting">
+                    <div class="page-consulting">
+                    <div class="consulting-title-lable-section">
+                        <div class="consulting-title-lable-section__lable">Contact Us</div>
+                        <h2 class="consulting-title-lable-section__title">Request A Call Back !</h2>
                     </div>
-                </div>
-                <form action="#" method="post" class="home-task-form">
+                    </div>
+                    <form action="#" method="post" class="home-task-form">
                     <div class="home-task-form-row">
                         <div class="home-task-form__item">
-                            <input type="text" name="your-name" placeholder="Your Name" required>
+                            <input class="home-task-form-item-input" type="text" name="your-name" placeholder="Your Name" required>
                         </div>
                         <div class="home-task-form__item">
-                            <input type="email" name="email-addres" placeholder="Email Address" required>
+                            <input class="home-task-form-item-input" type="email" name="email-addres" placeholder="Email Address" required>
                         </div>
                     </div>
                     <div class="home-task-form-row">
                         <div class="home-task-form__item">
-                            <input type="tel" name="phone-number" placeholder="Phone Number" required>
+                            <input class="home-task-form-item-input" type="tel" name="phone-number" placeholder="Phone Number" required>
                         </div>
                         <div class="home-task-form__item">
-                            <input type="text" name="subject" placeholder="Subject" required>
+                            <input class="home-task-form-item-input" type="text" name="subject" placeholder="Subject" required>
                         </div>
                     </div>
                     <div class="home-task-form__textarea">
                         <textarea name="mess" placeholder="Message" required></textarea>
                     </div>
+                    <div class="home-task-form-button">
+                        <button class="home-task-form-button__button-submit" type="submit">Submit</button>
+                    </div>
+                    </form>
                 </div>
-                </form>
+                <div class="page-home-task-euphoria">
+                    <div class="euphoria-title-lable-section">
+                        <h2 class="euphoria-title-lable-section__h2">My Info</h2>
+                        <div class="euphoria-title-lable-section__label">Add Address</div>
+                    </div>
+                    <form action="#" method="post" class="euphoria-form">
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">First Name*</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="First Name" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Last Name*</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Country / Region*</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="region" placeholder="Country / Region" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Company Name</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="Company (optional)" required>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Street Address*</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="adress" placeholder="House number and street name" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Apt, suite, unit</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="house" placeholder="apartment, suite, unit, etc. (optional)" required>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">City*</label>
+                                <input id="input" class="home-task-form-item__input-city" type="text" name="city" placeholder="Town / City" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="state" class="home-task-form-item__label">State*</label>
+                                <select id="state" class="home-task-form-item__input-select" name="state" required>
+                                    <option value="" disabled selected>State</option>
+                                    <option value="01">Alaska</option>
+                                    <option value="02">California</option>
+                                    <option value="03">Colorado</option>
+                                    <option value="04">Florida</option>
+                                    <option value="05">Канзас</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Phone*</label>
+                                <input id="input" class="home-task-form-item__input" type="tel" autocomplete="off" name="phone" placeholder="Phone" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="input" class="home-task-form-item__label">Postal Code*</label>
+                                <input id="input" class="home-task-form-item__input" type="text" name="posta" placeholder="Postal Code" required>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-textarea">
+                            <label for="delivery-instruction" class="home-task-form-item__label">Delivery Instruction</label>
+                            <textarea id="delivery-instruction" class="textarea" name="di" placeholder="delivery-instruction"></textarea>
+                        </div>
+                        <div class="euphoria-form__checkbox">
+                            <div class="euphoria-form-checkbox-item">
+                                <input id="default-shipping" name="ds" type="checkbox" class="checkbox">
+                                <label for="default-shipping" class="euphoria-form-checkbox-item__label-checkbox">Set as default shipping address</label>
+                            </div>
+                            <div class="euphoria-form-checkbox-item">
+                                <input id="default-address" name="da" type="checkbox" class="checkbox">
+                                <label for="default-address" class="euphoria-form-checkbox-item__label-checkbox">Set as default billing address</label>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-button-section">
+                            <button class="euphoria-form-button-section__button-purple" type="submit">Save</button>
+                            <button class="euphoria-form-button-section__button-gray" type="reset">Cancel</button>
+                        </div>
+                    </form>
+                    
+                </div>
             </div>
         </main>
     </div>

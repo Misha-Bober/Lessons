@@ -23,6 +23,7 @@ body {
 main {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 50px;
 }
 header {
 	padding: 50px;
@@ -302,4 +303,16 @@ text-align: center;
 .euphoria-form-button-section__button-gray {
 	color: #807D7E;
 	background-color: #F6F6F6;
+}
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #cff5ff;
+    color: #712f2f;
+    border-radius: 20px;
+    margin: 0 auto;
 }

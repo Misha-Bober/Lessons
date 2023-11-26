@@ -16,14 +16,14 @@
             <div class="page__continer">
                 <form  enctype="multipart/form-data"  method="post" class="form" action="#">
                 <div class="form-text">
-                    <input disabled maxlength="10" minlength="3s" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
+                    <input disabled maxlength="10" minlength="3" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
                 </div>
                 <div class="form-text">
-                    <input maxlength="10" minlength="3s" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
+                    <input maxlength="10" minlength="3" required autocomplete="off" name="name" placeholder="Введіть ім'я" value="" type="text">
                 </div>   
                 <div class="form-age">
                     <label for="age">Повних рочків</label>
-                    <input id="age" maxlength="10" minlength="3s" required autocomplete="off" name="age" placeholder="Повних рочків "  type="number">
+                    <input id="age" required autocomplete="off" name="age" placeholder="Повних рочків "  type="number">
                 </div> 
                 <div class="form-email">
                     <label for="email">email</label>
@@ -31,15 +31,15 @@
                 </div>
                 <div class="form-tell">
                     <label for="phone">Вкажіть свій номер</label>
-                    <input id="phone" type="tel" maxlength="10" minlength="6s" required autocomplete="off" name="age" placeholder="Вкажіть номер тел." >
+                    <input id="phone" type="tel" maxlength="10" minlength="6" required autocomplete="off" name="age" placeholder="Вкажіть номер тел." >
                 </div> 
                 <div class="form-password">
                     <label for="password">Пароль</label>
-                    <input id="password" type="password"  minlength="3s" required autocomplete="off" name="age" placeholder="Введіть пароль">
+                    <input id="password" type="password"  minlength="3" required autocomplete="off" name="age" placeholder="Введіть пароль">
                 </div>
                 <div class="form-color">
                     <label for="color">Виберіть колір</label>
-                    <input id="color" type="color" name="color" placeholder="Ваш колір ">
+                    <input id="color" type="color" name="color" >
                 </div>
                 <div class="form-search">
                     <label for="search">Введіть щось </label>
@@ -59,8 +59,7 @@
                     <label for="chek-two">Сигаретки ненайдеться !? </label>
                     <input id="chek-two" checked type="checkbox" name="chek" >
                 </div>
-                 <fieldset>
-                    <div class="form-radio-stection">
+                 <fieldset class="form-radio-stection">
                         <legend>Star WAR</legend>
                         <div class="form-radio">
                             <input id="radio" checked type="radio" value="light" name="radio" >
@@ -70,7 +69,6 @@
                             <input id="radio-second" type="radio" value="dark" name="radio" >
                             <label for="radio-second">Темна сторона ?</label>
                         </div>
-                    </div>
                 </fieldset>
                 <div class="form-file">
                     <label for="file">Вибрати файл</label>
@@ -144,34 +142,34 @@
                                 <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="First Name" required>
                             </div>
                             <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Last Name*</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="Last Name" required>
+                                <label for="input-first" class="home-task-form-item__label">Last Name*</label>
+                                <input id="input-first" class="home-task-form-item__input" type="text" name="name" placeholder="Last Name" required>
                             </div>
                         </div>
                         <div class="euphoria-form-row">
                             <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Country / Region*</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="region" placeholder="Country / Region" required>
+                                <label for="input-second" class="home-task-form-item__label">Country / Region*</label>
+                                <input id="input-second" class="home-task-form-item__input" type="text" name="region" placeholder="Country / Region" required>
                             </div>
                             <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Company Name</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="name" placeholder="Company (optional)" required>
-                            </div>
-                        </div>
-                        <div class="euphoria-form-row">
-                            <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Street Address*</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="adress" placeholder="House number and street name" required>
-                            </div>
-                            <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Apt, suite, unit</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="house" placeholder="apartment, suite, unit, etc. (optional)" required>
+                                <label for="input-third" class="home-task-form-item__label">Company Name</label>
+                                <input id="input-third" class="home-task-form-item__input" type="text" name="name" placeholder="Company (optional)" required>
                             </div>
                         </div>
                         <div class="euphoria-form-row">
                             <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">City*</label>
-                                <input id="input" class="home-task-form-item__input-city" type="text" name="city" placeholder="Town / City" required>
+                                <label for="input-fourth" class="home-task-form-item__label">Street Address*</label>
+                                <input id="input-fourth" class="home-task-form-item__input" type="text" name="adress" placeholder="House number and street name" required>
+                            </div>
+                            <div class="home-task-form-item">
+                                <label for="input-fifth" class="home-task-form-item__label">Apt, suite, unit</label>
+                                <input id="input-fifth" class="home-task-form-item__input" type="text" name="house" placeholder="apartment, suite, unit, etc. (optional)" required>
+                            </div>
+                        </div>
+                        <div class="euphoria-form-row">
+                            <div class="home-task-form-item">
+                                <label for="input-sixth" class="home-task-form-item__label">City*</label>
+                                <input id="input-sixth" class="home-task-form-item__input-city" type="text" name="city" placeholder="Town / City" required>
                             </div>
                             <div class="home-task-form-item">
                                 <label for="state" class="home-task-form-item__label">State*</label>
@@ -191,8 +189,8 @@
                                 <input id="input" class="home-task-form-item__input" type="tel" autocomplete="off" name="phone" placeholder="Phone" required>
                             </div>
                             <div class="home-task-form-item">
-                                <label for="input" class="home-task-form-item__label">Postal Code*</label>
-                                <input id="input" class="home-task-form-item__input" type="text" name="posta" placeholder="Postal Code" required>
+                                <label for="input-seventh" class="home-task-form-item__label">Postal Code*</label>
+                                <input id="input-seventh" class="home-task-form-item__input" type="text" name="posta" placeholder="Postal Code" required>
                             </div>
                         </div>
                         <div class="euphoria-form-textarea">

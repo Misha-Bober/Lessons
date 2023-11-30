@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:regular,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap");
@@ -26,16 +27,22 @@ body {
 	font-size: 30px;
 	border-radius: 20px;
 }
+/* ///////////////////////////Ours-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .ours-products {
 	max-width: 1633px;
 	background-color: #0E333D;
 	padding: 94px 0px;
+	margin-bottom: 50px;
 }
+.most-popular-product__container,
 .ours-products__container {
 	max-width: 1203px;
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	align-items: center;
 }
 .ours-products__header {
 	display: flex;
@@ -70,14 +77,11 @@ body {
 	color: #FFFFFF;
 	display: flex;
 	line-height: 1.27;
-	font-weight: 500;
-	flex: 0 1 auto;
+	font-weight: 600;
+	transition: all 0.4s;
 }
-.menu-products__item {
-	min-height: 100%;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+.menu-products__item:hover {
+	text-decoration: underline 2px rgb(255, 255, 255);
 }
 .card-product__img {
 	width: 100%;
@@ -85,6 +89,7 @@ body {
 	aspect-ratio: 270px / 270px;
 	object-fit: cover;
 	margin-bottom: 17px;
+	transition: 0.4s;
 }
 
 .card-product__name {
@@ -94,9 +99,7 @@ body {
 	line-height: 1.4;
 	font-weight: 700;
 	margin-bottom: 5px;
-}
-.card-product__item {
-	transition: all 08s;
+	transition: all 0.4s;
 }
 .card-product__item:hover .card-product__name {
 	text-decoration: underline 2px rgb(255, 255, 255);
@@ -111,19 +114,119 @@ body {
 	line-height: 1.4;
 	font-weight: 700;
 }
+.popular-product,
 .card-product {
 	display: flex;
 	row-gap: 30px;
 	flex-wrap: wrap;
 	margin: 0 -15px;
 }
+.popular-product {
+	margin-bottom: 76px;
+}
+.most-popular-product__column,
 .ours-products__column {
 	padding: 0 15px;
     flex: 1 0 25%;
 	
 }
-@media (max-width: 756px) {
-	.ours-products {
-		padding: 0px 0px;
+@media (max-width: 1047px) {
+	.ours-products__column {
+		padding: 0 15px;
+    	flex: 0 1 33.3333%;
 	}
+}
+@media (max-width: 785px) {
+	.ours-products__column {
+		padding: 0 15px;
+    	flex: 0 1 50%;
+	}
+}
+@media (max-width: 524px) {
+	.ours-products__column {
+		padding: 0 10px;
+    	flex: 0 1 100%;
+	}
+	.ours-products__title {
+		font-family: "DM Serif Text";
+		font-size: 30px;
+		color: #FFFFFF;
+	}
+	.ours-products__sub-title {
+		font-family: "Raleway";
+		font-size: 20px;
+		color: #EBEBEB;
+		font-weight: 500;
+	}
+	.menu-products {
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+		margin: 0 auto 25px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+/* ///////////////////////////Most-popular-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.most-popular-product__header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 27px;
+	text-align: center;
+}
+.most-popular-product__title {
+	font-family: "DM Serif Text";
+	font-size: 58px;
+	color: #291403;
+	line-height: 1.4;
+}
+.most-popular-product__sub-title {
+	font-family: "Cormorant Infant";
+	font-size: 30px;
+	color: #818181;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.popular-product__img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 271px / 270px;
+	object-fit: cover;
+	margin-bottom: 17px;
+	transition: 0.4s;
+}
+.popular-product__name {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #000000;
+	line-height: 1.4;
+	font-weight: 700;
+	margin-bottom: 5px;
+	transition: all 0.4s;
+}
+.popular-product__item:hover .popular-product__name {
+	text-decoration: underline 2px rgb(0, 0, 0);
+}
+.popular-product__item:hover .popular-product__img {
+	transform: scale(1.02);
+}
+.popular-product__price {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #000000;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.most-popular-product__button {
+	padding: 12px 42px;
+    background-color: #FF7A49;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 1.87;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+.most-popular-product__button:hover {
+	background-color: #c84b1e;
 }

@@ -26,6 +26,8 @@ body {
 	text-align: center;
 	font-size: 30px;
 	border-radius: 20px;
+	max-width: 1633px;
+	margin: 0 auto;
 }
 /* ///////////////////////////Ours-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
 .ours-products {
@@ -33,6 +35,7 @@ body {
 	background-color: #0E333D;
 	padding: 94px 0px;
 	margin-bottom: 50px;
+	margin: 0 auto;
 }
 .most-popular-product__container,
 .ours-products__container {
@@ -148,15 +151,10 @@ body {
     	flex: 0 1 100%;
 	}
 	.ours-products__title {
-		font-family: "DM Serif Text";
 		font-size: 30px;
-		color: #FFFFFF;
 	}
 	.ours-products__sub-title {
-		font-family: "Raleway";
 		font-size: 20px;
-		color: #EBEBEB;
-		font-weight: 500;
 	}
 	.menu-products {
 		display: flex;
@@ -165,6 +163,11 @@ body {
 		margin: 0 auto 25px;
 		justify-content: center;
 		align-items: center;
+	}
+}
+@media (max-width: 352px) {
+	.ours-products__sub-title {
+		font-size: 18px;
 	}
 }
 /* ///////////////////////////Most-popular-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
@@ -229,4 +232,28 @@ body {
 }
 .most-popular-product__button:hover {
 	background-color: #c84b1e;
+}
+@media (max-width: 1047px) {
+	.most-popular-product__column {
+		padding: 0 15px;
+    	flex: 0 1 33.3333%;
+	}
+}
+@media (max-width: 785px) {
+	.most-popular-product__column {
+		padding: 0 15px;
+    	flex: 0 1 50%;
+	}
+}
+@media (max-width: 524px) {
+	.most-popular-product__column {
+		padding: 0 10px;
+    	flex: 0 1 100%;
+	}
+	.most-popular-product__title {
+		font-size: 30px;
+	}
+	.most-popular-product__sub-title {
+		font-size: 20px;
+	}
 }

@@ -96,11 +96,13 @@ body {
 	margin-bottom: 5px;
 }
 .card-product__item {
-	transition: 0.8s;
+	transition: all 08s;
 }
 .card-product__item:hover .card-product__name {
 	text-decoration: underline 2px rgb(255, 255, 255);
-	
+}
+.card-product__item:hover .card-product__img {
+	transform: scale(1.02);
 }
 .card-product__price {
 	font-family: "Cormorant Infant";

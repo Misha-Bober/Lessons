@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:regular,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap");
+@import url("fonts.css");
+@import url("reset.css");
+body {
+	font-family: "Inter", sans-serif;
+	color: #000000;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+}
+.wrapper > main {
+	flex-grow: 1;
+}
+.header {
+	width: 100%;
+	background-image: url(../img/mohammad.jpg);
+	background-position: 70%;
+	color: rgb(124, 181, 162);
+	padding: 50px 0px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 20px;
+}
+.ours-products {
+	max-width: 1633px;
+	background-color: #0E333D;
+	padding: 94px 0px;
+}
+.ours-products__container {
+	max-width: 1203px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.ours-products__header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 23px;
+	margin: 0 auto 34px;
+	align-items: center;
+}
+
+.ours-products__title {
+	font-family: "DM Serif Text";
+	font-size: 48px;
+	color: #FFFFFF;
+	line-height: 1.27;
+}
+.ours-products__sub-title {
+	font-family: "Raleway";
+	font-size: 20px;
+	color: #EBEBEB;
+	line-height: 1.27;
+	font-weight: 500;
+}
+.menu-products {
+	display: flex;
+	column-gap: 41px;
+	margin: 0 auto 34px;
+	justify-content: center;
+}
+.menu-products__item {
+	font-family: "Raleway";
+	font-size: 18px;
+	color: #FFFFFF;
+	display: flex;
+	line-height: 1.27;
+	font-weight: 500;
+	flex: 0 1 auto;
+}
+.menu-products__item {
+	min-height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.card-product__img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 270px / 270px;
+	object-fit: cover;
+	margin-bottom: 17px;
+}
+
+.card-product__name {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 1.4;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.card-product__item {
+	transition: 0.8s;
+}
+.card-product__item:hover .card-product__name {
+	text-decoration: underline 2px rgb(255, 255, 255);
+	
+}
+.card-product__price {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 1.4;
+	font-weight: 700;
+}
+.card-product {
+	display: flex;
+	row-gap: 30px;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.ours-products__column {
+	padding: 0 15px;
+    flex: 1 0 25%;
+	
+}
+@media (max-width: 756px) {
+	.ours-products {
+		padding: 0px 0px;
+	}
+}

@@ -90,7 +90,7 @@ body {
 .card-product__img {
 	width: 100%;
 	height: 100%;
-	aspect-ratio: 270px / 270px;
+	aspect-ratio: 270 / 270;
 	object-fit: cover;
 	margin-bottom: 17px;
 	transition: 0.4s;
@@ -195,7 +195,7 @@ body {
 .popular-product__img {
 	width: 100%;
 	height: 100%;
-	aspect-ratio: 271px / 270px;
+	aspect-ratio: 271 / 270;
 	object-fit: cover;
 	margin-bottom: 17px;
 	transition: 0.4s;
@@ -290,8 +290,14 @@ body {
 	line-height: 1.8;
 	color: #606060;
 }
+.ours-product {
+	display: flex;
+	row-gap: 30px;
+	flex-wrap: wrap;
+	margin: 0 -24px;
+}
 .ours-popular-product__column {
-	padding: 0 15px;
+	padding: 0 24px;
     flex: 1 0 33.3333%;
 }
 .ours-product__img {
@@ -299,28 +305,141 @@ body {
 	transition: 0.4s;
 	width: 100%;
 	height: 100%;
-	aspect-ratio: 357px / 240px;
+	aspect-ratio: 357 / 240;
 	object-fit: cover;
+	margin-bottom: 16px;
 }
-.pours-product__name {
-	font-family: "Cormorant Infant";
+.ours-product__name {
+	font-family: "DM Serif Text";
 	font-size: 24px;
 	color: #000000;
-	line-height: 1.4;
-	font-weight: 700;
-	margin-bottom: 5px;
-	transition: all 0.4s;
+	line-height: 1.2;
+	margin-bottom: 16px;
 }
-.ours-product__item:hover .ours-product__name {
-	text-decoration: underline 2px rgb(0, 0, 0);
-}
-.ours-product__item:hover .ours-product__img {
+.ours-product__item-link:hover .ours-product__img {
 	transform: scale(1.02);
 }
-.ours-product__price {
-	font-family: "Cormorant Infant";
-	font-size: 24px;
-	color: #000000;
-	line-height: 1.4;
-	font-weight: 700;
+.ours-product__content {
+	color: #000;
+	font-weight: 400;
+	line-height: 1.6;
+	margin-bottom: 8px;
+	font-size: 16px;
+}
+.ours-product__link {
+	font-size: 16px;
+	line-height: 1.50;
+    font-weight: 800;
+    color: #F55529;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+.ours-product__link::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: url(../img/ours_popular_product/arrov.svg) no-repeat;
+    transition: transform 0.2s;
+}
+.ours-product__link:hover::after {
+	transform: scale(1.1);
+}
+.ours-product__link:hover {
+	text-decoration: underline 2px #F55529;
+	font-weight: 900;
+}
+@media (max-width: 1361px){
+	.ours-popular-product {
+		padding: 50px 50px;
+	}
+}
+@media (max-width: 1161px){
+	.ours-popular-product {
+		padding: 15px 15px;
+	}
+}
+@media (max-width: 1098px){
+	.ours-popular-product__column {
+		padding: 0 24px;
+		flex: 0 1 50%;
+	}
+}
+@media (max-width: 731px){
+	.ours-product__name {
+		font-size: 20px;
+	}
+	.ours-popular-product {
+		padding: 0;
+	}
+	.ours-product {
+		row-gap: 20px;
+		margin: 0 -18px;
+	}
+	.ours-popular-product__column {
+		padding: 0 18px;
+
+	}
+	.ours-product__img {
+		margin-bottom: 10px;
+	}
+	.ours-product__name {
+		margin-bottom: 10px;
+	}
+	.ours-product__content {
+		margin-bottom: 5px;
+	}
+}
+@media (max-width: 586px){
+	.ours-popular-product {
+		padding: 0;
+	}
+	.ours-product {
+		row-gap: 20px;
+		margin: 0 -10px;
+	}
+	.ours-popular-product__column {
+		padding: 0 10px;
+
+	}
+	.ours-popular-product {
+		background: #fefaf4 url(../img/ours_popular_product/flowers.png) 100% 80% / auto no-repeat;
+	}
+	.ours-product__name {
+		font-size: 18px;
+	}
+}
+@media (max-width: 543px){
+	.ours-popular-product {
+		padding: 0;
+	}
+	.ours-product {
+		row-gap: 20px;
+		margin: 0 -10px;
+	}
+	.ours-popular-product__column {
+		padding: 0 10px;
+
+	}
+	.ours-popular-product {
+		background: #fefaf4 url(../img/ours_popular_product/flowers.png) 100% 80% / auto no-repeat;
+	}
+	/* .ours-popular-product__column {
+		padding: 0 24px;
+		flex: 0 1 100%;
+	} */
+	.ours-product__content {
+		font-size: 14px;
+	}
+}
+@media (max-width: 518px){
+	.ours-popular-product__column {
+		flex: 0 1 100%;
+	}
+	.ours-popular-product {
+		background: #fefaf4 url() 0 0 / auto no-repeat;
+	}
 }

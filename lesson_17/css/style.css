@@ -172,6 +172,9 @@ body {
 	}
 }
 /* ///////////////////////////Most-popular-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.most-popular-product {
+	margin-bottom: 30px;
+}
 .ours-popular-product__header,
 .most-popular-product__header {
 	display: flex;
@@ -442,4 +445,16 @@ body {
 	.ours-popular-product {
 		background: #fefaf4 url() 0 0 / auto no-repeat;
 	}
+}
+footer {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    font-family: "Poppins";
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    background-color: #cff5ff;
+    color: #712f2f;
+    border-radius: 20px;
+    margin: 0 auto;
 }

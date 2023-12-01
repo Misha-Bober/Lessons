@@ -47,6 +47,7 @@ body {
 	padding-right: 15px;
 	align-items: center;
 }
+
 .ours-products__header {
 	display: flex;
 	flex-direction: column;
@@ -117,6 +118,7 @@ body {
 	line-height: 1.4;
 	font-weight: 700;
 }
+.ours-product,
 .popular-product,
 .card-product {
 	display: flex;
@@ -131,7 +133,6 @@ body {
 .ours-products__column {
 	padding: 0 15px;
     flex: 1 0 25%;
-	
 }
 @media (max-width: 1047px) {
 	.ours-products__column {
@@ -171,6 +172,7 @@ body {
 	}
 }
 /* ///////////////////////////Most-popular-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.ours-popular-product__header,
 .most-popular-product__header {
 	display: flex;
 	flex-direction: column;
@@ -256,4 +258,69 @@ body {
 	.most-popular-product__sub-title {
 		font-size: 20px;
 	}
+}
+/* ///////////////////////////////Ours popular-product\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.ours-popular-product {
+	background: #fefaf4 url(../img/ours_popular_product/flowers.png) 100% 115% / auto no-repeat;
+	padding: 50px 150px;
+}
+.ours-popular-product__container {
+	max-width: 1197px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.ours-popular-product__header {
+	display: flex;
+	flex-direction: column;
+	row-gap: 27px;
+	align-items: start;
+	margin-bottom: 53px;
+}
+.ours-popular-product__title {
+	font-family: "DM Serif Text";
+	font-size: 58px;
+	color: #000000;
+	line-height: 1.0;
+}
+.ours-popular-product__sub-title {
+	font-size: 20px;
+	line-height: 1.8;
+	color: #606060;
+}
+.ours-popular-product__column {
+	padding: 0 15px;
+    flex: 1 0 33.3333%;
+}
+.ours-product__img {
+	margin-bottom: 16px;
+	transition: 0.4s;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 357px / 240px;
+	object-fit: cover;
+}
+.pours-product__name {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #000000;
+	line-height: 1.4;
+	font-weight: 700;
+	margin-bottom: 5px;
+	transition: all 0.4s;
+}
+.ours-product__item:hover .ours-product__name {
+	text-decoration: underline 2px rgb(0, 0, 0);
+}
+.ours-product__item:hover .ours-product__img {
+	transform: scale(1.02);
+}
+.ours-product__price {
+	font-family: "Cormorant Infant";
+	font-size: 24px;
+	color: #000000;
+	line-height: 1.4;
+	font-weight: 700;
 }

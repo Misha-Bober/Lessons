@@ -76,6 +76,9 @@ label {
 	width: 12px;
 	height: 12px;
 	background-color: #40DDB6;
+	flex: 0 0 12px;
+	align-self: start;
+
 }
 .consulting-title-lable-section__title {
 	font-family: "Poppins";
@@ -303,6 +306,14 @@ text-align: center;
 .euphoria-form-button-section__button-gray {
 	color: #807D7E;
 	background-color: #F6F6F6;
+}
+.euphoria-form-button-section__button-purple:hover {
+	background-color: #ab6efc;
+	color: black;
+}
+.euphoria-form-button-section__button-gray:hover {
+	background-color: #ab6efc;
+	color: black;
 }
 footer {
     width: 100%;

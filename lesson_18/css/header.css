@@ -1,0 +1,35 @@
+
+[class*="__container"] {
+	max-width: 1200px; /* 1170 + 15 + 15 */
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.header {
+color: #000;
+font-family: "Merriweather";
+width: 100%;
+/* position: fixed;
+top: 0;
+left: 0;
+z-index: 100; */
+background-color: #fff;
+display: flex;
+}
+.heder__container {
+/* max-width: 1200px;
+display: flex;
+gap: 15px;
+align-items: center;
+min-height: 100px;
+padding-top: 5px;
+padding-bottom: 5px; */
+}
+
+.menu__listy {
+    display: flex;
+    flex-direction: column;
+} 
+.sub-menu__item {
+    display: none;
+}

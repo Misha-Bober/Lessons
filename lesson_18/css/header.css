@@ -17,10 +17,14 @@ top: 0;
 left: 0;
 z-index: 100;
 }
-.menu__item {
+.menu__item .menu__link {
     display: flex;
-    gap: 4px;
+    column-gap: 4px;
     align-items: center;
+    flex-wrap: wrap;
+}
+.menu__item {
+    font-size: 20px;
 }
 .menu__list {
     display: flex;
@@ -36,9 +40,6 @@ z-index: 100;
 }
 .heder__menu {
     flex: 1 1 auto;
-}
-.menu__item {
-    font-size: 20px;
 }
 .favorite-basket__link {
     flex: 0 0 32px;
@@ -106,11 +107,18 @@ z-index: 100;
     background-color: #b1937f;
 } 
 }
-.menu__item img {
-    transition: transform 0.4s;
+
+.menu__link::after {
+	content: "";
+	background: url("../img/tick\ ​_mark.png") 0 0 no-repeat;
+	flex: 0 0 16px;
+	height: 8px;
+	width: 16px;
+	transition: transform 0.4s;
+
 }
-@media (any-hover: hover){
-.menu__item:hover .menu-img {
+@media (any-hover: hover) {
+.menu__item:hover .menu__link::after {
     transform: rotate(180deg);
 }
 }
@@ -124,18 +132,29 @@ z-index: 100;
 	height: 100%;
 	overflow: auto;
 	top: 0;
-	/* left: -100%; */
-    left: 0;
+	left: -100%;
 	transition: left 0.3s;
 	padding: 80px 30px 30px 15px;
 	background-color: #e85d000f;
+    
 	}
 .menu__list {
 	flex-direction: column;
-	align-items: flex-end;
+	text-align: end;
 	row-gap: 28px;
-}
+    align-items: end;
 
+}
+.menu__item--parent .menu__link  {
+    display: block;
+}
+.menu__item::after {
+    display: none;
+}
+.menu-open .menu__body,
+	.menu-open .menu__body::before {
+		left: 0;
+	}
 .icon-menu {
     width: 30px;
     display: block;
@@ -179,15 +198,18 @@ z-index: 100;
     margin-bottom: -1px;
 }
 .sub-menu {
-    left: 67%;
-    top: 35%;
+    position: relative;
+    left: 0%;
+    top: 0%;
+    margin-top: 20px;
     padding: 25px;
-    opacity: 0;
+    opacity: 1;
     overflow: auto;
-    transition: 0.6s;
-    visibility: hidden;
     pointer-events: none; 
+    opacity: 1;
+    visibility: visible;
 }
+
 }
 @media (max-width:480px) {
 .header__favorite-basket {

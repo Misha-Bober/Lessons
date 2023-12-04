@@ -115,7 +115,6 @@
 	height: 8px;
 	width: 16px;
 	transition: transform 0.4s;
-
 }
 @media (any-hover: hover) {
 .menu__item:hover .menu__link::after {
@@ -143,7 +142,9 @@
 	text-align: end;
 	row-gap: 28px;
     align-items: end;
-
+}
+.menu__link::after {
+	display: none;
 }
 .menu__item {
     font-size: 20px;

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Infant:regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap");
 @import url("fonts.css");
 @import url("reset.css");
 body {
@@ -30,9 +31,11 @@ body {
 	margin: 0 auto;
 }
 /* ///////////////////////////Ours-products\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.ours-product-background {
+	background-color: #0E333D;
+}
 .ours-products {
 	max-width: 1633px;
-	background-color: #0E333D;
 	padding: 94px 0px;
 	margin-bottom: 50px;
 	margin: 0 auto;
@@ -68,6 +71,7 @@ body {
 	color: #EBEBEB;
 	line-height: 1.27;
 	font-weight: 500;
+	text-align: center;
 }
 .menu-products {
 	display: flex;
@@ -132,7 +136,7 @@ body {
 .most-popular-product__column,
 .ours-products__column {
 	padding: 0 15px;
-    flex: 1 0 25%;
+    flex: 0 0 25%;
 }
 @media (max-width: 1047px) {
 	.ours-products__column {
@@ -266,6 +270,7 @@ body {
 .ours-popular-product {
 	background: #fefaf4 url(../img/ours_popular_product/flowers.png) 100% 115% / auto no-repeat;
 	padding: 50px 150px;
+	margin-bottom: 30px;
 }
 .ours-popular-product__container {
 	max-width: 1197px;

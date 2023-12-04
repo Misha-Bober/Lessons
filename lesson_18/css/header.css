@@ -9,13 +9,13 @@
     padding: 5px 15px 5px 15px;
 }
 .header {
-color: #000;
-font-family: "Merriweather";
-width: 100%;
-position: fixed;
-top: 0;
-left: 0;
-z-index: 100;
+    color: #000;
+    font-family: "Merriweather";
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; */
 }
 .menu__item .menu__link {
     display: flex;
@@ -85,7 +85,7 @@ z-index: 100;
     visibility: hidden;
     pointer-events: none; 
 }
-.icon-menu {
+.icon-menu-burrer {
     display: none;
 }
 @media (any-hover: hover){
@@ -122,21 +122,21 @@ z-index: 100;
     transform: rotate(180deg);
 }
 }
-@media (max-width:960px) {
+@media (max-width:990px) {
 .header__container {
 	min-height: 50px;
 }
 .menu__body {
 	position: fixed;
-	width: 100%;
-	height: 100%;
+	width: 300px;
+	height: 600px;
 	overflow: auto;
 	top: 0;
-	left: -100%;
-	transition: left 0.3s;
+	right: 100%;
+	transition: right 0.3s;
 	padding: 80px 30px 30px 15px;
-	background-color: #e85d000f;
-    
+	background-color: #2914069a;
+    z-index: 4;
 	}
 .menu__list {
 	flex-direction: column;
@@ -144,6 +144,13 @@ z-index: 100;
 	row-gap: 28px;
     align-items: end;
 
+}
+.menu__item {
+    font-size: 20px;
+    color: #fff;
+}
+.sub-menu__item {
+    color: #fff;
 }
 .menu__item--parent .menu__link  {
     display: block;
@@ -153,9 +160,9 @@ z-index: 100;
 }
 .menu-open .menu__body,
 	.menu-open .menu__body::before {
-		left: 0;
+		right: 0;
 	}
-.icon-menu {
+.icon-menu-burrer {
     width: 30px;
     display: block;
     flex: 0 0 30px;
@@ -163,9 +170,9 @@ z-index: 100;
     position: relative;
     z-index: 5;
 }
-.icon-menu::before,
-.icon-menu::after,
-.icon-menu span {
+.icon-menu-burrer::before,
+.icon-menu-burrer::after,
+.icon-menu-burrer span {
     content: "";
     height: 2px;
     width: 100%;
@@ -174,25 +181,25 @@ z-index: 100;
     transition: all 0.3s;
     background-color: #000;
 }
-.icon-menu::before {
+.icon-menu-burrer::before {
     top: 0;
 }
-.icon-menu::after {
+.icon-menu-burrer::after {
     bottom: 0;
 }
-.icon-menu span {
+.icon-menu-burrer span {
     top: 50%;
     margin-top: -1px;
 }
-.menu-open .icon-menu span {
+.menu-open .icon-menu-burrer span {
     transform: scale(0);
 }
-.menu-open .icon-menu::before {
+.menu-open .icon-menu-burrer::before {
     transform: rotate(-45deg);
     top: 50%;
     margin-top: -1px;
 }
-.menu-open .icon-menu::after {
+.menu-open .icon-menu-burrer::after {
     transform: rotate(45deg);
     bottom: 50%;
     margin-bottom: -1px;
@@ -208,6 +215,7 @@ z-index: 100;
     pointer-events: none; 
     opacity: 1;
     visibility: visible;
+    z-index: 5;
 }
 
 }

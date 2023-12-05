@@ -30,11 +30,15 @@ body {
 	flex-grow: 1;
 	display: flex;
 	align-items: center;
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
 }
 .hero__container {
 	flex: 1 1 auto;
 	display: flex;
 	align-items: flex-start;
+	overflow: hidden;
 }
 .hero__title {
 	font-family: "Cormorant infant";
@@ -82,10 +86,78 @@ body {
 	padding: 20px;
 }
 .hero__img img {
-    max-width: 100%;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 390 / 554;
+	object-fit: cover;
+	max-width: 390px;
 }
 .hero__content {
 	padding: 76px 0px 0px 23px;
+}
+.hero__img-left-up {
+	position: absolute;
+    bottom: 120px;
+	left: -50px;
+    height: 100%;
+    /* height: 110vh; */
+    z-index: 1;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+} 
+.hero__img-left-up {
+    width: 211px;
+}
+.hero__img-left-down {
+	position: absolute;
+   	top: 70.6%;
+	left: 78px;
+    height: 100%;
+    /* height: 110vh; */
+    z-index: 1;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+}
+.hero__img-left-down { 
+	width: 245px;
+}
+
+.right-section {
+	position: absolute;
+    bottom: 0;
+    height: 100%;
+    /* height: 110vh; */
+    z-index: 1;
+    display: flex;
+    flex-shrink: 1;
+    flex-direction: column;
+	overflow: hidden;
+    width: 310px;
+    right: 0;
+    align-items: flex-end;
+}
+.right-section__img-up {
+	width: 623px;
+    height: 396px;
+    position: absolute;
+    bottom: 200px;
+    right: -430px;
+}
+.right-section__decor {
+	position: absolute;
+    border-radius: 215px;
+    right: -105px;
+    bottom: 55px;
+    z-index: 1;
+}
+.right-section__img-down {
+	border-radius: 195px;
+    border: 1px solid #FFF;
+    padding: 12px;
+    max-width: 100%;
+    aspect-ratio: 237/336;
 }
 .hero__text {
 	font-family: "Cormorant infant";
@@ -94,6 +166,7 @@ body {
 	line-height: 1.48;
 	color: #fff;
 	margin-bottom: 176px;
+
 }
 .hero__text-second {
 	position: relative;
@@ -121,17 +194,14 @@ body {
     flex-direction: column;
     gap: 20px;
 	align-self: stretch;
+	position: relative;
+	z-index: 10;
 }
 @media (max-width:991px) {
 .hero__container {
 	flex-direction: column;
     gap: 40px;
 	align-items: stretch;
-}
-.hero__img img {
-	width: 100%;
-	height: 100%;
-	aspect-ratio: 390/554;
 }
 .hero {
 	padding: 30px 0;
@@ -155,11 +225,27 @@ body {
 .hero__text-second {
 	align-self: flex-start;
 }
+.hero__img {
+	align-self: center;
 }
-/* @media (max-width:991px) {
-	.hero__container {
-		flex-direction: column;
-		gap: 40px;
-		justify-content: center;
+}
+@media (max-width:1498px) {
+	.right-section__decor {
+		display: none;
 	}
-} */
+}
+@media (max-width:1200px) {
+	.hero__img-left-down {
+		display: none;
+	}
+}
+@media (max-width:806px) {
+	.hero__img-left-up,
+	.right-section__img-up {
+		display: none;
+	}
+}
+/* //////////////////////////////jewelry-design\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.jewelry-design {
+	background-color: #FFF9F4;
+}

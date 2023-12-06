@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Відпрацювання Адаптивна верстка </title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header--color">
+            <div class="header__container">
+                <div class="header__logo">Pretty Stones</div>
+                <div class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link menu__link--no-after" href="#">Home</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link--no-after" href="#">Shop </a></li>
+                            <li class="menu__item menu__item--parent"><a class="menu__link menu__link--no-after" href="#">Product</a></li>
+                            <li class="menu__item"><a class="menu__link menu__link--no-after" href="#">Blog </a></li>
+                            <li class="menu__item"><a class="menu__link menu__link--no-after" href="#">Pages </a></li>
+                            <li class="menu__item"><a class="menu__link menu__link--no-after" href="#">Cantact </a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__favorite-basket favorite-basket">
+                    <button class="header__button">Log In</button>
+                    <button type="button" class="header__icon icon-menu-burger"><span></span></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="jewelry-design">
+                 <div class="jewelry-design__hero hero-jewelry">
+                    <div class="hero-jewelry__container">
+                        <div class="hero-jewelry__content content-jewelry">
+                            <h2 class="content-jewelry__title">Individual Jewelry Design</h2>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+                            <div class="content-jewelry__button-section">
+                                <button class="button-section__button">Shop Now</button>
+                                <a class="button-section__video-link" href="https://misha-bober.github.io/lessons/lesson_18/">Video Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-jewelry__img-section">
+                            <div class="jewelry__img jewelry__img--margin-top">
+                                <img  src="img/rectangle_272_4x.webp" alt="img">
+                            </div>
+                            <div class="jewelry__img jewelry__img">
+                                <img  src="img/rectangle_271_4x.webp" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer><a class="footer___link" href="https://misha-bober.github.io/lessons/lesson_18/">page_1 >></a></footer>
+    </div>
+    <script>
+        const icon = document.querySelector('.icon-menu-burger');
+icon.addEventListener('click', function () {
+	document.documentElement.classList.toggle('menu-open');
+});
+    </script>
+</body>
+</html>

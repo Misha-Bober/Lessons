@@ -247,6 +247,7 @@ body {
 	background-color: #FFF9F4;
 	color: #000000;
 	padding-top: 100px;
+	padding-bottom: 50px;
 }
 .content-jewelry__title {
 color: #0E333D;
@@ -334,6 +335,7 @@ font-weight: 400;
 @media (max-width:810px) {
 	.jewelry-design {
 		padding-top: 0px;
+		padding-bottom: 30px;
 	}
 	.hero-jewelry__container {
 		align-items: center;
@@ -381,6 +383,9 @@ font-weight: 400;
 		max-height: 250px;
 		margin-bottom: 0px;
 	}
+	.jewelry-design {
+		padding-bottom: 20px;
+	}
 }
 @media (max-width:410px) {
 	.hero-jewelry__img img {
@@ -408,6 +413,9 @@ font-weight: 400;
 	}
 	.button-section__video-link {
 		font-size: 20px;
+	}
+	.jewelry-design {
+		padding-bottom: 20px;
 	}
 }
 footer {

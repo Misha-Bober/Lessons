@@ -250,8 +250,14 @@
     border-radius: 5px; 
     padding: 12px 29px 14px 26px;
 }
+.header__button:hover {
+    background-color: #2f8faa;
+}
 .header--color {
     background-color: #FFF9F4;
+}
+.menu__link--no-after:hover {
+    color: #575454;
 }
 @media (max-width:410px) {
 .header__button {

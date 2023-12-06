@@ -11,12 +11,12 @@
     font-family: "Merriweather";
 }
 .header {
-    /* width: 100%;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: #fff; */
+    background-color: #fff;
 }
 .menu__item .menu__link {
     display: flex;
@@ -37,7 +37,6 @@
     font-size: 30px;
     font-weight: 700;
     font-style: italic;
-    text-wrap: nowrap;
 }
 .heder__menu {
     flex: 1 1 auto;

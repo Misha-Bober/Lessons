@@ -201,7 +201,7 @@ body {
 	align-items: stretch;
 }
 .hero {
-	padding: 30px 0;
+	padding: 50px 0;
 }
 .hero__title {
 	font-size: 68px;;
@@ -357,9 +357,6 @@ font-weight: 400;
 		max-width: 100%;
 		align-items: center;
 		}
-		.content-jewelry {
-			margin-top: 40px;
-		}
 	.hero-jewelry__img-section {
 		width: 100%;
 		}
@@ -396,9 +393,6 @@ font-weight: 400;
 	.content-jewelry__title {
 		font-size: 35px;
 		margin-bottom: 15px;
-		}
-		.content-jewelry {
-			margin-top: 30px;
 		}
 	.content-jewelry p {
 		font-size: 15px;

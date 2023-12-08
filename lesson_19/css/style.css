@@ -30,6 +30,9 @@ body {
 .page {
 	margin-top: 130px;
 }
+.first-section {
+	margin-bottom: 101px;
+}
 .first-section__container {
 	display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -38,20 +41,17 @@ body {
 .card {
 	font-family: "CoreSansC", sans-serif;
 	color: #ffffff ;
-	background: url(../img/card-img-1.webp) center / cover no-repeat;
+	background: url(../img/section1/card-img-1.webp) center / cover no-repeat;
     padding: 67px 0px 80px 28px;
     border-radius: 12px;
+	min-height: 268px;
 }
 .card--second-card {
-	background: url(../img/card-img-2.webp) center / cover no-repeat;
+	background: url(../img/section1/card-img-2.webp) center / cover no-repeat;
 }
 .card__content {
-	width: 264px;
+	 max-width: 264px;
 	margin-bottom: 42px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: 0;
 }
 .card__lable {
 	font-family: "Montserrat", sans-serif;
@@ -88,16 +88,110 @@ body {
 	.card {
 		padding: 30px 0px 30px 18px;
 		border-radius: 12px;
+		min-height: 256px;
 	}
 	.card__content {
-		max-width: 200px;
 		margin-bottom: 30px;
 	}
 	.card__title {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	.card__lable {
 		margin-bottom: 18px;
 	}
 
+}
+@media (max-width:440px) {
+	.card__lable {
+		margin-bottom: 10px;
+	}
+	.card__content {
+		margin-bottom: 20px;
+	}
+	.card {
+		padding: 20px 0px 20px 18px;
+		min-height: 218px;
+	}
+}
+@media (max-width:380px) {
+	.card {
+		padding: 20px 0px 20px 18px;
+		min-height: auto;
+	}
+	.card__title {
+		font-size: 20px;
+	}
+	.card__lable {
+		font-size: 14px;
+	}
+	.card-discount {
+		font-size: 14px;
+	}
+	.card__info-card {
+		font-size: 18px;
+	}
+	.first-section__container {
+		gap: 20px;
+	}
+}
+/* /////////////////arrival\\\\\\\\\\\\\\\\\\\\\\\ */
+.arrival {
+	color: #3C4242;
+}
+.arrival__title {
+	font-family: "CoreSansC";
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.335;
+	letter-spacing: 0.68px;
+	padding-left: 26px;
+    position: relative;
+	margin-bottom: 70px;
+}
+.arrival__title::before {
+	content: "";
+    position: absolute;
+    width: 6px;
+    height: 90%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #8a33fd;
+    border-radius: 10px;
+}
+.arrival__arrow-body {
+	position: relative;
+	padding: 0 35px;
+}
+.arrival__arrow-body::before,
+.arrival__arrow-body::after {
+content: "";
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    top: 50%;
+    margin-top: -6px;
+    background-image: url(../img/section2/arrow.png);
+}
+.arrival__arrow-body::before{
+	left: 0;
+	transform: rotate(180deg);
+}
+.arrival__arrow-body::after {
+	right: 0;
+}
+.arrival__item-section {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(262.81px, 1fr));
+    gap: 38.58px;
+}
+.item__img {
+	margin-bottom: 33px;
+	border-radius: 12px;
+}
+.item__name {
+	font-family: "Causten";
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.2px;
 }

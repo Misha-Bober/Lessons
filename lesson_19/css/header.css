@@ -24,6 +24,9 @@
 .menu__item {
     font-size: 22px;
 }
+.menu__item:hover { 
+ color: #202525;
+}
 .header__input {
     color: #3c4242;
     height: 44px;

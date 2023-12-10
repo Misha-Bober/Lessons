@@ -22,10 +22,11 @@
     display: flex;
     column-gap: 4px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .menu__item {
     font-size: 20px;
+    flex-wrap: nowrap;
 }
 .menu__list {
     display: flex;
@@ -37,6 +38,8 @@
     font-size: 30px;
     font-weight: 700;
     font-style: italic;
+    flex-shrink: 0;
+    margin-right: 10px;
 }
 .heder__menu {
     flex: 1 1 auto;
@@ -50,6 +53,8 @@
     display: inline-flex;
     flex: 0 0 auto;
     gap: 23px;
+    align-items: center;
+    margin-left: 10px;
 }
 @media (any-hover: hover){
 .favorite-basket__link:hover {
@@ -185,6 +190,7 @@
     transition: all 0.3s;
     background-color: #000;
 }
+
 .icon-menu-burger::before {
     top: 0;
 }

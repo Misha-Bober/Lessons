@@ -83,6 +83,8 @@ body {
 	border-radius: 215px;
 	border: 1px solid #fff;
 	padding: 20px;
+	max-width: 430px;
+	border-radius: 195px;
 }
 .hero__img img {
 	width: 100%;
@@ -90,6 +92,7 @@ body {
 	aspect-ratio: 390 / 554;
 	object-fit: cover;
 	max-width: 390px;
+	border-radius: 195px;
 }
 .hero__content {
 	padding: 76px 0px 0px 23px;
@@ -106,7 +109,7 @@ body {
     flex-direction: column;
 } 
 .hero__img-left-up {
-    width: 211px;
+    max-width: 211px;
 }
 .hero__img-left-down {
 	position: absolute;
@@ -117,9 +120,10 @@ body {
     display: flex;
     flex-shrink: 1;
     flex-direction: column;
+	max-width: 245px;
 }
 .hero__img-left-down { 
-	width: 245px;
+	max-width: 245px;
 }
 
 .right-section {
@@ -145,16 +149,18 @@ body {
 .right-section__decor {
 	position: absolute;
     border-radius: 215px;
-    right: -105px;
+    right: -80px;
     bottom: 55px;
     z-index: 1;
+	max-width: 261px;
 }
 .right-section__img-down {
 	border-radius: 195px;
     border: 1px solid #FFF;
     padding: 12px;
     max-width: 100%;
-    aspect-ratio: 237/336;
+    aspect-ratio: 239/336;
+	max-width: 239px;
 }
 .hero__text {
 	font-family: "Cormorant infant";
@@ -162,7 +168,7 @@ body {
 	font-weight: 700;
 	line-height: 1.48;
 	color: #fff;
-	margin-bottom: 176px;
+	/* margin-bottom: 176px; */
 
 }
 .hero__text-second {
@@ -174,6 +180,7 @@ body {
 	color: #fff;
 	padding-left: 10px;
 	align-self: flex-end;
+	margin: auto 0;
 }
 .hero__text-second::before {
 	position: absolute;
@@ -295,7 +302,7 @@ font-weight: 400;
 .hero-jewelry__container {
 	display: flex;
 	flex-direction: row;
-	gap: 8%;
+	gap: 8.5%;
 
 }
 .menu__link--no-after::after {
@@ -313,7 +320,10 @@ font-weight: 400;
 	gap: 47px;
 	align-items: center;
 }
-
+.hero-jewelry__img {
+	max-width: 246px;
+	max-height: 468px;
+}
 .hero-jewelry__img--margin-top {
 	margin-top: 69px;
 }
@@ -322,14 +332,14 @@ font-weight: 400;
 	height: 100%;
     aspect-ratio: 246 / 468;
     object-fit: cover;
-	max-width: 246px;
-	max-height: 468px;
 	margin-bottom: 69px;
 }
 .hero-jewelry__img-section {
 	display: flex;
-    gap: 6.1%;	
+    /* justify-content: space-between;	 */
+	gap: 2.7%;
 	flex-basis: 44%;
+	max-width: 523px;
     flex-shrink: 1;			
 }
 @media (max-width:810px) {
@@ -377,7 +387,7 @@ font-weight: 400;
 @media (max-width:510px) {
 	.hero-jewelry__img img {
 		max-width: 100%;
-		max-height: 250px;
+		max-height: 300px;
 		margin-bottom: 0px;
 	}
 	.jewelry-design {
@@ -387,7 +397,7 @@ font-weight: 400;
 @media (max-width:410px) {
 	.hero-jewelry__img img {
 		max-width: 100%;
-		max-height: 200px;
+		max-height: 230px;
 		margin-bottom: 0px;
 	}
 	.content-jewelry__title {

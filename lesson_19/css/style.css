@@ -382,8 +382,8 @@ transition: 0.3s
 	align-items: flex-end;
 	color: #3C4242;
 }
-.item__arow-link-section:hover .item__arrow {
-	transform: translateY(10px)
+.item__link-item:hover ~ .item__arrow {
+	transform: translateY(35px)
 }
 .item__content {
 	margin-bottom: 30.84px;
@@ -411,9 +411,9 @@ transition: 0.3s
 }
 .item__arow-link-section {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	gap: 40px;
-	align-items: center;
+	align-items: center; 
 }
 .item__arrow {
 	max-width: 23.62px;

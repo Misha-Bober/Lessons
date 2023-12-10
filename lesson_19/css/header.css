@@ -146,7 +146,7 @@ justify-content: space-between;
 	padding: 80px 30px 30px 15px;
 	background-color: #6647334d;
     z-index: 4;
-	} */
+	} 
  .menu__list {
 	flex-direction: column;
 	text-align: end;

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SASS SCSS</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo" href="https://misha-bober.github.io/lessons/lesson_20"><img src="img/header/logo.svg" alt="logo"></a>
+                <div class="header__menu-form-action">
+                    <div class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Men </a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Women</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Combos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Joggers</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <form class="header__form" action="#">
+                        <input class="header__input" type="search" name="search" placeholder="Search">
+                        <button class="header__btn" type="submit"><img src="img/header/search.svg" alt="Icon search"></button>
+                    </form>
+                    <div class="header__action action-header">
+                        <a class="action-header__link" href="#"><img src="img/header/heart.svg" alt="icon"></a>
+                        <a class="action-header__link" href="#"><img src="img/header/user.svg" alt="icon"></a>
+                        <a class="action-header__link" href="#"><img src="img/header/shopping_cart.svg" alt="icon"></a>
+                        <button type="button" class="header__icon icon-menu-burger">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__recently-viewed recently-viewed-page">
+                <div class="recently-viewed-page__container">
+                    <h2 class="recently-viewed-page__title">Recently Viewed</h2>
+                    <div class="recently-viewed-page__card-section">
+                        <div class="recently-viewed-page__card viewed-card">
+                            <a class="viewed-card__link" href="https://misha-bober.github.io/lessons/lesson_20">
+                                <div class="viewed-card__img"><img class="viewed-card__img-view" src="img/viewed_img1.webp" alt="img"></div>
+                                <div class="viewed-card__content">
+                                    <div class="viewed-card__name-name-brand">
+                                        <h4 class="viewed-card__name">White T-Shirt</h4>
+                                        <h5 class="viewed-card__name-brand">Priya’s  Brand</h5>
+                                    </div>
+                                    <div class="viewed-card__price">$13.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recently-viewed-page__card viewed-card">
+                            <a class="viewed-card__link" href="https://misha-bober.github.io/lessons/lesson_20">
+                                <div class="viewed-card__img"><img class="viewed-card__img-view" src="img/viewed_img2.webp" alt="img"></div>
+                                <div class="viewed-card__content">
+                                    <div class="viewed-card__name-name-brand">
+                                        <h4 class="viewed-card__name">White T-Shirt</h4>
+                                        <h5 class="viewed-card__name-brand">Priya’s  Brand</h5>
+                                    </div>
+                                    <div class="viewed-card__price">$13.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recently-viewed-page__card viewed-card">
+                            <a class="viewed-card__link" href="https://misha-bober.github.io/lessons/lesson_20">
+                                <div class="viewed-card__img"><img  class="viewed-card__img-view" src="img/viewed_img3.webp" alt="img"></div>
+                                <div class="viewed-card__content">
+                                    <div class="viewed-card__name-name-brand">
+                                        <h4 class="viewed-card__name">White T-Shirt</h4>
+                                        <h5 class="viewed-card__name-brand">Priya’s  Brand</h5>
+                                    </div>
+                                    <div class="viewed-card__price">$13.00</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="recently-viewed-page__card viewed-card">
+                            <a class="viewed-card__link" href="https://misha-bober.github.io/lessons/lesson_20">
+                                <div class="viewed-card__img"><img class="viewed-card__img-view" src="img/viewed_img4.webp" alt="img"></div>
+                                <div class="viewed-card__content">
+                                    <div class="viewed-card__name-name-brand">
+                                        <h4 class="viewed-card__name">White T-Shirt</h4>
+                                        <h5 class="viewed-card__name-brand">Priya’s  Brand</h5>
+                                    </div>
+                                    <div class="viewed-card__price">$13.00</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            const icon = document.querySelector('.icon-menu-burger');
+    icon.addEventListener('click', function () {
+        document.documentElement.classList.toggle('menu-open');
+    });
+        </script>
+    </div>
+    
+
+    
+</body>
+</html>

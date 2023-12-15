@@ -542,7 +542,13 @@ body {
 .text {
     
     // .text__name
-
+    & p {
+        font-family: "Causten";
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #807D7E;
+        font-weight: 400;
+        }
     &__name {
         font-family: "CoreSansC";
         font-weight: 500;
@@ -550,12 +556,6 @@ body {
         letter-spacing: 0.44px;
         color: #3C4242;
         margin-bottom: 20px;
-        & p {
-        font-family: "Causten";
-        font-size: 14px;
-        letter-spacing: 0.28px;
-        color: #807D7E;
-        font-weight: 400;
-        }
+        
     }
 }

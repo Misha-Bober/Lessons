@@ -629,6 +629,9 @@ body {
   height: 36.58px;
 }
 
+.feedback {
+  margin-bottom: 50px;
+}
 .feedback__title {
   font-family: "CoreSansC";
   font-size: 28px;
@@ -680,6 +683,7 @@ body {
   border: 1.8px solid #BEBCBD;
   border-radius: 10px;
 }
+
 .img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,4 +734,17 @@ body {
   letter-spacing: 0.44px;
   color: #3C4242;
   margin-bottom: 20px;
+}
+
+footer {
+  width: 100%;
+  padding: 50px 0 50px 0;
+  font-family: "Poppins";
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  background-color: #cff5ff;
+  color: #712f2f;
+  border-radius: 20px;
+  margin: 0 auto;
 }

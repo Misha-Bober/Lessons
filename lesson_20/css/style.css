@@ -481,6 +481,7 @@ body {
 
 .recently-viewed-page {
   margin-top: 200px;
+  margin-bottom: 70px;
 }
 .recently-viewed-page__title {
   font-family: "CoreSansC";
@@ -491,6 +492,11 @@ body {
   padding-left: 26px;
   position: relative;
   margin-bottom: 70px;
+}
+@media (max-width: 640px) {
+  .recently-viewed-page__title {
+    margin-bottom: 40px;
+  }
 }
 .recently-viewed-page__title::before {
   content: "";
@@ -646,6 +652,21 @@ body {
   background-color: #8a33fd;
   border-radius: 10px;
 }
+@media (max-width: 640px) {
+  .feedback__title {
+    margin-bottom: 40px;
+  }
+}
+.feedback__card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(396.87px, 1fr));
+  gap: 23.19px;
+}
+@media (max-width: 850px) {
+  .feedback__card-section {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
 .feedback__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -655,8 +676,11 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+  padding: 23.19px;
+  border: 1.8px solid #BEBCBD;
+  border-radius: 10px;
 }
-.feedback__img-section {
+.img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,15 +692,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.img {
-  max-width: 58px;
-  max-height: 58px;
-  margin-right: 20px;
-}
 .img__client {
   width: 100%;
   height: 100%;
   aspect-ratio: 58/58;
+  margin-right: 20px;
+  max-width: 58px;
+  max-height: 58px;
 }
 
 .star {
@@ -688,4 +710,24 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 4px;
+}
+.star__star-img {
+  max-width: 23px;
+  max-height: 23px;
+}
+
+.text__name {
+  font-family: "CoreSansC";
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 0.44px;
+  color: #3C4242;
+  margin-bottom: 20px;
+}
+.text__name p {
+  font-family: "Causten";
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  color: #807D7E;
+  font-weight: 400;
 }

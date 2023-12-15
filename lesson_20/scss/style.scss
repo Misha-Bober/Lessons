@@ -308,6 +308,7 @@ body {
 }
 .recently-viewed-page {
     margin-top: 200px;
+    margin-bottom: 70px;
     // .recently-viewed-page__title
 
     &__title {
@@ -319,6 +320,9 @@ body {
 	padding-left: 26px;
     position: relative;
 	margin-bottom: 70px;
+    @media (max-width:640px) {
+        margin-bottom: 40px;
+    }
     &::before {
     content: "";
     position: absolute;
@@ -329,6 +333,7 @@ body {
     transform: translateY(-50%);
     background-color: #8a33fd;
     border-radius: 10px;
+    
 }
     }
 
@@ -463,11 +468,20 @@ body {
     background-color: #8a33fd;
     border-radius: 10px;
     }
+    @media (max-width:640px) {
+        margin-bottom: 40px;
+    }
 }
 
     // .feedback__card-section
 
     &__card-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(396.87px, 1fr)); 
+        gap: 23.19px;
+        @media (max-width:850px) {
+            grid-template-columns: repeat(auto-fill,minmax(250px, 1fr)); 
+        }
     }
 
     // .feedback__card
@@ -476,14 +490,15 @@ body {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        padding: 23.19px;
+        border: 1.8px solid #BEBCBD;
+        border-radius: 10px;
     }
 
     // .feedback__img-section
 
     &__img-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        
     }
 
 
@@ -498,15 +513,18 @@ body {
     }
 }
 .img {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     // .img__client
-    max-width: 58px;
-    max-height: 58px;
-    margin-right: 20px;
+    
     &__client {
         width: 100%;
         height: 100%;
         aspect-ratio: 58 / 58;
+        margin-right: 20px;
+        max-width: 58px;
+        max-height: 58px;
         
     }
 }
@@ -517,12 +535,27 @@ body {
     // .star__star-img
 
     &__star-img {
+        max-width: 23px;
+        max-height: 23px;
     }
 }
 .text {
-
+    
     // .text__name
 
     &__name {
+        font-family: "CoreSansC";
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.44px;
+        color: #3C4242;
+        margin-bottom: 20px;
+        & p {
+        font-family: "Causten";
+        font-size: 14px;
+        letter-spacing: 0.28px;
+        color: #807D7E;
+        font-weight: 400;
+        }
     }
 }

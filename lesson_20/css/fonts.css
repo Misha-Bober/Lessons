@@ -73,3 +73,12 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: "CoreSansC";
+    src:
+    url("../fonts/CoreSansC-55MediumIt.woff2") format(woff2),
+    url("../fonts/CoreSansC-55MediumIt.woff") format(woff);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

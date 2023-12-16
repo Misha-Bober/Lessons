@@ -527,6 +527,9 @@ body {
           flex-direction: column;
   gap: 30px;
 }
+.viewed-card__link:hover .viewed-card__name {
+  text-decoration-line: underline;
+}
 @media (max-width: 949px) {
   .viewed-card__link {
     gap: 20px;

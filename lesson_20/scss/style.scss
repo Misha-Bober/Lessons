@@ -353,6 +353,9 @@ body {
             display: flex;
             flex-direction: column;
             gap: 30px;
+            &:hover .viewed-card__name{
+                text-decoration-line: underline;
+             }
             @media (max-width:949px) {
                 gap: 20px;
             }

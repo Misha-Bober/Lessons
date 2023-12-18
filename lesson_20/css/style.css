@@ -146,7 +146,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 .wrapper > main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -167,11 +166,6 @@ body {
   left: 0;
   z-index: 100;
   background-color: #fff;
-}
-@media (max-width: 520px) {
-  .header__form {
-    display: none;
-  }
 }
 .header__container {
   display: -webkit-box;
@@ -267,6 +261,11 @@ body {
   .header__form {
     -ms-flex-preferred-size: 160px;
         flex-basis: 160px;
+  }
+}
+@media (max-width: 520px) {
+  .header__form {
+    display: none;
   }
 }
 .header__input {

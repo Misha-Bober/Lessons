@@ -11,10 +11,11 @@ body {
 	overflow: clip;
 	display: flex;
 	flex-direction: column;
-}
-.wrapper > main {
+    & > main {
 	flex-grow: 1;
+    }
 }
+
 
 
 [class*="__container"] {
@@ -30,12 +31,7 @@ body {
     left: 0;
     z-index: 100;
     background-color: #fff;
-    @media (max-width:520px) {
-        &__form {
-        display: none;
-        }
-    }
-    &__container {
+        &__container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -44,21 +40,15 @@ body {
     color: #807D7E;
     font-family: "Causten";
         @media (max-width:1125px) {
-            & {
                 flex-direction: row;
                 min-height: 50px;
-                justify-content: space-between;
-            }      
+                justify-content: space-between;   
         }
         @media (max-width:620px) {
-            & {
             gap: 0px;
-            }
         }
         @media (max-width:520px) {
-            & {
                 padding: 20px 10px 20px 10px;
-            }
         }
 }
     &__menu-form-action {
@@ -68,9 +58,7 @@ body {
         align-items: center;
         margin: 0px 0px 0px 20px;
         @media (max-width: 1250px) {
-        & {
             justify-content: space-between;
-            }
         }
     }
     &__logo {
@@ -78,9 +66,7 @@ body {
             margin-right: 20px;
         }
         @media (max-width: 1250px) {
-            & {
                 margin-right: 10px;
-            }
     }
 }
     // .header__menu
@@ -105,9 +91,10 @@ body {
         flex: 0 1 267px;
         position: relative;
         @media (max-width: 1250px) {
-            & {
             flex-basis: 160px;
-            }
+        }
+        @media (max-width:520px) {
+            display: none;
         }
     }
     

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Предпроцесор SCSS</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <section class="header__container">
+                <a class="header__logo" href="https://misha-bober.github.io/lessons/lesson_20"><img src="img/header/logo.svg" alt="logo"></a>
+                <div class="header__menu-form-action">
+                    <div class="header__menu menu">
+                    <div class="menu__body">
+                        <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Men </a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Women</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Combos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Joggers</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <form class="header__form" action="#">
+                        <input class="header__input" type="search" name="search" placeholder="Search">
+                        <button class="header__btn" type="submit"><img src="img/header/search.svg" alt="Icon search"></button>
+                    </form>
+                    <div class="header__action action-header">
+                        <a class="action-header__link" href="#"><img class="action-header__icon" src="img/header/heart.svg" alt="icon"></a>
+                        <a class="action-header__link" href="#"><img class="action-header__icon" src="img/header/user.svg" alt="icon"></a>
+                        <a class="action-header__link" href="#"><img class="action-header__icon" src="img/header/shopping_cart.svg" alt="icon"></a>
+                        <button type="button" class="action-header icon-menu-burger">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <main>
+            <section class="value-pack">
+                <div class="value-pack__boddy">
+                    <a class="value-pack__arrow-left-link" href="#"><img class="value-pack__left-arrow" src="img/value-pack/arrow-left-white.svg" alt="white-arrow"></a>
+                    <a class="value-pack__arrow-right-link" href="#"><img class="value-pack__right-arrow" src="img/value-pack/arrow-right-white.svg" alt="white-arrow"></a>
+                    <img class="value-pack__img" src="img/value-pack/value_main_img.webp" alt="img">
+                    <div class="value-pack__content content">
+                        <div class="content__label">T-shirt / Tops</div>
+                        <h1 class="content__title">Summer <br> Value Pack</h1>
+                        <div class="content__label">cool / colorful / comfy</div>
+                        <a class="content__action" href="#">Shop Now</a>
+                    </div>
+                    <div class="value-pack__slide slide-line">
+                        <a class="slide-line__slide-one" href="#"><img class="line" src="img/value-pack/line-one.png" alt="line"></a>
+                        <a class="slide-line__slide-one" href="#"><img class="line" src="img/value-pack/line-second.png" alt="line"></a>
+                    </div>
+                </div>
+            </section>
+            <section class="first-section">
+                <div class="first-section__container">
+                    <article class="first-section__card card">
+                        <div class="card__content">
+                            <h4 class="card__lable">Low Price</h4>
+                            <h3 class="card__title">High Coziness</h3> 
+                            <div class="card-discount">UPTO 50% OFF</div>
+                        </div>
+                        <a class="card__info-card" href="#">Explore Items</a>
+                    </article>
+                    <article class="first-section__card card card--second-card">
+                        <div class="card__content">
+                            <h4 class="card__lable">Beyoung Presents</h4>
+                            <h3 class="card__title">Breezy Summer <br>Style</h3> 
+                            <div class="card-discount">UPTO 50% OFF</div>
+                        </div>
+                        <a class="card__info-card" href="#">Explore Items</a>
+                    </article>
+                </div>
+            </section>
+            <section class="arrival">
+                <div class="arrival__container">
+                    <h2 class="arrival__title">New Arrival</h2>
+                    <div class="arrival__arrow-body">
+                        <img class="arrival__arrow arrival__arrow--left" src="img/section2/arrow.svg" alt="arrow">
+                        <img class="arrival__arrow arrival__arrow--right" src="img/section2/arrow_right.svg" alt="arrow">
+                        <div class="arrival__item-section">
+                            <article class="arrival__item item">
+                                <a class="item__link" href=""><img class="item__img" src="img/section2/section2-img1.webp" alt="pictuer"></a>
+                                <a class="item__name-link" href=""><h4 class="item__name">Knitted Joggers</h4></a>
+                            </article>
+                            <article class="arrival__item item">
+                                <a class="item__link" href=""><img class="item__img" src="img/section2/section2-img2.webp" alt="pictuer"></a>
+                                <a class="item__name-link" href=""><h4 class="item__name">Full Sleeve</h4></a>
+                            </article>
+                            <article class="arrival__item item">
+                                <a class="item__link" href=""><img class="item__img" src="img/section2/section2-img3.webp" alt="pictuer"></a>
+                                <a class="item__name-link" href=""><h4 class="item__name">Active T-Shirts</h4></a>
+                            </article>
+                            <article class="arrival__item item">
+                                <a class="item__link" href=""><img class="item__img" src="img/section2/section2-img4.webp" alt="pictuer"></a>
+                                <a class="item__name-link" href=""><h4 class="item__name">Urban Shirts</h4></a>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="saving-zone">
+                <div class="saving-zone__container">
+                    <h2 class="saving-zone__title">Big Saving Zone</h2>
+                    <div class="saving-zone__item-section item">
+                        <article class="item__card">
+                            <div class="item__content">
+                                <h4 class="item__title">Hawaiian Shirts</h4>
+                                <div class="item__offer">Dress up in summer vibe</div>
+                                <div class="item__cta">UPTO 50% OFF</div>
+                            </div>
+                            <div class="item__arow-link-section">
+                                <a class="item__link-item" href="#">SHOP NOW</a>
+                                <img class="item__arrow" src="img/section3/item_arrow.svg" alt="icon">
+                            </div>
+                        </article>
+                        <article class="item__card item__card--second">
+                            <div class="item__limited-offer">Limited Stock</div>
+                            <div class="item__content">
+                                <h4 class="item__title item__title--margin-bottom15">Printed <br>T-Shirt</h4>
+                                <div class="item__offer ">New Designs Every Week</div>
+                                <div class="item__cta">UPTO 40% OFF</div>
+                            </div>
+                            <div class="item__arow-link-section">
+                                <a class="item__link-item" href="#">SHOP NOW</a>
+                                <img class="item__arrow" src="img/section3/item_arrow.svg" alt="icon">
+                            </div>
+                        </article>
+                        <article class="item__card item__card--third">
+                            <div class="item__content">
+                                <h4 class="item__title">Cargo Joggers</h4>
+                                <div class="item__offer">Move with style & comfort</div>
+                                <div class="item__cta">UPTO 50% OFF</div>
+                            </div>
+                            <div class="item__arow-link-section">
+                                <a class="item__link-item" href="#">SHOP NOW</a>
+                                <img class="item__arrow" src="img/section3/item_arrow-black.svg" alt="icon">
+                            </div>
+                        </article>
+                        <article class="item__card item__card--fourth">
+                            <div class="item__content">
+                                <h4 class="item__title">Urban Shirts</h4>
+                                <div class="item__offer">Live In Confort</div>
+                                <div class="item__cta">FLAT 60% OFF</div>
+                            </div>
+                            <div class="item__arow-link-section">
+                                <a class="item__link-item" href="#">SHOP NOW</a>
+                                <img class="item__arrow" src="img/section3/item_arrow-black.svg" alt="icon">
+                            </div>
+                        </article>
+                        <article class="item__card item__card--fifth">
+                            <div class="item__content">
+                                <h4 class="item__title">Oversized T-Shirts</h4>
+                                <div class="item__offer">Street Style Icon</div>
+                                <div class="item__cta">FLAT 60% OFF</div>
+                            </div>
+                            <div class="item__arow-link-section">
+                                <a class="item__link-item" href="#">SHOP NOW</a>
+                                <img class="item__arrow" src="img/section3/item_arrow-black.svg" alt="icon">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="fashion-better">
+                <div class="fashion-better__container">
+                        <div class="section-content__first-section">
+                            <img class="section-content__img-better" src="img/better-section/better-first-img.webp" alt="img">
+                            <div class="section-content__content content">
+                                <h2 class="content__title content__title--better">WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+                                <p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+                                <a class="content__action content__action--better" href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="section-content__second-section">
+                            <img class="section-content__img-better section-content__img-better--second" src="img/better-section/better-second-img.webp" alt="img">
+                        </div>
+                </div>
+            </section>
+            <section class="top-brands">
+                <div class="top-brands__container">
+                    <div class="top-brands__background">
+                        <h2 class="top-brands__title">Top Brands Deal</h2>
+                        <h3 class="top-brands__sub-title">Up To <span>60%</span> off on brands</h3>
+                        <div class="top-brands__section brand">
+                            <img class="brand__img" src="img/brand/puma.webp" alt="brand">
+                            <img class="brand__img" src="img/brand/h&m.webp" alt="brand">
+                            <img class="brand__img" src="img/brand/h&m.webp" alt="brand">
+                            <img class="brand__img" src="img/brand/h&m.webp" alt="brand">
+                            <img class="brand__img" src="img/brand/h&m.webp" alt="brand">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="feedback">
+                <section class="feedback__container">
+                    <div class="feedback__section">
+                        <h2 class="feedback__title">Feedback</h2>
+                        <div class="feedback__card-section">
+                            <article class="feedback__card">
+                                <div class="feedback__img-section img"><img class="img__client" src="img/feedback/feedback_img1.webp" alt="img">
+                                    <div class="feedback__img-star-section star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star_3.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star_2.webp" alt="star">
+                                    </div>
+                                </div>
+                                <div class="feedback__text-section text">
+                                    <div class="text__name">Floyd Miles</div>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                        <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                         Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feedback__card">
+                                <div class="feedback__img-section img"><img class="img__client" src="img/feedback/feedback_img2.webp" alt="img">
+                                    <div class="feedback__img-star-section star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star_2.webp" alt="star">
+                                    </div>
+                                </div>
+                                <div class="feedback__text-section text">
+                                    <div class="text__name">Floyd Miles</div>
+                                    <p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat 
+                                        sunt nostrud amet.
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="feedback__card">
+                                <div class="feedback__img-section img"><img class="img__client" src="img/feedback/feedback_img3.webp" alt="img">
+                                    <div class="feedback__img-star-section star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star_3.webp" alt="star">
+                                        <img class="star__star-img" src="img/feedback/star_2.webp" alt="star">
+                                    </div>
+                                </div>
+                                <div class="feedback__text-section text">
+                                    <div class="text__name">Floyd Miles</div>
+                                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                                        <br>Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                                         Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+
+    
+</body>
+</html>

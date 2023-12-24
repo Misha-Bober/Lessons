@@ -853,8 +853,8 @@ body {
 .value-pack__left-arrow {
   width: 24px;
   height: 45px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 420px) {
   .value-pack__left-arrow {
@@ -866,7 +866,6 @@ body {
   position: absolute;
   top: 40%;
   left: 40px;
-  overflow: hidden;
 }
 .value-pack__arrow-left-link:hover .value-pack__left-arrow {
   -webkit-transform: scale(1.2);
@@ -876,8 +875,8 @@ body {
 .value-pack__right-arrow {
   width: 24px;
   height: 45px;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 @media (max-width: 420px) {
   .value-pack__right-arrow {
@@ -889,7 +888,6 @@ body {
   position: absolute;
   top: 40%;
   right: 40px;
-  overflow: hidden;
 }
 .value-pack__arrow-right-link:hover .value-pack__right-arrow {
   -webkit-transform: scale(1.2);

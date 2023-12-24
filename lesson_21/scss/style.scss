@@ -656,7 +656,7 @@ body {
     &__left-arrow {
         width: 24px;
         height: 45px;
-        transition: all 0.4s;
+        transition: all 0.3s;
         @media (max-width:420px) {
             width: 14px;
             height: 25px;
@@ -667,7 +667,6 @@ body {
         position: absolute;
         top: 40%;
         left: 40px;
-        overflow: hidden;
         &:hover .value-pack__left-arrow {
             transform: scale(1.2);
         } 
@@ -677,7 +676,7 @@ body {
     &__right-arrow {
         width: 24px;
         height: 45px;
-        transition: all 0.4s;
+        transition: all 0.3s;
         @media (max-width:420px) {
             width: 14px;
             height: 25px;
@@ -688,7 +687,6 @@ body {
         position: absolute;
         top: 40%;
         right: 40px;
-        overflow: hidden;
         &:hover .value-pack__right-arrow {
             transform: scale(1.2);
         } 

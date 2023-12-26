@@ -1093,11 +1093,10 @@ body {
     border-radius: 20px;
     overflow: hidden;
     }
+    
 
     // .fashion-better__content-section
 
-    &__content-section {
-    }
 
     
     // .section-content__first-section
@@ -1111,7 +1110,7 @@ body {
     &__img-better {
         width: 100%;
         height: 100%;
-        aspect-ratio: 614 / 639.72;
+        aspect-ratio: 614 / 640;
         object-fit: contain;
         max-width: 614px;
     }
@@ -1166,7 +1165,7 @@ body {
     &__img-better--second {
         width: 100%;
         height: 100%;
-        aspect-ratio: 626 / 639.72;
+        aspect-ratio: 626 / 640;
         max-width: 626px;
         object-fit: contain;
     }

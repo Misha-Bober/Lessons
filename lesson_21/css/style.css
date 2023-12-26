@@ -1319,6 +1319,13 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+.fashion-better__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+}
 .fashion-better__first-section {
   position: relative;
 }
@@ -1573,6 +1580,9 @@ body {
   }
 }
 
+.feedback {
+  margin-bottom: 50px;
+}
 .feedback__card-section {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(396.87px, 1fr));

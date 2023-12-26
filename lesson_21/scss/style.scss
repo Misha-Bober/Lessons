@@ -1097,6 +1097,11 @@ body {
 
     // .fashion-better__content-section
 
+    &__body {
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    }
 
     
     // .section-content__first-section
@@ -1348,7 +1353,7 @@ body {
 
 .feedback {
 
-
+    margin-bottom: 50px;
     &__title {
         @extend .arrival__title;
 }
@@ -1435,5 +1440,4 @@ footer {
     border-radius: 20px;
     margin: 0 auto;
 }
-
 

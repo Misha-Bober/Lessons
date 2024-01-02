@@ -303,13 +303,18 @@ body {
 }
 @media (max-width: 377px) {
   .header__input {
-    padding: 12px 20px 12px 40px;
+    padding: 12px 20px 12px 25px;
   }
 }
 .header__btn {
   position: absolute;
   top: 12px;
   left: 20px;
+}
+@media (max-width: 377px) {
+  .header__btn {
+    left: 5px;
+  }
 }
 .header__action {
   display: -webkit-inline-box;

@@ -7,6 +7,7 @@
 
 $mainColor: #ffffff;
 $textColor: #37393F;
+$reviewsColor: #7D7D7D;
 body {
 	background-color: $mainColor;
 	font-family: "Inter", sans-serif;
@@ -485,6 +486,9 @@ body {
         @media (max-width: 470px) {
             max-height: 40vh;
         }
+        @media (max-width: 799px) {
+            margin-bottom: toRem(30);
+        }
 		// .first-section__img
 
 		&__img {
@@ -696,6 +700,9 @@ body {
 }
 .section--margin {
     margin-bottom: toRem(100);
+    @media (max-width: 800px) {
+        margin-bottom: toRem(40);
+    }
     @media (max-width: 820px) {
         margin-bottom: toRem(60);
     }
@@ -974,7 +981,7 @@ body {
             }
         }
         @media (max-width: 799px) {
-            margin-bottom: 50px;
+            margin-bottom: 25px;
         }
     }
     
@@ -1109,6 +1116,9 @@ body {
     
     .brand--margin {
         margin-bottom: toRem(82);
+        @media (max-width: 800px) {
+            margin-bottom: toRem(60);
+        }
 }
 ////////////////Expert\\\\\\\\\\\\\\
 
@@ -1174,6 +1184,15 @@ body {
 }
 .expert--margin {
     margin: 0 auto 130px auto;
+    @media (max-width: 1200px) {
+        margin: 0 auto 100px auto;;
+    }
+    @media (max-width: 1000px) {
+        margin: 0 auto 80px auto;;
+    }
+    @media (max-width: 800px) {
+        margin: 0 auto 60px auto;;
+    }
 }
 .label {
 }
@@ -1336,6 +1355,15 @@ body {
 }
 .solutions--margin {
     margin-bottom: toRem(132);
+    @media (max-width: 1200px) {
+        margin: 0 auto 100px auto;;
+    }
+    @media (max-width: 1000px) {
+        margin: 0 auto 80px auto;;
+    }
+    @media (max-width: 800px) {
+        margin: 0 auto 60px auto;;
+    }
 }
 .label {
 }
@@ -1464,6 +1492,11 @@ body {
         align-items: center;
         justify-content: space-between;
         margin: 0 auto toRem(40) auto;
+        @media (max-width: 799px) {
+            flex-direction: column;
+            gap: toRem(20);
+            text-align: center;
+        }
     }
 
     // .our-project__label-title-section
@@ -1492,17 +1525,111 @@ body {
     // .expert__label
 
     &__label {
+        
     }
 
     // .expert__title
 
     &__title {
+
     }
 
 
     &__button {
         padding: toRem(21) toRem(45) toRem(22) toRem(45);
         color: $mainColor;
+        @media (max-width: 799px) {
+            padding: toRem(21) toRem(30) toRem(22) toRem(30);
+        }
+    }
+}
+.label {
+}
+.label--margin-bottom {
+    
+    
+}
+.title {
+}
+.button {
+}
+.our-project--margin {
+    margin-bottom: toRem(150);
+    @media (max-width: 1200px) {
+        margin: 0 auto 130px auto;
+    }
+    @media (max-width: 1000px) {
+        margin: 0 auto 80px auto;
+    }
+    @media (max-width: 800px) {
+        margin: 0 auto 60px auto;
+    }
+}
+
+
+
+.testimonial {
+
+    // .testimonial__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22.2rem, 1fr));
+        row-gap: toRem(25);
+        column-gap: toRem(36);
+        padding-top: toRem(140);
+        border-top: 1px solid #C5C5C5;
+        @media (max-width: 1200px) {
+            padding-top: toRem(130);
+        }
+        @media (max-width: 1000px) {
+            padding-top: toRem(100);
+        }
+        @media (max-width: 800px) {
+            padding-top: toRem(80);
+        }
+        @media (max-width: 600px) {
+            padding-top: toRem(60);
+        }
+        @media (max-width: 390px) {
+            grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+            padding-top: toRem(40);
+        }
+}
+
+
+    // .testimonial__label-title-section
+
+    &__label-title-section {
+        & p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.45;
+            color: $reviewsColor;
+        }
+    }
+
+    // .testimonial__label
+
+    &__label {
+        @media (max-width: 800px) {
+            margin-bottom: toRem(10);
+        }
+    }
+
+    // .testimonial__title
+
+    &__title {
+        margin-bottom: toRem(23);
+        max-width: toRem(243);
+        @media (max-width: 800px) {
+            margin-bottom: toRem(16);
+        }
+    }
+
+    // .testimonial__card
+
+    &__card {
     }
 }
 .label {
@@ -1511,8 +1638,87 @@ body {
 }
 .title {
 }
-.button {
+.card {
+
+    // .card__reviews
+
+    &__reviews {
+
+    }
 }
-.our-project--margin {
-    margin-bottom: toRem(150);
+.reviews {
+    padding: toRem(50) toRem(37);
+    background-color: #F6F6F6;
+    @media (max-width: 799px) {
+        padding: toRem(30) toRem(25);
+    }
+    @media (max-width: 390px) {
+        padding: toRem(20) toRem(15);
+    }
+    &__info-card {
+        display: flex;
+        column-gap: toRem(16);
+    }
+    // .reviews__img
+
+    &__img {
+        max-width: toRem(101);
+        border-radius: 50%;
+        @media (max-width: 390px) {
+            max-width: toRem(75);
+        }
+    }
+
+    // .reviews__info
+
+    &__info-card {
+        margin-bottom: toRem(34);
+        @media (max-width: 799px) {
+            margin-bottom: toRem(25);
+        }
+    }
+
+    & p {
+        font-family: Inter;
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.46;
+        color: $reviewsColor;
+        @media (max-width: 390px) {
+            font-size: 18px;
+        }
+    }
+    // .reviews__name
+
+    &__name {
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #37393F;
+        margin-bottom: 1px;
+        @media (max-width: 390px) {
+            font-size: 16px;
+        }
+    }
+
+    // .reviews__profession
+
+    &__profession {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.37;
+        color: $reviewsColor;
+        margin-bottom: 1px;
+        @media (max-width: 390px) {
+            font-size: 14px;
+        }
+    }
+
+    // .reviews__rating
+
+    &__rating {
+        max-width: 121.76px;
+    }
 }

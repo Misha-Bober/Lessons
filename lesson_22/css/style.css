@@ -737,6 +737,11 @@ body {
     max-height: 40vh;
   }
 }
+@media (max-width: 799px) {
+  .first-section {
+    margin-bottom: 1.875rem;
+  }
+}
 .first-section__img {
   width: 100%;
   height: 100%;
@@ -977,6 +982,11 @@ body {
 
 .section--margin {
   margin-bottom: 6.25rem;
+}
+@media (max-width: 800px) {
+  .section--margin {
+    margin-bottom: 2.5rem;
+  }
 }
 @media (max-width: 820px) {
   .section--margin {
@@ -1267,7 +1277,7 @@ body {
 }
 @media (max-width: 799px) {
   .button--margin {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 }
 
@@ -1415,6 +1425,11 @@ body {
 .brand--margin {
   margin-bottom: 5.125rem;
 }
+@media (max-width: 800px) {
+  .brand--margin {
+    margin-bottom: 3.75rem;
+  }
+}
 
 .expert {
   display: -webkit-box;
@@ -1478,6 +1493,21 @@ body {
 
 .expert--margin {
   margin: 0 auto 130px auto;
+}
+@media (max-width: 1200px) {
+  .expert--margin {
+    margin: 0 auto 100px auto;
+  }
+}
+@media (max-width: 1000px) {
+  .expert--margin {
+    margin: 0 auto 80px auto;
+  }
+}
+@media (max-width: 800px) {
+  .expert--margin {
+    margin: 0 auto 60px auto;
+  }
 }
 
 .card-expert {
@@ -1625,6 +1655,21 @@ body {
 }
 .solutions--margin {
   margin-bottom: 8.25rem;
+}
+@media (max-width: 1200px) {
+  .solutions--margin {
+    margin: 0 auto 100px auto;
+  }
+}
+@media (max-width: 1000px) {
+  .solutions--margin {
+    margin: 0 auto 80px auto;
+  }
+}
+@media (max-width: 800px) {
+  .solutions--margin {
+    margin: 0 auto 60px auto;
+  }
 }
 
 .label--margin16 {
@@ -1777,6 +1822,16 @@ body {
           justify-content: space-between;
   margin: 0 auto 2.5rem auto;
 }
+@media (max-width: 799px) {
+  .our-project__label-title-button-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+}
 .our-project__label-title-section {
   max-width: 34.6875rem;
 }
@@ -1797,7 +1852,164 @@ body {
   padding: 1.3125rem 2.8125rem 1.375rem 2.8125rem;
   color: #ffffff;
 }
+@media (max-width: 799px) {
+  .our-project__button {
+    padding: 1.3125rem 1.875rem 1.375rem 1.875rem;
+  }
+}
 
 .our-project--margin {
   margin-bottom: 9.375rem;
+}
+@media (max-width: 1200px) {
+  .our-project--margin {
+    margin: 0 auto 130px auto;
+  }
+}
+@media (max-width: 1000px) {
+  .our-project--margin {
+    margin: 0 auto 80px auto;
+  }
+}
+@media (max-width: 800px) {
+  .our-project--margin {
+    margin: 0 auto 60px auto;
+  }
+}
+
+.testimonial__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22.2rem, 1fr));
+  row-gap: 1.5625rem;
+  -webkit-column-gap: 2.25rem;
+     -moz-column-gap: 2.25rem;
+          column-gap: 2.25rem;
+  padding-top: 8.75rem;
+  border-top: 1px solid #C5C5C5;
+}
+@media (max-width: 1200px) {
+  .testimonial__container {
+    padding-top: 8.125rem;
+  }
+}
+@media (max-width: 1000px) {
+  .testimonial__container {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .testimonial__container {
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 600px) {
+  .testimonial__container {
+    padding-top: 3.75rem;
+  }
+}
+@media (max-width: 390px) {
+  .testimonial__container {
+    grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+    padding-top: 2.5rem;
+  }
+}
+.testimonial__label-title-section p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #7D7D7D;
+}
+@media (max-width: 800px) {
+  .testimonial__label {
+    margin-bottom: 0.625rem;
+  }
+}
+.testimonial__title {
+  margin-bottom: 1.4375rem;
+  max-width: 15.1875rem;
+}
+@media (max-width: 800px) {
+  .testimonial__title {
+    margin-bottom: 1rem;
+  }
+}
+.reviews {
+  padding: 3.125rem 2.3125rem;
+  background-color: #F6F6F6;
+}
+@media (max-width: 799px) {
+  .reviews {
+    padding: 1.875rem 1.5625rem;
+  }
+}
+@media (max-width: 390px) {
+  .reviews {
+    padding: 1.25rem 0.9375rem;
+  }
+}
+.reviews__info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
+}
+.reviews__img {
+  max-width: 6.3125rem;
+  border-radius: 50%;
+}
+@media (max-width: 390px) {
+  .reviews__img {
+    max-width: 4.6875rem;
+  }
+}
+.reviews__info-card {
+  margin-bottom: 2.125rem;
+}
+@media (max-width: 799px) {
+  .reviews__info-card {
+    margin-bottom: 1.5625rem;
+  }
+}
+.reviews p {
+  font-family: Inter;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.46;
+  color: #7D7D7D;
+}
+@media (max-width: 390px) {
+  .reviews p {
+    font-size: 18px;
+  }
+}
+.reviews__name {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #37393F;
+  margin-bottom: 1px;
+}
+@media (max-width: 390px) {
+  .reviews__name {
+    font-size: 16px;
+  }
+}
+.reviews__profession {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.37;
+  color: #7D7D7D;
+  margin-bottom: 1px;
+}
+@media (max-width: 390px) {
+  .reviews__profession {
+    font-size: 14px;
+  }
+}
+.reviews__rating {
+  max-width: 121.76px;
 }

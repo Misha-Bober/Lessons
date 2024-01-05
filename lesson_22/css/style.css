@@ -1064,7 +1064,7 @@ body {
 }
 .left-section__img {
   width: 100%;
-  aspect-ratio: 25.5rem/27.875rem;
+  aspect-ratio: 408/446;
   margin-bottom: 1.375rem;
 }
 
@@ -1345,11 +1345,6 @@ body {
 .brand__home {
   max-width: 136.96px;
 }
-@media (max-width: 1100) {
-  .brand__home {
-    max-width: 12.45vw;
-  }
-}
 @media (max-width: 820px) {
   .brand__home {
     max-width: 13vw;
@@ -1363,11 +1358,6 @@ body {
 .brand__organical {
   max-width: 103.31px;
 }
-@media (max-width: 1100) {
-  .brand__organical {
-    max-width: 9.39vw;
-  }
-}
 @media (max-width: 820px) {
   .brand__organical {
     max-width: 10vw;
@@ -1380,11 +1370,6 @@ body {
 }
 .brand__rand {
   max-width: 170.45px;
-}
-@media (max-width: 1100) {
-  .brand__rand {
-    max-width: 15.495vw;
-  }
 }
 @media (max-width: 820px) {
   .brand__rand {
@@ -1416,11 +1401,6 @@ body {
 }
 .brand__nature-home {
   max-width: 150.96px;
-}
-@media (max-width: 1100) {
-  .brand__nature-home {
-    max-width: 13.72vw;
-  }
 }
 @media (max-width: 820px) {
   .brand__nature-home {
@@ -1534,10 +1514,6 @@ body {
   .card-expert__name {
     font-size: 1.25rem;
     max-width: 8.125rem;
-  }
-}
-@media (max-width: 420px) {
-  .card-expert__name {
     font-size: 18px;
   }
 }
@@ -1652,6 +1628,10 @@ body {
             flex-direction: column;
   }
 }
+.solutions--margin {
+  margin-bottom: 8.25rem;
+}
+
 .label--margin16 {
   color: #ffffff;
 }
@@ -1778,4 +1758,51 @@ body {
         -ms-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.our-project {
+  max-width: 118.125rem;
+  padding: 0.9375rem;
+  margin: 0 auto;
+}
+.our-project__label-title-button-section {
+  max-width: 78.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 2.5rem auto;
+}
+.our-project__label-title-section {
+  max-width: 34.6875rem;
+}
+.our-project__img-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+  row-gap: 2.5rem;
+  -webkit-column-gap: 2.5rem;
+     -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+}
+.our-project__img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 434/501;
+}
+.our-project__button {
+  padding: 1.3125rem 2.8125rem 1.375rem 2.8125rem;
+  color: #ffffff;
+}
+
+.our-project--margin {
+  margin-bottom: 9.375rem;
 }

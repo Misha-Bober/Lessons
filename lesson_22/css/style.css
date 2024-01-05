@@ -1384,11 +1384,6 @@ body {
 .brand__f-n {
   max-width: 119.78px;
 }
-@media (max-width: 1100) {
-  .brand__f-n {
-    max-width: 10.889vw;
-  }
-}
 @media (max-width: 820px) {
   .brand__f-n {
     max-width: 12vw;

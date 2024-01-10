@@ -35,20 +35,21 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-}
-.section {
-    
-    // @media (max-width:890px) {
-    //     padding: toRem(10) toRem(15);
-    // }
     @media (max-width:890px) {
         gap: 20px;
     }
+    @media (max-width:530px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.section-header {
     &__left-section {
         display: flex;
         flex-direction: row;
         gap: 42px;
         margin-right: 42px;
+        
         @media (max-width:961px) {
             margin-right: 20px;
         }
@@ -56,6 +57,7 @@ body {
             gap: 20px;
         }
         @media (max-width:890px) {
+            max-width: 255px;
             gap: 20px;
             flex-direction: column;
             align-items: center;
@@ -72,15 +74,16 @@ body {
         gap: 11px;
         align-items: center;
         transition: 0.3s;
+        
         @media (any-hover: hover){ 
             &:hover {
                 color: #40DDB6;
             }
         }
-        @media (max-width:484px) {
-           flex-direction: column;
-           gap: 11px;
-        }
+        // @media (max-width:484px) {
+        //    flex-direction: column;
+        //    gap: 11px;
+        // }
     }
     &__right-section {
         display: flex;
@@ -91,10 +94,12 @@ body {
             gap: 20px;
         }
         @media (max-width:890px) {
+            max-width: 255px;
             gap: 20px;
             flex-direction: column;
             align-items: center;
         }
+        
     }
     // .section__text
 
@@ -237,6 +242,7 @@ body {
         background-color: #6B77E5;
         padding: 21px 35px 22px 35px;
         transition: all 0.3s;
+        flex-shrink: 0;
         @media (any-hover: hover){ 
             &:hover {
                 background-color: #9da5eb;
@@ -315,26 +321,26 @@ body {
                 color: #b3fffcbe;
                 z-index: 4; 
             }
-            @media (max-width:890px) {
-                top: 234.92px;
+            @media (max-width:900px) {
+                top: 190.92px;
             }
-            @media (max-width:800px) {
-                top: 297.03px;
+            @media (max-width:890px) {
+                top: 224.92px;
             }
             @media (max-width:770px) {
-                top: 271.03px;
+                top: 198.92px;
             }
             @media (max-width:560px) {
-                top: 269.03px;
+                top: 196.92px;
             }
-            @media (max-width:560px) {
-                top: 252.11px;
+            @media (max-width:530px) {
+                top: 267.03px;
             }
-            @media (max-width:484px) {
-                top: 320.84px;
+            @media (max-width:500px) {
+                top: 252.1px;
             }
             @media (max-width:380px) {
-                top: 300.84px;
+                top: 231.11px;
             }
             }
     &-open {
@@ -364,10 +370,7 @@ body {
     &__list {
         display: flex;
         flex-direction: row;
-        gap: 40px;
-        @media (max-width:1125px) {
-            gap: 30px;
-         }
+        gap: 30px;
          @media (max-width: 1036px) {
             gap: 15px;
     }
@@ -385,6 +388,7 @@ body {
         font-size: 22px;
         transition: all 0.3s;
         color: #37393F;
+        flex-wrap: wrap;
         @media (any-hover: hover){ 
             &:hover {
                 color: #6B77E5;
@@ -451,29 +455,23 @@ body {
 
 .page {
     margin-top: 190.92px;
-    @media (max-width: 890px) {
-        margin-top: toRem(244.95)
+    @media (max-width: 964px) {
+        margin-top: toRem(190.92)
 }
-@media (max-width: 798px) {
-    margin-top: 297px;
+    @media (max-width: 890px) {
+        margin-top: toRem(224.95)
 }
 @media (max-width: 770px) {
-    margin-top: 228.92px;
+    margin-top: toRem(198.92)
 }
-@media (max-width: 760px) {
-    margin-top: 271px;
-}
-@media (max-width: 561px) {
+@media (max-width: 530px) {
     margin-top: 267.03px;
 }
 @media (max-width: 500px) {
     margin-top: 252.11px;
 }
-@media (max-width: 485px) {
-    margin-top: 322.84px;
-}
 @media (max-width: 380px) {
-    margin-top: 290.84px;
+    margin-top: 232.11px;
 }
 }
 .first-section {
@@ -790,6 +788,7 @@ body {
             // height: 100%;
             aspect-ratio: 408 / 446;
             margin-bottom: toRem(22);
+            object-fit: cover;
             // max-width: 408px;
             // max-height: 446px;
             // @media (max-width: 1524px) {
@@ -976,7 +975,8 @@ body {
         margin-bottom: 0;
         line-height: 1.38;
     }
-    .button--margin {
+    
+    .button--color {
         background-color: #6B77E5;
         color: $mainColor;
         @media (any-hover: hover){ 
@@ -1394,6 +1394,7 @@ body {
     gap: 0.75rem;;
     justify-content: space-between;
     padding: toRem(27) toRem(30);
+    flex-wrap: wrap;
     @media (max-width: 1164px) {
         justify-content: space-between;
         max-width: toRem(296.97);
@@ -1523,13 +1524,15 @@ body {
 
     &__link {
         overflow: hidden;
+        aspect-ratio: 434/501;
     }
     // .our-project__img
 
     &__img {
         width: 100%;
         height: 100%;
-        aspect-ratio: 434/501;
+        object-fit: cover;
+        
         transition: all 0.4s;
         @media (any-hover: hover){ 
             &:hover {
@@ -1696,10 +1699,15 @@ body {
     // .reviews__img
 
     &__img {
-        max-width: toRem(101);
+        width: toRem(101);
+        height: toRem(101);
         border-radius: 50%;
+        object-fit: cover;
+        flex: 0 0 101px;
         @media (max-width: 390px) {
-            max-width: toRem(75);
+            width: toRem(75);
+            height: toRem(75);
+            flex: 0 0 75px;
         }
     }
 
@@ -1858,7 +1866,7 @@ body {
                 position: absolute;
                 width: 27px;
                 height: 27px;
-                background: url(../img/work-section/tick-mark-green.svg) no-repeat;
+                background: url(../img/the-fourth-section/tick-mark-green.svg) no-repeat;
                 top: 6px;
                 left: 0;
                 border-radius: 50%;
@@ -1997,6 +2005,7 @@ body {
     padding-left: 2.0625rem;
     padding-top: 0.625rem;
     margin-bottom: toRem(25);
+    resize: vertical;
     }
 
     // .booking-form__button

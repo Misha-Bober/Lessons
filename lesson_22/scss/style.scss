@@ -157,6 +157,9 @@ body {
     left: 0;
     z-index: 100;
     background-color: $mainColor;
+    @media (max-width:770px) {
+        position: static;
+} 
     &__section-backgrond {
         background-color: $textColor;
         padding: 19px 0px;
@@ -328,19 +331,8 @@ body {
                 top: 224.92px;
             }
             @media (max-width:770px) {
-                top: 198.92px;
-            }
-            @media (max-width:560px) {
-                top: 196.92px;
-            }
-            @media (max-width:530px) {
-                top: 267.03px;
-            }
-            @media (max-width:500px) {
-                top: 252.1px;
-            }
-            @media (max-width:380px) {
-                top: 231.11px;
+                padding: 250px 15px 0px 0px;
+                top: 0px;
             }
             }
     &-open {
@@ -462,16 +454,7 @@ body {
         margin-top: toRem(224.95)
 }
 @media (max-width: 770px) {
-    margin-top: toRem(198.92)
-}
-@media (max-width: 530px) {
-    margin-top: 267.03px;
-}
-@media (max-width: 500px) {
-    margin-top: 252.11px;
-}
-@media (max-width: 380px) {
-    margin-top: 232.11px;
+    margin-top: toRem(0)
 }
 }
 .first-section {

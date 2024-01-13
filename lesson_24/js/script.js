@@ -65,16 +65,9 @@
 //   console.log(item[i]);
 // }
 
-// let someString = "Привіт! Як справи?";
-// console.log(someString.length);
-
-// console.log(someString[0]);
-// console.log(someString[1]);
-// console.log(someString[2]);
-// console.log(someString[3]);
-// console.log(someString[4]);
-// console.log(someString[5]);
-// console.log(someString[6]);
+// for (let i = 1; i <= 10; i++) {
+//     console.log("Пункт № " + i);
+// }
 
 
 // Задача №3

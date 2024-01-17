@@ -1,0 +1,171 @@
+@use "sass:math";
+
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1170;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 30;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// // Шрифти
+// @import "_fonts.scss";
+// Обнулення
+@import "_reset.scss";
+// Компоненти
+@import "_common.scss";
+// Функції
+@import "_functions.scss";
+
+body {
+ background-color: #794f458c;
+ .transparent {
+	background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.wrapper {
+	overflow: clip;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.wrapper main {
+	flex-grow: 1;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.link {
+	margin: 50px 0px 0px 50px;
+	font-size: 25px;
+}
+
+.header {
+	// position: fixed;
+	width: 100%;
+	// top: 0;
+	// left: 0;
+	z-index: 50;
+	background-color: #794f45;
+	padding: toRem(50) 0px toRem(50) toRem(50)  ;
+	// .header__container
+	&__container {
+	}
+	// .header__menu
+	&__menu {
+	}
+}
+.menu {
+	// .menu__icon
+	&__icon {
+	}
+	// .menu__body
+	&__body {
+		@media (max-width: toEm(767.98)) {
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			overflow: auto;
+			top: 0;
+			padding: 100px;
+			background-color: #7a956b;
+			left: -100%;
+			transition: left 0.3s;
+			.menu-open & {
+				left: 0;
+			}
+		}
+	}
+	// .menu__list
+	&__list {
+	}
+	// .menu__item
+	&__item {
+	}
+	// .menu__link
+	&__link {
+	}
+}
+//Burger Icon
+.icon-menu {
+	display: none;
+	@media (max-width: toEm(767.98)) {
+		display: block;
+		position: relative;
+		width: toRem(30);
+		height: toRem(18);
+		z-index: 5;
+		@media (any-hover: none) {
+			cursor: default;
+		}
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: toRem(2);
+			background-color: #fff;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: calc(50% - toRem(1));
+		}
+		.menu-open & {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: calc(50% - toRem(1));
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - toRem(1));
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+.section--two {
+	p {
+		color: #338867;
+	}
+}
+.section--one {
+	p {
+		color: #43aa24;
+	}
+}
+.section--three {
+	p {
+		color: #2837bd;
+	}
+}
+.active {
+	background-color: #ffff00;
+  }
+
+footer {
+	background-color: #2837bd;
+	transition: background-color  0.3s ease; 
+  }
+  
+.task-4 {
+	margin: 0 auto;
+}

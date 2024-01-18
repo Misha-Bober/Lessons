@@ -72,11 +72,8 @@ textarea {
           appearance: none;
 }
 
-body {
-  background-color: rgba(121, 79, 69, 0.5490196078);
-}
 body .transparent {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(150, 80, 80, 0.5);
 }
 
 .wrapper {
@@ -204,10 +201,6 @@ body .transparent {
   color: #2837bd;
 }
 
-.active {
-  background-color: #ffff00;
-}
-
 footer {
   background-color: #2837bd;
   -webkit-transition: background-color 0.3s ease;
@@ -216,4 +209,28 @@ footer {
 
 .task-4 {
   margin: 0 auto;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 30px 0px 0px 30px;
+}
+
+.item {
+  padding: 20px;
+  background-color: #7a956b;
+  border-radius: 12px;
+}
+
+.active {
+  background-color: #ffff00;
 }

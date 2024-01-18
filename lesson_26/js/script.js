@@ -144,12 +144,12 @@ function documentAction(e) {
 // Дано в css/scss: body прозорий
 // При повному завантаженню сторінки додати клас до body який прибирає прозорість.
 
-document.addEventListener('DOMContentLoaded', function () {
-    var body = document.body;
+// document.addEventListener('load', function () {
+//     let body = document.body;
   
-    // Add the 'transparent' class to the body on page load
-    body.classList.add('transparent');
-  });
+//     // Add the 'transparent' class to the body on page load
+//     body.classList.add('transparent');
+//   });
 
 // У цьому прикладі ми використовуємо classList.add('transparent') для додавання класу "transparent" 
 // до елемента body при завантаженні сторінки. В CSS ми визначаємо стилі для класу "transparent", 
@@ -160,20 +160,20 @@ document.addEventListener('DOMContentLoaded', function () {
 // Пи наведенні курсору на header змінювати колір фону у footer.
 // Коли курсор йде з header повертати початковий фон для footer.
 
-document.addEventListener('DOMContentLoaded', function () {
-    var header = document.getElementById('header');
-    var footer = document.getElementById('footer');
+// document.addEventListener('DOMContentLoaded', function () {
+//     let header = document.getElementById('header');
+//     let footer = document.getElementById('footer');
   
-    header.addEventListener('mouseenter', function () {
-      // Змінюємо колір фону footer при наведенні на header
-      footer.style.backgroundColor = 'yellow';
-    });
+//     header.addEventListener('mouseenter', function () {
+//       // Змінюємо колір фону footer при наведенні на header
+//       footer.style.backgroundColor = 'yellow';
+//     });
   
-    header.addEventListener('mouseleave', function () {
-      // Повертаємо початковий колір фону footer при виході з header
-      footer.style.backgroundColor = '';
-    });
-  });
+//     header.addEventListener('mouseleave', function () {
+//       // Повертаємо початковий колір фону footer при виході з header
+//       footer.style.backgroundColor = '';
+//     });
+//   });
 
 //   У цьому прикладі ми використовуємо JavaScript для додавання обробників подій до елемента 
 //   header, які реагують на події mouseenter (наведення курсору) та mouseleave (виїзд курсору). 
@@ -186,18 +186,78 @@ document.addEventListener('DOMContentLoaded', function () {
 // Затримка між зміною числа, та до якого числа має працювати інтервал має задаватись в дата атрибутах елемента item.
 // Функція має запустатить коли ми доскролюємо до елементу item (його видно), і не запускатись повторно.
 
-document.addEventListener('DOMContentLoaded', function () {
-    var item = document.querySelector('.item');
-    var isIntervalRunning = false;
+// document.addEventListener('DOMContentLoaded', function () {
+//     let item = document.querySelector('.item');
+//     let isIntervalRunning = false;
+  
+//     function startInterval() {
+//       if (!isIntervalRunning) {
+//         let delay = parseInt(item.dataset.delay) || 1000;
+//         let currentNumber = 1;
+//         let interval = setInterval(function () {
+//           item.textContent = currentNumber;
+//           currentNumber++;
+//         }, delay);
+//       }
+//     }
+  
+//     function isElementInViewport(el) {
+//       let rect = el.getBoundingClientRect();
+//       return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//       );
+//     }
+  
+//     function handleScroll() {
+//       if (isElementInViewport(item)) {
+//         startInterval();
+//         window.removeEventListener('scroll', handleScroll);
+//       }
+//     }
+  
+    // window.addEventListener('scroll', handleScroll);
+  
+    // handleScroll();
+  // });
+  
+
+//   У цьому прикладі, коли елемент з класом "item" стає видимим у в'юпорті, функція startInterval 
+//   запускає інтервал, який змінює вміст елемента і виводить числа від 1 до заданого максимального 
+//   числа з заданою затримкою. Функція isElementInViewport визначає, чи елемент видимий у в'юпорті.
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Задача №1
+  document.querySelectorAll('.item').forEach(function(item) {
+      item.addEventListener('click', function() {
+          item.classList.toggle('active');
+      });
+  });
+
+  // Задача №2
+  document.body.classList.add('transparent');
+
+  // Задача №3
+  document.querySelector('header').addEventListener('mouseover', function() {
+      document.querySelector('footer').style.backgroundColor = 'lightblue';
+  });
+
+  document.querySelector('header').addEventListener('mouseout', function() {
+      document.querySelector('footer').style.backgroundColor = '';
+  });
+
+  // Задача №4
+let item = document.querySelector('.item');
+    let isIntervalRunning = false;
   
     function startInterval() {
       if (!isIntervalRunning) {
-        var delay = parseInt(item.dataset.delay) || 1000;
-        var currentNumber = 1;
-  
-        isIntervalRunning = true;
-  
-        var interval = setInterval(function () {
+        let delay = parseInt(item.dataset.delay) || 1000;
+        let currentNumber = 1;
+        let interval = setInterval(function () {
           item.textContent = currentNumber;
           currentNumber++;
         }, delay);
@@ -205,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   
     function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
+      let rect = el.getBoundingClientRect();
       return (
         rect.top >= 0 &&
         rect.left >= 0 &&
@@ -221,15 +281,8 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   
-    // Додавання обробника подій для перевірки видимості під час прокрутки
     window.addEventListener('scroll', handleScroll);
   
-    // Запуск перевірки видимості при завантаженні сторінки
     handleScroll();
-  });
-  
-
-//   У цьому прикладі, коли елемент з класом "item" стає видимим у в'юпорті, функція startInterval 
-//   запускає інтервал, який змінює вміст елемента і виводить числа від 1 до заданого максимального 
-//   числа з заданою затримкою. Функція isElementInViewport визначає, чи елемент видимий у в'юпорті.
+});
   

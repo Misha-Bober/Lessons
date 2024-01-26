@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Задача №2
-  document.body.classList.add('transparent');
+  document.body.classList.add('white');
 
   // Задача №3
   document.querySelector('header').addEventListener('mouseover', function() {
@@ -250,39 +250,77 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Задача №4
+// let item = document.querySelector('.item');
+//     let isIntervalRunning = false;
+  
+//     function startInterval() {
+//       if (!isIntervalRunning) {
+//         let delay = parseInt(item.dataset.delay) || 1000;
+//         let currentNumber = 1;
+//         let interval = setInterval(function () {
+//           item.textContent = currentNumber;
+//           currentNumber++;
+//         }, delay);
+//       }
+//     }
+  
+//     function isElementInViewport(el) {
+//       let rect = el.getBoundingClientRect();
+//       return (
+//         rect.top >= 0 &&
+//         rect.left >= 0 &&
+//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//       );
+//     }
+  
+//     function handleScroll() {
+//       if (isElementInViewport(item)) {
+//         startInterval();
+//         window.removeEventListener('scroll', handleScroll);
+//       }
+//     }
+  
+//     window.addEventListener('scroll', handleScroll);
+  
+//     handleScroll();
+
 let item = document.querySelector('.item');
-    let isIntervalRunning = false;
-  
-    function startInterval() {
-      if (!isIntervalRunning) {
-        let delay = parseInt(item.dataset.delay) || 1000;
-        let currentNumber = 1;
-        let interval = setInterval(function () {
-          item.textContent = currentNumber;
-          currentNumber++;
-        }, delay);
-      }
+let isIntervalRunning = false;
+
+// Створюємо Intersection Observer
+let observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    // Перевіряємо, чи елемент потрапив в зону видимості
+    if (entry.isIntersecting && !isIntervalRunning) {
+      // Отримуємо значення з дата-атрибутів
+      let delay = parseInt(item.dataset.delay) || 1000;
+
+      let currentNumber = 1;
+      let interval = setInterval(() => {
+        // Змінюємо текст в елементі item
+        item.textContent = currentNumber;
+
+        // Збільшуємо значення
+        currentNumber++;
+
+        // Перевіряємо, чи досягли максимального числа
+        if (currentNumber > maxNumber) {
+          clearInterval(interval);
+          isIntervalRunning = false;
+        }
+      }, delay);
+
+      isIntervalRunning = true;
+
+      // Припиняємо спостереження, так як інтервал вже запущено
+      observer.disconnect();
     }
-  
-    function isElementInViewport(el) {
-      let rect = el.getBoundingClientRect();
-      return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-    }
-  
-    function handleScroll() {
-      if (isElementInViewport(item)) {
-        startInterval();
-        window.removeEventListener('scroll', handleScroll);
-      }
-    }
-  
-    window.addEventListener('scroll', handleScroll);
-  
-    handleScroll();
+  });
+});
+
+// Спостерігаємо за елементом item
+observer.observe(item);
+
 });
   

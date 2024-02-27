@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 5</h1>
+
+            <div>
+                <p>
+                    Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+                </p>
+            </div>
+            <script>
+                // Отримання кількості секунд з клавіатури
+                let totalSeconds = parseInt(prompt("Введіть кількість секунд:"));
+
+                // Обчислення годин
+                let hours = Math.floor(totalSeconds / 3600); // Отримуємо цілу кількість годин
+
+                // Знаходимо залишок секунд після віднімання годин
+                let remainingSeconds = totalSeconds % 3600;
+
+                // Обчислення хвилин
+                let minutes = Math.floor(remainingSeconds / 60); // Отримуємо цілу кількість хвилин
+
+                // Виведення результатів у консоль
+                console.log("Годин:", hours);
+                console.log("Хвилин:", minutes);
+
+                // Виведення результатів на екран
+                document.write("<p>Відповідь:</p>");
+                document.write("<p>Годин: " + hours + "</p>");
+                document.write("<p>Хвилин: " + minutes + "</p>");
+            </script>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

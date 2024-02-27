@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 1</h1>
+
+            <div>
+                <p>Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у формі таблиці</p>
+            </div>
+            <script>
+                // Отримання значень з клавіатури
+                let num1 = parseFloat(prompt("Введіть перше число:"));
+                let num2 = parseFloat(prompt("Введіть друге число:"));
+
+                // Обчислення суми, добутку та частки
+                let sum = num1 + num2;
+                let product = num1 * num2;
+                let quotient = num1 / num2;
+
+                // Виведення результатів у консоль
+                console.log("Сума:", sum);
+                console.log("Добуток:", product);
+                console.log("Частка:", quotient);
+
+                // Формування таблиці з результатами
+                let tableHTML = `
+                    <table>
+                      <tr>
+                        <th>Дія</th>
+                        <th>Результат</th>
+                      </tr>
+                      <tr>
+                        <td>Сума</td>
+                        <td>${sum}</td>
+                      </tr>
+                      <tr>
+                        <td>Добуток</td>
+                        <td>${product}</td>
+                      </tr>
+                      <tr>
+                        <td>Частка</td>
+                        <td>${quotient}</td>
+                      </tr>
+                    </table>
+                `;
+
+                // Виведення таблиці у документ
+                document.write(tableHTML);
+            </script>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

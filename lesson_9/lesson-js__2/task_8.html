@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 7</h1>
+            <p>
+                . Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).
+            </p>
+            <script>
+                // Отримання випадкового номера місяця та дня з клавіатури
+                let month = parseInt(prompt("Введіть випадковий номер місяця (від 1 до 12):"));
+                let day = parseInt(prompt("Введіть випадковий номер дня (від 0 до 6):"));
+
+                // Перевірка на коректність введених значень
+                if (isNaN(month) || month < 1 || month > 12 || isNaN(day) || day < 0 || day > 6) {
+                    console.error("Неправильний формат введених даних.");
+                    document.write("<p>Неправильний формат введених даних.</p>");
+                } else {
+                    // Обчислення суми випадкових номерів місяця та дня
+                    let sum = month + day;
+
+                    // Виведення результату у консоль
+                    console.log("Сума випадкових номерів місяця та дня:", sum);
+
+                    // Виведення результату на екран
+                    document.write("<p>Відповідь:</p>");
+                    document.write("<p>Сума випадкових номерів місяця та дня: " + sum + "</p>");
+                }
+            </script>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

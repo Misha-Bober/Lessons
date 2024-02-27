@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 3</h1>
+
+            <div>
+                <p>
+                    Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної
+                    вартості).
+                </p>
+            </div>
+            <script>
+                // Отримання вартості одиниці товару та кількості з клавіатури
+                let unitPrice = parseFloat(prompt("Введіть вартість одиниці товару:"));
+                let quantity = parseInt(prompt("Введіть кількість одиниць товару:"));
+
+                // Обчислення загальної вартості
+                let totalCost = unitPrice * quantity;
+
+                // Обчислення ПДВ
+                let vat = 0.05 * totalCost;
+
+                // Виведення результатів у консоль
+                console.log("Загальна вартість:", totalCost);
+                console.log("ПДВ (5% від загальної вартості):", vat);
+
+                // Виведення результатів на екран
+                document.write("<p>Відповідь</p>");
+                document.write("<p>Загальна вартість: " + totalCost + "</p>");
+                document.write("<p>ПДВ (5% від загальної вартості): " + vat + "</p>");
+            </script>
+
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

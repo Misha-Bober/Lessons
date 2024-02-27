@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 2</h1>
+
+            <div>
+                <p>Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.</p>
+            </div>
+            <script>
+                // Отримання років народження з клавіатури
+                let birthYear = parseInt(prompt("Введіть рік народження:"));
+
+                // Отримання поточного року
+                let currentYear = new Date().getFullYear();
+
+                // Знаходження кількості років
+                let age = currentYear - birthYear;
+
+                // Виведення результату у консоль
+                console.log("Кількість років:", age);
+
+                // Виведення результату на екран
+                document.write("<p>Відповідь:</p>");
+                document.write("<p>Кількість років: " + age + "</p>");
+            </script>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

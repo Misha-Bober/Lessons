@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Урок JS 1</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+        </header>
+        <main>
+            <h1>Задача 4</h1>
+            <div>
+                <p>
+                    Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+                </p>
+            </div>
+            <script>
+                // Отримання довжини у сантиметрах з клавіатури
+                let lengthInCentimeters = parseFloat(prompt("Введіть довжину у сантиметрах:"));
+
+                // Переведення у метри
+                let lengthInMeters = lengthInCentimeters / 100;
+
+                // Переведення у кілометри
+                let lengthInKilometers = lengthInCentimeters / 100000;
+
+                // Виведення результатів у консоль
+                console.log("Довжина у метрах:", lengthInMeters);
+                console.log("Довжина у кілометрах:", lengthInKilometers);
+
+                // Виведення результатів на екран
+                document.write("<p>Відповідь:</p>");
+                document.write("<p>Довжина у метрах: " + lengthInMeters + "</p>");
+                document.write("<p>Довжина у кілометрах: " + lengthInKilometers + "</p>");
+            </script>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
